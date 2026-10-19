@@ -1,0 +1,43 @@
+{
+  "protocol": "VDS-PROJECT/9",
+  "projectId": "gemmashivali",
+  "projectName": "Gemma Shivali",
+  "description": "Terapia online y presencial en Sitges y Barcelona: programas de transformación, sesiones individuales, talleres, retiros, qigong y tantra.",
+  "siteOrigin": "https://gemmashivali.com",
+  "engineVersion": "9.0.0-rc.1",
+  "owner": "Visual Design Studio",
+  "createdMonth": "2026-10",
+  "quality": {
+    "protocol": "VDS-QUALITY/3",
+    "agenticBrowsing": {
+      "protocol": "VDS-AGENTIC-BROWSING/1",
+      "evidenceType": "lighthouse-runtime",
+      "requiredProfiles": [
+        "mobile",
+        "desktop"
+      ],
+      "requireCompleteFractionOnCriticalRoutes": true
+    }
+  },
+  "humanInspection": {
+    "protocol": "VDS-HUMAN-CODE/1",
+    "signature": "Visual Design Studio — VDS Engine 9",
+    "requireFilePurpose": true,
+    "requireDeclarationPurpose": true,
+    "sourceRoots": [
+      "src"
+    ]
+  },
+  "agenticDevelopment": {
+    "editor": "VS Code",
+    "agent": "Kilo Code",
+    "preferredProvider": "DeepSeek API",
+    "instructions": [
+      "AGENTS.md",
+      "CONTEXT.md",
+      ".kilo/rules/*.md"
+    ],
+    "projectGuide": "docs/VDS9_PROJECT_GUIDE.md",
+    "humanGuide": "docs/VDS9_HUMAN_EDITING_GUIDE.md"
+  }
+}

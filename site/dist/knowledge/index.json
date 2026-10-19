@@ -1,0 +1,85 @@
+{
+  "protocol": "VDS-KNOWLEDGE-INDEX/1",
+  "site": {
+    "name": "Gemma Shivali",
+    "origin": "https://gemmashivali.com",
+    "description": "Terapia online y presencial en Sitges y Barcelona: programas de transformación, sesiones individuales, talleres, retiros, qigong y tantra."
+  },
+  "strategy": null,
+  "retirement": null,
+  "indexNow": null,
+  "pages": [
+    {
+      "canonical": "https://gemmashivali.com/",
+      "path": "/",
+      "title": "Gemma Shivali | Terapia online y presencial en Sitges y Barcelona",
+      "description": "Terapia online y presencial en Sitges y Barcelona: programas de transformación, sesiones individuales, talleres, retiros, qigong y tantra.",
+      "primaryEntityId": "gemma-shivali",
+      "intent": "informational",
+      "role": "home",
+      "clusterId": null,
+      "audienceIds": [],
+      "knowledgePath": "/knowledge/page.json"
+    },
+    {
+      "canonical": "https://gemmashivali.com/nuestros-servicios/",
+      "path": "/nuestros-servicios/",
+      "title": "Servicios | Programas, sesiones, talleres y retiros | Gemma Shivali",
+      "description": "Programas de transformación, sesiones individuales, talleres presenciales, retiros, Qi Gong y Tantra. Terapia online y presencial en Sitges y Barcelona.",
+      "primaryEntityId": "gemma-shivali",
+      "intent": "commercial",
+      "role": "service",
+      "clusterId": null,
+      "audienceIds": [],
+      "knowledgePath": "/nuestros-servicios/knowledge.json"
+    },
+    {
+      "canonical": "https://gemmashivali.com/nota-legal/",
+      "path": "/nota-legal/",
+      "title": "Aviso legal | Gemma Shivali",
+      "description": "Aviso legal de Gemma Shivali: datos identificativos, condiciones de uso, propiedad intelectual y legislación aplicable.",
+      "primaryEntityId": "gemma-shivali",
+      "intent": "informational",
+      "role": "legal",
+      "clusterId": null,
+      "audienceIds": [],
+      "knowledgePath": "/nota-legal/knowledge.json"
+    },
+    {
+      "canonical": "https://gemmashivali.com/politica-de-privacidad/",
+      "path": "/politica-de-privacidad/",
+      "title": "Política de privacidad | Gemma Shivali",
+      "description": "Política de privacidad de Gemma Shivali: finalidad del tratamiento, derechos de los usuarios, conservación y transferencias internacionales.",
+      "primaryEntityId": "gemma-shivali",
+      "intent": "informational",
+      "role": "legal",
+      "clusterId": null,
+      "audienceIds": [],
+      "knowledgePath": "/politica-de-privacidad/knowledge.json"
+    },
+    {
+      "canonical": "https://gemmashivali.com/politica-de-cookies/",
+      "path": "/politica-de-cookies/",
+      "title": "Política de cookies | Gemma Shivali",
+      "description": "Política de cookies de Gemma Shivali: qué cookies se utilizan, con qué finalidad, quién las gestiona y cómo aceptarlas o rechazarlas.",
+      "primaryEntityId": "gemma-shivali",
+      "intent": "informational",
+      "role": "legal",
+      "clusterId": null,
+      "audienceIds": [],
+      "knowledgePath": "/politica-de-cookies/knowledge.json"
+    },
+    {
+      "canonical": "https://gemmashivali.com/declaracion-de-accesibilidad/",
+      "path": "/declaracion-de-accesibilidad/",
+      "title": "Declaración de accesibilidad | Gemma Shivali",
+      "description": "Declaración de accesibilidad del sitio web de Gemma Shivali conforme al Real Decreto 1112/2018 y la norma UNE-EN 301549:2022.",
+      "primaryEntityId": "gemma-shivali",
+      "intent": "informational",
+      "role": "legal",
+      "clusterId": null,
+      "audienceIds": [],
+      "knowledgePath": "/declaracion-de-accesibilidad/knowledge.json"
+    }
+  ]
+}

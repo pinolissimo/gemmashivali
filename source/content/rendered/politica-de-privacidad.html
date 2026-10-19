@@ -1,0 +1,580 @@
+﻿<!DOCTYPE html>
+<html lang="es" amp=""><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        #initial-loader {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -70px;
+        }
+
+        .spinner {
+            color: #24a7ff;
+            font-size: 10px;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            position: relative;
+            text-indent: -9999em;
+            animation: mulShdSpin 1.3s infinite linear;
+            transform: translateZ(0);
+        }
+
+        @keyframes mulShdSpin {
+
+            0%,
+            100% {
+                box-shadow: 0 -3em 0 0.2em,
+                    2em -2em 0 0em, 3em 0 0 -1em,
+                    2em 2em 0 -1em, 0 3em 0 -1em,
+                    -2em 2em 0 -1em, -3em 0 0 -1em,
+                    -2em -2em 0 0;
+            }
+
+            12.5% {
+                box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em,
+                    3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em,
+                    -2em 2em 0 -1em, -3em 0 0 -1em,
+                    -2em -2em 0 -1em;
+            }
+
+            25% {
+                box-shadow: 0 -3em 0 -0.5em,
+                    2em -2em 0 0, 3em 0 0 0.2em,
+                    2em 2em 0 0, 0 3em 0 -1em,
+                    -2em 2em 0 -1em, -3em 0 0 -1em,
+                    -2em -2em 0 -1em;
+            }
+
+            37.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+                    3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em,
+                    -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+
+            50% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+                    3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em,
+                    -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+
+            62.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+                    3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0,
+                    -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+            }
+
+            75% {
+                box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em,
+                    3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+                    -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+            }
+
+            87.5% {
+                box-shadow: 0em -3em 0 0, 2em -2em 0 -1em,
+                    3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+                    -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://connect.facebook.net">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://connect.facebook.net">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    <!-- Font Awesome CSS for icons -->
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
+
+    <link href="/css/app.b1a9a82077.css?v=1792433377" rel="preload" as="style">
+    <link href="/css/chunk-vendors.1a06b43d77.css?v=1792433377" rel="preload" as="style">
+
+    <link href="/js/app.9f163af677.js?v=1792433377" rel="preload" as="script">
+    <link href="/js/chunk-vendors.fc1c89fd77.js?v=1792433377" rel="preload" as="script">
+
+    <link href="/css/chunk-vendors.1a06b43d77.css?v=1792433377" rel="stylesheet">
+    <link href="/css/app.b1a9a82077.css?v=1792433377" rel="stylesheet">
+
+    <link rel="manifest" href="blob:https://gemmashivali.com/a44e588b-dfe7-4eef-9ca8-5d716eaff302" id="my-manifest-placeholder">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    
+    <meta name="meta-web" content="https://www.erescambio.com/wp-json/wp/v2/ztudio_webs_metas2/?web=gemmashivali.com/politica-de-privacidad/">
+
+    <!-- Primary Meta Tags -->
+    <title>Gemma Estivill ǀ Terapia online y presencial en Sitges y BCN</title>
+    <meta name="title" content="Gemma Estivill ǀ Terapia online y presencial en Sitges y BCN">
+    <meta name="description" content="Recupera tu energía, reconecta con tu cuerpo y fortalece tu bienestar en cada etapa de tu vida">
+    <link rel="canonical" href="https://gemmashivali.com">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gemmashivali.com">
+    <meta property="og:title" content="Gemma Estivill ǀ Terapia online y presencial en Sitges y BCN">
+    <meta property="og:description" content="Recupera tu energía, reconecta con tu cuerpo y fortalece tu bienestar en cada etapa de tu vida">
+    <meta property="og:image" content="https://cdn.erescambio.com/wp-content/uploads/2022/04/favicon-gemma.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gemmashivali.com">
+    <meta property="twitter:title" content="Gemma Estivill ǀ Terapia online y presencial en Sitges y BCN">
+    <meta property="twitter:description" content="Recupera tu energía, reconecta con tu cuerpo y fortalece tu bienestar en cada etapa de tu vida">
+    <meta property="twitter:image" content="https://cdn.erescambio.com/wp-content/uploads/2022/04/favicon-gemma.png">
+
+    <link rel="apple-touch-icon" sizes="192x192" href="https://cdn.erescambio.com/wp-content/uploads/2022/04/favicon-gemma.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.erescambio.com/wp-content/uploads/2022/04/favicon-gemma.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.erescambio.com/wp-content/uploads/2022/04/favicon-gemma.png">
+
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    
+    <!-- Dynamic Manifest -->
+    <script>
+        var manifestJSON = {
+            "name": "Gemma Estivill ǀ Terapia online y presencial en Sitges y BCN",
+            "short_name": "Gemma Estivill ǀ Terapia online y presencial en Sitges y BCN",
+            "display": "standalone",
+            "icons": [
+                {
+                    "src": "https://cdn.erescambio.com/wp-content/uploads/2022/04/favicon-gemma.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                }
+            ],
+            "background_color": "#FFFFFF",
+            "theme_color": "#FFFFFF"
+        };
+
+        const stringManifest = JSON.stringify(manifestJSON);
+        const blob = new Blob([stringManifest], {type: 'application/json'});
+        const manifestURL = URL.createObjectURL(blob);
+        document.querySelector('#my-manifest-placeholder').setAttribute('href', manifestURL);
+    </script>
+
+        <!-- Google Tag Manager -->
+    <script type="text/plain" data-cookie="" data-category="analytics">
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-P3DVM6KX');
+    </script>
+    <!-- End Google Tag Manager -->
+    
+        <!-- Google Analytics -->
+    <script type="text/plain" src="https://www.googletagmanager.com/gtag/js?id=409051117" async="" data-cookie="" data-category="analytics"></script>
+    <script type="text/plain" data-cookie="" data-category="analytics">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '409051117');
+    </script>
+    <!-- End Google Analytics -->
+    
+        <!-- Facebook Pixel -->
+    <script type="text/plain" data-cookie="" data-category="analytics">
+        setTimeout(function(){
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '232135880622207');
+            fbq('track', 'PageView');
+        }, 3500);
+    </script>
+    <noscript data-cookie="" data-category="analytics">
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=232135880622207&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel -->
+    <link rel="preconnect" href="https://www.erescambio.com"><link rel="dns-prefetch" href="https://www.erescambio.com"><style type="text/css">
+.vue-modal-resizer {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  background: transparent;
+  cursor: se-resize;
+}
+.vue-modal-resizer::after {
+  display: block;
+  position: absolute;
+  content: '';
+  background: transparent;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid #ddd;
+  border-left: 10px solid transparent;
+}
+.vue-modal-resizer.clicked::after {
+  border-bottom: 10px solid #369be9;
+}
+</style><style type="text/css">
+.v--modal-block-scroll {
+  overflow: hidden;
+  width: 100vw;
+}
+.v--modal-overlay {
+  position: fixed;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  opacity: 1;
+}
+.v--modal-overlay.scrollable {
+  height: 100%;
+  min-height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.v--modal-overlay .v--modal-background-click {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+}
+.v--modal-overlay .v--modal-box {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.v--modal-overlay.scrollable .v--modal-box {
+  margin-bottom: 2px;
+}
+.v--modal {
+  background-color: white;
+  text-align: left;
+  border-radius: 3px;
+  box-shadow: 0 20px 60px -2px rgba(27, 33, 58, 0.4);
+  padding: 0;
+}
+.v--modal.v--modal-fullscreen {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  left: 0;
+  top: 0;
+}
+.v--modal-top-right {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.overlay-fade-enter-active,
+.overlay-fade-leave-active {
+  transition: all 0.2s;
+}
+.overlay-fade-enter,
+.overlay-fade-leave-active {
+  opacity: 0;
+}
+.nice-modal-fade-enter-active,
+.nice-modal-fade-leave-active {
+  transition: all 0.4s;
+}
+.nice-modal-fade-enter,
+.nice-modal-fade-leave-active {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+</style><style type="text/css">
+.vue-dialog div {
+  box-sizing: border-box;
+}
+.vue-dialog .dialog-flex {
+  width: 100%;
+  height: 100%;
+}
+.vue-dialog .dialog-content {
+  flex: 1 0 auto;
+  width: 100%;
+  padding: 15px;
+  font-size: 14px;
+}
+.vue-dialog .dialog-c-title {
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.vue-dialog .dialog-c-text {
+}
+.vue-dialog .vue-dialog-buttons {
+  display: flex;
+  flex: 0 1 auto;
+  width: 100%;
+  border-top: 1px solid #eee;
+}
+.vue-dialog .vue-dialog-buttons-none {
+  width: 100%;
+  padding-bottom: 15px;
+}
+.vue-dialog-button {
+  font-size: 12px !important;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  line-height: 40px;
+  height: 40px;
+  color: inherit;
+  font: inherit;
+  outline: none;
+}
+.vue-dialog-button:hover {
+  background: rgba(0, 0, 0, 0.01);
+}
+.vue-dialog-button:active {
+  background: rgba(0, 0, 0, 0.025);
+}
+.vue-dialog-button:not(:first-of-type) {
+  border-left: 1px solid #eee;
+}
+</style><style type="text/css">.cookie-consent_modal{padding:30px;font-family:sans-serif;line-height:20px;color:#7a8990}.cookie-consent_modal:focus{outline:0}.cookie-consent_modal .cookie-consent_modal__header .cookie-consent_modal__header-title{margin:0 0 20px 0;font-size:16px;font-weight:700;color:#142f47}.cookie-consent_modal .cookie-consent_modal__header hr{height:1px;width:100%;border:0;background:#eee}.cookie-consent_modal .cookieConsent-modal__body{margin-top:20px}.cookie-consent_modal .cookie-consent_modal__footer{display:flex;justify-content:flex-end;flex-wrap:nowrap;border:0;margin-top:25px;text-align:right}.cookie-consent_modal .vct__btn{padding:12px 24px;margin-right:10px;border-radius:5px;border:1px solid transparent;line-height:16px;font-size:14px;font-family:sans-serif;white-space:nowrap;vertical-align:middle;cursor:pointer;white-space:normal}.cookie-consent_modal .vct__btn:nth-last-child(1){margin-right:0}.cookie-consent_modal .vct__btn:focus{outline:0}.cookie-consent_modal .vct__btn--default{background:0 0;border:2px solid #e1e7ec;color:#142f47}.cookie-consent_modal .vct__btn--default:hover{background-color:#e1e7ec}.cookie-consent_modal .vct__btn--primary{background-color:#288ede;color:#fff}.cookie-consent_modal .vct__btn--primary:hover{background-color:#1c73b7}</style><style type="text/css">.cookie-enable__message[data-v-51c9604a]{padding:15px 20px;background-color:#e5effa;border-radius:5px;color:#142f47;font-family:sans-serif;text-align:left}.cookie-enable__message svg[data-v-51c9604a]{vertical-align:text-top}</style><link data-vue-meta="1" rel="canonical" href="https://gemmashivali.com"><link data-vue-meta="1" rel="icon" href="https://cdn.erescambio.com/wp-content/uploads/2022/04/favicon-gemma.png"><link data-vue-meta="1" rel="preload" href="https://cdn.erescambio.com/wp-content/uploads/2022/04/favicon-gemma.png" as="image"><link data-vue-meta="1" rel="preload" href="false" as="image"><link data-vue-meta="1" rel="preload" href="https://cdn.erescambio.com/wp-content/uploads/2022/04/CABECERA.jpg" as="image"><link data-vue-meta="1" rel="preload" href="https://cdn.erescambio.com/wp-content/uploads/2022/04/CABECERA-600x310.jpg" as="image"><link data-vue-meta="1" rel="font" as="font" href="/fonts/OpenSans/OpenSans-Bold.woff2" onload="this.onload=null;this.rel='font'" crossorigin="true"><link data-vue-meta="1" rel="font" as="font" href="/fonts/OpenSans/OpenSans-Regular.woff2" onload="this.onload=null;this.rel='font'" crossorigin="true"><link data-vue-meta="1" rel="font" as="font" href="/fontawesome/webfonts/fa-brands-400.woff2" onload="this.onload=null;this.rel='font'" crossorigin="true"><link data-vue-meta="1" rel="font" as="font" href="/fontawesome/webfonts/fa-regular-400.woff2" onload="this.onload=null;this.rel='font'" crossorigin="true"><link data-vue-meta="1" rel="font" as="font" href="/fontawesome/webfonts/fa-solid-900.woff2" onload="this.onload=null;this.rel='font'" crossorigin="true"><style data-vue-meta="1">
+            @font-face {
+              font-family: 'Open Sans'; 
+              font-style: normal;
+              font-display: swap;
+              font-weight: 700;
+              src:  url(/fonts/OpenSans/OpenSans-Bold.woff2) format('woff2');
+              tet: '12'
+            }
+          
+            @font-face {
+              font-family: 'Open Sans'; 
+              font-style: normal;
+              font-display: swap;
+              font-weight: 400;
+              src:  url(/fonts/OpenSans/OpenSans-Regular.woff2) format('woff2');
+              tet: '12'
+            }
+          </style></head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" class="v--modal-block-scroll">
+        <div id="initial-loader" style="display: none;">
+        <span class="spinner"></span>
+    </div>
+    <div id="app"><!----><div id="app"><a href="#content" class="visually-hidden focusable skip-link survey-processed"> Saltar al contenido principal </a><header id="header" class="header navbar navbar-expand-lg navbar-dark fixed-top "><div class="container navbar_sub"><a href="https://gemmashivali.com" class="main-logo"><img src="https://cdn.erescambio.com/wp-content/uploads/2022/04/favicon-gemma.png" alt="Logotipo de Gemma Shivali" intrinsicsize="50x50" height="50" width="50" class="logo-imagen-web"><span class="logo-text">Gemma Shivali</span></a><nav id="nav" role="navigation" aria-label="Navegacion principal" class="nav"><ul id="main-menu" class="menu"><li class="menu-item nav-item nav-item-menu-button menu-item-0"><a href="/#sobre-mi" target="_self" class="menu-link">SOBRE MI</a><!----><!----></li><li class="menu-item nav-item nav-item-menu-button menu-item-1"><a href="/nuestros-servicios" target="_self" class="menu-link">SERVICIOS</a><!----><!----></li><li class="menu-item nav-item nav-item-menu-button menu-item-2"><a href="/#contacto" target="_self" class="menu-link">CONTACTO</a><!----><!----></li><li class="menu-item nav-item nav-item-menu-button menu-item-3"><a href="/#calendario" target="_self" class="menu-link">Calendario</a><!----><!----></li><!----></ul><ul class="list-inline social-buttons"></ul><button id="menu-trigger" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir o cerrar menu principal"><i aria-hidden="true" class="fa fa-bars"></i></button></nav></div></header><main role="main" id="content"><div class="individual-politica container pb-5"><style data-v-0638af71=""> #politica_texto{ color: ; background: ; } #politica_texto a { color: ; } #politica_texto h1, #politica_texto h2, #politica_texto h3, #politica_texto h4, #politica_texto h5, #politica_texto h6 { color: ; } #politica_texto .date-and-author { color: ; font-family: 'Open Sans', sans-serif; } </style><div id="politica_texto">
+
+  	
+    <style>
+      body.info_legal{
+        color: #777;
+        font-family: "Quicksand",Sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.65em;
+        padding: 30px;
+      }
+    </style>
+  
+    
+  <h1>Política de privacidad</h1>
+<h2><strong>1. Política de privacidad</strong></h2>
+<p>Gemma Shivali informa a los usuarios del sitio web sobre su política respecto del tratamiento y protección de los datos de carácter personal de los usuarios y clientes que puedan ser recabados por la navegación o contratación de servicios a través de su sitio web.</p>
+<p>En este sentido, Gemma Shivali garantiza el cumplimiento de la normativa vigente en materia de protección de datos personales, reflejada en <em>el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (RGPD).</em></p>
+<p>El uso de esta web implica la aceptación de esta política de privacidad.</p>
+<p>&nbsp;</p>
+<h2><strong>2. Recogida, finalidad y tratamientos de datos</strong></h2>
+<p>Gemma Shivali tiene el deber de informar a los usuarios de su sitio web acerca de la recogida de datos de carácter personal que pueden llevarse a cabo, bien sea mediante el envío de correo electrónico o al cumplimentar los formularios incluidos en el sitio web. En este sentido, Gemma Shivali será considerada como responsable de los datos recabados mediante los medios anteriormente descritos.</p>
+<p>A su vez Gemma Shivali informa a los usuarios de que la finalidad del tratamiento de los datos recabados contempla: La atención de solicitudes realizadas por los usuarios, la inclusión en la agenda de contactos, la prestación de servicios y la gestión de la relación comercial.</p>
+<p>Las operaciones, gestiones y procedimientos técnicos que se realicen de forma automatizada o no automatizada y que posibiliten la recogida, el almacenamiento, la modificación, la transferencia y otras acciones sobre datos de carácter personal, tienen la consideración de tratamiento de datos personales.</p>
+<p>Para todos los datos personales, que sean recogidos a través del sitio web de Gemma Shivali, se adoptaran las medidas de seguridad técnicas y organizativas apropiadas para garantizar la confidencialidad, integridad, disponibilidad y resiliencia permanentes de los sistemas y servicios de tratamiento, de manera que el tratamiento sea conforme con los requisitos del RGPD y garantice la protección de los derechos de los usuarios.</p>
+<p>&nbsp;</p>
+<h2><strong>3. Comunicación de información a terceros</strong></h2>
+<p>Gemma Shivali informa a los usuarios de que sus datos personales no serán cedidos a terceras organizaciones, con la salvedad de que dicha cesión de datos esté amparada en una obligación legal.</p>
+<p>No obstante, como los servicios que ofrece la Gemma Shivali están alojados en la plataforma erescambio (enlace con nota legal de erescambio) que actúa por cuenta de la citada empresa y, por tanto, como que los datos facilitados pueden ser tratados por un servidor ubicado en USA, cumpliendo con el acuerdo de escudo de privacidad (Privacy Shield).</p>
+<p>&nbsp;</p>
+<h2><strong>4. Derechos de los usuarios</strong></h2>
+<p>El RGPD concede a los interesados la posibilidad de ejercer una serie de derechos relacionados con el tratamiento de sus datos personales: derecho de acceso, rectificación, supresión, oposición, portabilidad, limitación del tratamiento y a no ser objeto de decisiones íntegramente automatizadas, así como a revocar el consentimiento prestado y a presentar reclamación ante la Agencia Española de Protección de Datos Personales.</p>
+<p>En tanto en cuanto los datos del usuario son objeto de tratamiento por parte de Gemma Shivali. Los usuarios podrán ejercer los derechos de acceso, rectificación, cancelación y oposición de acuerdo con lo previsto en la normativa legal vigente en materia de protección de datos personales.</p>
+<p>Para hacer uso del ejercicio de estos derechos, el usuario deberá dirigirse mediante comunicación escrita, aportando documentación que acredite su identidad (DNI o pasaporte), a la siguiente dirección: Gemma Shivali, CALLE SANTALO , Barcelona o la dirección que sea sustituida en el Registro General de Protección de Datos o al correo electrónico gemmaestivill@gmail.com. Dicha comunicación deberá reflejar la siguiente información: Nombre y apellidos del usuario, la petición de solicitud (indicando expresamente el derecho que ejercita), el domicilio y los datos acreditativos.</p>
+<p>El ejercicio de derechos deberá ser realizado por el propio usuario. No obstante, podrán ser ejecutados por una persona autorizada como representante legal del autorizado. En tal caso, se deberá aportar la documentación que acredite esta representación del interesado.</p>
+<p>&nbsp;</p>
+<p>En cumplimiento de lo dispuesto en el referido RGPD, Gemma Shivali tratará los siguientes datos:</p>
+<p>&nbsp;</p>
+<table>
+<tbody>
+<tr>
+<td width="124">Responsable del tratamiento</td>
+<td>Gemma Shivali, CALLE SANTALO , Barcelona, C.I.F./N.I.F.: 43417740L, teléfono 630127319 y correo electrónico gemmaestivill@gmail.com</td>
+</tr>
+<tr>
+<td width="124">Datos recabados y su procedencia</td>
+<td>
+<ul>
+<li>Para atender consultas: Nombre y correo electrónico y teléfono.</li>
+<li>Para remitir newsletters: nombre y correo electrónico.</li>
+<li>Altas y seguimiento en cuentas de redes sociales: los datos personales que facilita o habilita a las redes sociales al convertirse en seguidor de las mismas, incluyendo la actividad y seguimiento a través de las distintas aplicaciones que proveen las redes sociales..</li>
+</ul>
+<p>Los datos han sido facilitados por los usuarios.</p></td>
+</tr>
+<tr>
+<td width="124">Finalidad del Tratamiento</td>
+<td>a) Atender las consultas de las personas que contacten con Gemma Shivali<p></p>
+<p>b) Enviar Newsletters, a través de correo electrónico, sms, whatsapp (en estos dos últimos casos requerirá tener el teléfono)</p>
+<p>c) Altas y seguimiento en cuentas de Gemma Shivali en las siguientes redes sociales: Facebook, Instagram y Linkedin , incluyendo la actividad y seguimiento a través de las distintas aplicaciones que proveen dichas redes sociales.</p></td>
+</tr>
+<tr>
+<td width="124">Legitimación</td>
+<td>El Consentimiento del Usuario.</td>
+</tr>
+<tr>
+<td width="124">Derechos</td>
+<td>De acceso, rectificación, supresión, oposición, portabilidad, limitación del tratamiento y a no ser objeto de decisiones íntegramente automatizadas. Derecho a revocar el consentimiento, <em>mediante escrito dirigido a Gemma Shivali,&nbsp;</em>CALLE SANTALO , Barcelona<em>, </em><em>o bien a través del correo electrónico gemmaestivill@gmail.com.</em></td>
+</tr>
+<tr>
+<td width="124">Cesiones o Transferencias Internacionales</td>
+<td>En las finalidades a), b) y c) los datos facilitados serán tratados por Siteground (<a href="https://www.siteground.com/" target="_blank" rel="noopener">https://www.siteground.com/</a>), en su condición de subencargado, a efectos de poder prestar los servicios ofrecidos por la plataforma erescambio, contratada por la&nbsp; <em>Gemma Shivali</em>. Además, para poder atender las consultas de los usuarios y/o enviar newsletters los datos serán tratados por Mailchimp (<a href="https://mailchimp.com/" target="_blank" rel="noopener">https://mailchimp.com/</a>), como subencargado contratado por el titular de la plataforma erescambio, contratada por la&nbsp; <em>Gemma Shivali</em>, cuya entidad tiene sus servidores en USA y está certificada según el acuerdo de escudo de privacidad (Privacy Shield).</td>
+</tr>
+<tr>
+<td width="124">Tiempo de Conservación</td>
+<td>Trataremos sus datos durante todo el tiempo que mantenga la relación con nosotros o no revoque el consentimiento prestado. Una vez finalizada la relación o revocado el consentimiento, mantendremos sus datos personales bloqueados durante los plazos de prescripción legales aplicables.</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p><em>Tiene derecho a presentar reclamación ante la Agencia Española de Protección de Datos de Carácter Personal, a través del siguiente enlace: https://sedeagpd.gob.es/sede-electronica-web/vistas/formNuevaReclamacion/reclamacion.jsf.</em></p>
+  
+  
+</div></div></main><footer role="contentinfo" class="footer"><style data-v-0638af71="">
+      .footer {
+        background-color: #938474;
+        color: #000000;
+      }
+      .footer a,
+      .footer ul.social-buttons li a {
+        color: #000000;
+      }
+      .footer .copyright,
+      .footer .legal {
+        opacity: 1;
+        color: #000000;
+      }
+      </style><div class="container"><div class="legal"><div><ul class="unlist"><li><a href="/nota-legal">Nota legal</a></li><li> | </li><li><a href="/politica-de-privacidad">Política de privacidad</a></li><li> | </li><li><a href="/politica-de-cookies">Política de cookies</a></li><li> | </li><li><a href="/declaracion-de-accesibilidad">Declaración de accesibilidad</a></li></ul></div></div><div class="copyright">Copyright ©2026</div></div><div class="container container_bottom"><div class="col-md-10 text-left links_personal"><div><ul class="unlist"><li><a href="" target="_blank" aria-label="Abrir enlace">  </a></li></ul></div></div><div class="col-md-2 text-right legal"><!----></div></div><!----><!----><div class="cookie-toggler-wrapper"><div><div data-modal="gdpr-modal" class="v--modal-overlay scrollable"><div class="v--modal-background-click"><div class="v--modal-top-right"></div> <div role="dialog" aria-modal="true" class="v--modal-box v--modal v-enter v-enter-active" aria-labelledby="cookieConsentModalLabel" style="top: 68px; left: 129px; width: 505px; height: auto;" tabindex="-1"><div id="cookieConsentModal" tabindex="-1" role="dialog" aria-labelledby="cookieConsentModalLabel" class="cookie-consent_modal"><div class="cookieConsent-modal__content"><div class="cookie-consent_modal__header"><p id="cookieConsentModalLabel" class="cookie-consent_modal__header-title cookie-modal-title"> Valoramos tu privacidad </p> <hr></div> <div class="cookieConsent-modal__body"> <div class="cookie-banner-message"> Usamos cookies para mejorar su experiencia de navegación, mostrarle anuncios o contenidos personalizados y analizar nuestro tráfico. Al hacer clic en "Aceptar todo" usted da su consentimiento a nuestro uso de las cookies. <a href="/politica-de-cookies">Política de cookies</a></div> <!----></div> <div class="cookie-consent_modal__footer"><button class="vct__btn vct__btn--default cookie-banner-btn btn-settings"> Personalizar </button><button class="vct__btn vct__btn--secondary cookie-banner-btn btn-reject"> Rechazar todas </button><button class="vct__btn vct__btn--primary cookie-banner-btn btn-accept"> Aceptar todo </button></div></div></div> <!----></div></div></div></div></div><!----><style data-v-0638af71="">
+      @import url("https://fonts.googleapis.com/css2?family=Open Sans&display=swap");
+      body{
+          font-family: 'Open Sans' !important;
+          font-size: 14px;
+          line-height: 26px; 
+      }
+      body.popup-active {
+        overflow: hidden !important;
+      }	
+      .header {
+        background-color: rgba(247,247,245,1);
+      }
+      .header.fijada {
+        background-color: rgb(247,247,245);
+      }
+      .header > .navbar_sub > .main-logo > span {
+        font-family: 'Open Sans';
+      }
+      .header ul.menu > li.menu-item > a{
+        font-size: 0.9rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        white-space: normal;
+        font-family: 'Open Sans';
+        text-transform: uppercase;
+      }
+      ::-moz-selection { /* Code for Firefox */
+        color: white;
+        background: #3297FD;
+      }
+      ::selection {
+        color: white;
+        background: #3297FD;
+      }
+      @media(max-width: 992px){
+        .header {
+          opacity: 1;
+          background-color: rgb(247,247,245);
+        }
+        .header > .container {
+          padding: 0;
+        }
+        .header ul.menu {
+          background-color: #f7f7f5;
+        }        
+      }
+        .header a {
+          color: #938474;
+        }
+        .header a:hover,
+        .header .menu-item.active a.menu-link,
+        .header .menu-item a.dropdown-item.active{
+          color: ;
+        }
+          .header a span {
+            color: #938474;
+          }
+          .header img {
+            border-radius: 50%;
+          }
+          @media(max-width: 992px){
+            .header li.menu-item a {
+              /*border-bottom: solid 1px #93847433;*/
+            }
+          }
+        .header .main-logo {
+          font-size: 26px;
+        }
+        @media(max-width: 992px){
+          .header .main-logo {
+            font-size: 20px;
+          }
+        }
+        .header #menu-trigger {
+          color: #938474;
+        }
+        
+        h1, 
+        h2,
+        h3,
+        h4,
+        h5,
+        h6{
+          font-family: 'Open Sans' !important;
+        }
+        
+        .h1, .h2, h1, h2{
+          font-size: 45px;
+        }
+        
+        
+        .bg .text{
+          padding: 75px 6%;
+          font-size: 14px;
+          line-height: 26px;
+        }
+       .header .main-logo span{ color: #938474; } .header ul.menu > li.menu-item > a{ font-size: 14px; } ul.social-buttons li a{ color: #938474; } .dropdown-menu{ background: rgb(247,247,245); } .dropdown-menu a{ font-size: 12px !important; line-height: 12px !important; } .dropdown-toggle{ color: #938474; } #autor-popup{ background: ; color: ; } #autor-popup .autor-popup-details a.btn{ background-color:  !important; color:  !important; border: 2px solid  !important; } #autor-popup .autor-popup-details a.btn:hover{ color:  !important; border: 2px solid  !important; background-color:  !important; } #autor-popup .autor-popup-details a{ color: ; } #autor-popup .autor-popup-details h3 a{ color: ; } #autor-popup .box-formulario{ background: ; color: ; } #autor-popup .wpcf7-form label { color: ; } #autor-popup .wpcf7-form a { color: ; } #autor-popup .wpcf7-form input[type=submit]{ cursor: pointer; background-color:  !important; color:  !important; border: 2px solid  !important; } #autor-popup .wpcf7-form input[type=submit]:hover{ color:  !important; border: 2px solid  !important; background-color:  !important; } #autor-popup .ec-author-follow{ color:  !important; background:  !important; border: 2px solid  !important; } .wrapper-popup .popup, .wrapper-popup .popup p, .wrapper-popup .popup h1, .wrapper-popup .popup h2, .wrapper-popup .popup h3, .wrapper-popup .popup h4, .wrapper-popup .popup h5, .wrapper-popup .popup h6 { color: #938474 !important; } .wrapper-popup.p-active { background: #f7f7f5 !important; color:  !important; } </style><style data-v-0638af71=""> .footer > .container{ border-bottom: none; } </style><!----></footer><!----></div></div>
+
+    <script src="/js/chunk-vendors.fc1c89fd77.js?v=1792433377"></script>
+
+    <script src="/js/app.9f163af677.js?v=1792433377"></script>
+
+    
+
+
+</body></html>

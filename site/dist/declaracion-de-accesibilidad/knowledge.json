@@ -1,0 +1,48 @@
+{
+  "protocol": "VDS-KNOWLEDGE-SURFACE/1",
+  "canonical": "https://gemmashivali.com/declaracion-de-accesibilidad/",
+  "primaryEntityId": "gemma-shivali",
+  "entities": [
+    {
+      "id": "gemma-shivali",
+      "name": "Gemma Shivali",
+      "type": "Person",
+      "description": "Terapeuta especializada en procesos de transformación a través del cuerpo y la energía, con más de 30 años de formación en rebirthing, codependencia, bioenergética, tantra y qigong."
+    }
+  ],
+  "relations": [],
+  "answers": [
+    {
+      "id": "answer-declaracion-de-accesibilidad",
+      "question": "¿Qué información contiene la declaración de accesibilidad de Gemma Shivali?",
+      "answer": "La declaración de accesibilidad de Gemma Shivali indica que el sitio es parcialmente conforme con el RD 1112/2018 y la norma UNE-EN 301549:2022, con nivel AA, tras la auditoría de ADDAW del 15/02/2023.",
+      "entityIds": [
+        "gemma-shivali"
+      ],
+      "claimIds": [
+        "claim-declaracion-de-accesibilidad"
+      ],
+      "fragment": "#respuesta-legal"
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-declaracion-de-accesibilidad",
+      "text": "La declaración de accesibilidad de Gemma Shivali indica que el sitio es parcialmente conforme con el RD 1112/2018 y la norma UNE-EN 301549:2022, con nivel AA, tras la auditoría de ADDAW del 15/02/2023.",
+      "entityId": "gemma-shivali",
+      "kind": "fact",
+      "sourceIds": [
+        "fuente-declaracion-de-accesibilidad"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "fuente-declaracion-de-accesibilidad",
+      "title": "Declaración de accesibilidad",
+      "url": "https://gemmashivali.com/declaracion-de-accesibilidad/",
+      "verifiedAt": "2026-10-19T00:00:00Z"
+    }
+  ],
+  "verifiedAt": "2026-10-19T00:00:00Z"
+}

@@ -1,0 +1,154 @@
+{
+  "protocol": "VDS-KNOWLEDGE-SURFACE/1",
+  "canonical": "https://gemmashivali.com/nuestros-servicios/",
+  "primaryEntityId": "gemma-shivali",
+  "entities": [
+    {
+      "id": "gemma-shivali",
+      "name": "Gemma Shivali",
+      "type": "Person",
+      "description": "Terapeuta especializada en procesos de transformación a través del cuerpo y la energía, con más de 30 años de formación en rebirthing, codependencia, bioenergética, tantra y qigong."
+    }
+  ],
+  "relations": [],
+  "answers": [
+    {
+      "id": "answer-servicios",
+      "question": "¿Qué servicios ofrece Gemma Shivali y cuánto cuestan las sesiones individuales?",
+      "answer": "Los servicios de Gemma Shivali incluyen programas de transformación online, sesiones individuales de 90 o 120 minutos, talleres presenciales de un día, retiros de 2-3 días, talleres de Qi Gong y sesiones de tantra. Las sesiones individuales cuestan 90 € (90 minutos) y 120 € (120 minutos), y pueden ser online o presenciales en Barcelona y Sitges.",
+      "entityIds": [
+        "gemma-shivali"
+      ],
+      "claimIds": [
+        "claim-servicios",
+        "claim-precio-sesiones"
+      ],
+      "fragment": "#servicios-en-breve"
+    },
+    {
+      "id": "answer-faq-programas-online",
+      "question": "¿Los programas de Gemma Shivali son online?",
+      "answer": "Sí. Todos los programas son online y se realizan en riguroso streaming, combinando sesiones grupales, sesiones individuales y herramientas de trabajo personal.",
+      "entityIds": [
+        "gemma-shivali"
+      ],
+      "claimIds": [
+        "claim-programas-online"
+      ],
+      "fragment": "#faq-programas-online"
+    },
+    {
+      "id": "answer-faq-sesiones-presenciales",
+      "question": "¿Dónde son las sesiones presenciales de Gemma Shivali?",
+      "answer": "Las sesiones individuales y los talleres presenciales se realizan en Barcelona y Sitges. También puedes elegir el formato online.",
+      "entityIds": [
+        "gemma-shivali"
+      ],
+      "claimIds": [
+        "claim-sesiones-presenciales"
+      ],
+      "fragment": "#faq-sesiones-presenciales"
+    },
+    {
+      "id": "answer-faq-precio-sesiones",
+      "question": "¿Cuánto cuestan las sesiones individuales de Gemma Shivali?",
+      "answer": "La sesión de 90 minutos cuesta 90 € y la de 120 minutos, 120 €. El formato puede ser online o presencial en Barcelona y Sitges.",
+      "entityIds": [
+        "gemma-shivali"
+      ],
+      "claimIds": [
+        "claim-precio-sesiones"
+      ],
+      "fragment": "#faq-precio-sesiones"
+    },
+    {
+      "id": "answer-faq-retiros",
+      "question": "¿Qué incluye un retiro de Gemma Shivali?",
+      "answer": "Los retiros combinan trabajo corporal, meditación, movimiento e introspección en un entorno natural. Cuando se indica, el precio incluye alojamiento y comidas.",
+      "entityIds": [
+        "gemma-shivali"
+      ],
+      "claimIds": [
+        "claim-retiros"
+      ],
+      "fragment": "#faq-retiros"
+    },
+    {
+      "id": "answer-faq-reservas",
+      "question": "¿Cómo se reserva o se pide información a Gemma Shivali?",
+      "answer": "Puedes escribir por WhatsApp al +34 630 127 319 o por email a gemmaestivill@gmail.com. Te responderé lo antes posible.",
+      "entityIds": [
+        "gemma-shivali"
+      ],
+      "claimIds": [
+        "claim-reservas"
+      ],
+      "fragment": "#faq-reservas"
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-servicios",
+      "text": "Gemma Shivali ofrece programas de transformación online, sesiones individuales de 90 o 120 minutos, talleres presenciales, retiros de 2-3 días, Qi Gong y Tantra, con opción online o presencial en Barcelona y Sitges.",
+      "entityId": "gemma-shivali",
+      "kind": "fact",
+      "sourceIds": [
+        "fuente-servicios"
+      ]
+    },
+    {
+      "id": "claim-programas-online",
+      "text": "Los programas de transformación de Gemma Shivali son online y se realizan en riguroso streaming, combinando sesiones grupales, sesiones individuales y herramientas de trabajo personal.",
+      "entityId": "gemma-shivali",
+      "kind": "fact",
+      "sourceIds": [
+        "fuente-servicios"
+      ]
+    },
+    {
+      "id": "claim-sesiones-presenciales",
+      "text": "Las sesiones individuales y los talleres presenciales de Gemma Shivali se realizan en Barcelona y Sitges, con opción de formato online.",
+      "entityId": "gemma-shivali",
+      "kind": "fact",
+      "sourceIds": [
+        "fuente-servicios"
+      ]
+    },
+    {
+      "id": "claim-precio-sesiones",
+      "text": "Las sesiones individuales de Gemma Shivali cuestan 90 € por 90 minutos y 120 € por 120 minutos.",
+      "entityId": "gemma-shivali",
+      "kind": "fact",
+      "sourceIds": [
+        "fuente-servicios"
+      ]
+    },
+    {
+      "id": "claim-retiros",
+      "text": "Los retiros de Gemma Shivali combinan trabajo corporal, meditación, movimiento e introspección en un entorno natural, e incluyen alojamiento y comidas cuando se indica.",
+      "entityId": "gemma-shivali",
+      "kind": "fact",
+      "sourceIds": [
+        "fuente-servicios"
+      ]
+    },
+    {
+      "id": "claim-reservas",
+      "text": "Para reservar o pedir información se puede escribir a Gemma Shivali por WhatsApp al +34 630 127 319 o por email a gemmaestivill@gmail.com.",
+      "entityId": "gemma-shivali",
+      "kind": "fact",
+      "sourceIds": [
+        "fuente-servicios"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "fuente-servicios",
+      "title": "Servicios de Gemma Shivali",
+      "url": "https://gemmashivali.com/nuestros-servicios/",
+      "verifiedAt": "2026-10-19T00:00:00Z"
+    }
+  ],
+  "verifiedAt": "2026-10-19T00:00:00Z"
+}

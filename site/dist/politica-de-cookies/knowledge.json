@@ -1,0 +1,48 @@
+{
+  "protocol": "VDS-KNOWLEDGE-SURFACE/1",
+  "canonical": "https://gemmashivali.com/politica-de-cookies/",
+  "primaryEntityId": "gemma-shivali",
+  "entities": [
+    {
+      "id": "gemma-shivali",
+      "name": "Gemma Shivali",
+      "type": "Person",
+      "description": "Terapeuta especializada en procesos de transformación a través del cuerpo y la energía, con más de 30 años de formación en rebirthing, codependencia, bioenergética, tantra y qigong."
+    }
+  ],
+  "relations": [],
+  "answers": [
+    {
+      "id": "answer-politica-de-cookies",
+      "question": "¿Qué información contiene la política de cookies de Gemma Shivali?",
+      "answer": "La política de cookies de Gemma Shivali describe las cookies necesarias, analíticas y publicitarias del sitio, quién las gestiona y cómo aceptarlas, rechazarlas o cambiar la configuración.",
+      "entityIds": [
+        "gemma-shivali"
+      ],
+      "claimIds": [
+        "claim-politica-de-cookies"
+      ],
+      "fragment": "#respuesta-legal"
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-politica-de-cookies",
+      "text": "La política de cookies de Gemma Shivali describe las cookies necesarias, analíticas y publicitarias del sitio, quién las gestiona y cómo aceptarlas, rechazarlas o cambiar la configuración.",
+      "entityId": "gemma-shivali",
+      "kind": "fact",
+      "sourceIds": [
+        "fuente-politica-de-cookies"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "fuente-politica-de-cookies",
+      "title": "Política de cookies",
+      "url": "https://gemmashivali.com/politica-de-cookies/",
+      "verifiedAt": "2026-10-19T00:00:00Z"
+    }
+  ],
+  "verifiedAt": "2026-10-19T00:00:00Z"
+}

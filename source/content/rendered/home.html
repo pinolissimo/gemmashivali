@@ -1,0 +1,683 @@
+﻿<!DOCTYPE html>
+<html lang="es" amp=""><head><meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        #initial-loader {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -70px;
+        }
+
+        .spinner {
+            color: #24a7ff;
+            font-size: 10px;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            position: relative;
+            text-indent: -9999em;
+            animation: mulShdSpin 1.3s infinite linear;
+            transform: translateZ(0);
+        }
+
+        @keyframes mulShdSpin {
+
+            0%,
+            100% {
+                box-shadow: 0 -3em 0 0.2em,
+                    2em -2em 0 0em, 3em 0 0 -1em,
+                    2em 2em 0 -1em, 0 3em 0 -1em,
+                    -2em 2em 0 -1em, -3em 0 0 -1em,
+                    -2em -2em 0 0;
+            }
+
+            12.5% {
+                box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em,
+                    3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em,
+                    -2em 2em 0 -1em, -3em 0 0 -1em,
+                    -2em -2em 0 -1em;
+            }
+
+            25% {
+                box-shadow: 0 -3em 0 -0.5em,
+                    2em -2em 0 0, 3em 0 0 0.2em,
+                    2em 2em 0 0, 0 3em 0 -1em,
+                    -2em 2em 0 -1em, -3em 0 0 -1em,
+                    -2em -2em 0 -1em;
+            }
+
+            37.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+                    3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em,
+                    -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+
+            50% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+                    3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em,
+                    -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+
+            62.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+                    3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0,
+                    -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+            }
+
+            75% {
+                box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em,
+                    3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+                    -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+            }
+
+            87.5% {
+                box-shadow: 0em -3em 0 0, 2em -2em 0 -1em,
+                    3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+                    -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://connect.facebook.net">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://connect.facebook.net">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    <!-- Font Awesome CSS for icons -->
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
+
+    <link href="/css/app.b1a9a82077.css?v=1792433363" rel="preload" as="style">
+    <link href="/css/chunk-vendors.1a06b43d77.css?v=1792433363" rel="preload" as="style">
+
+    <link href="/js/app.9f163af677.js?v=1792433363" rel="preload" as="script">
+    <link href="/js/chunk-vendors.fc1c89fd77.js?v=1792433363" rel="preload" as="script">
+
+    <link href="/css/chunk-vendors.1a06b43d77.css?v=1792433363" rel="stylesheet">
+    <link href="/css/app.b1a9a82077.css?v=1792433363" rel="stylesheet">
+
+    <link rel="manifest" href="blob:https://gemmashivali.com/668d382c-5f08-48db-9f68-1e8c8bee003a" id="my-manifest-placeholder">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    
+    <meta name="meta-web" content="https://www.erescambio.com/wp-json/wp/v2/ztudio_webs_metas2/?web=gemmashivali.com/">
+
+    <!-- Primary Meta Tags -->
+    <title>Gemma Estivill ǀ Terapia online y presencial en Sitges y BCN</title>
+    <meta name="title" content="Gemma Estivill ǀ Terapia online y presencial en Sitges y BCN">
+    <meta name="description" content="Recupera tu energía, reconecta con tu cuerpo y fortalece tu bienestar en cada etapa de tu vida">
+    <link rel="canonical" href="https://gemmashivali.com">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gemmashivali.com">
+    <meta property="og:title" content="Gemma Estivill ǀ Terapia online y presencial en Sitges y BCN">
+    <meta property="og:description" content="Recupera tu energía, reconecta con tu cuerpo y fortalece tu bienestar en cada etapa de tu vida">
+    <meta property="og:image" content="https://cdn.erescambio.com/wp-content/uploads/2022/04/favicon-gemma.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gemmashivali.com">
+    <meta property="twitter:title" content="Gemma Estivill ǀ Terapia online y presencial en Sitges y BCN">
+    <meta property="twitter:description" content="Recupera tu energía, reconecta con tu cuerpo y fortalece tu bienestar en cada etapa de tu vida">
+    <meta property="twitter:image" content="https://cdn.erescambio.com/wp-content/uploads/2022/04/favicon-gemma.png">
+
+    <link rel="apple-touch-icon" sizes="192x192" href="https://cdn.erescambio.com/wp-content/uploads/2022/04/favicon-gemma.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.erescambio.com/wp-content/uploads/2022/04/favicon-gemma.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.erescambio.com/wp-content/uploads/2022/04/favicon-gemma.png">
+
+    <meta name="robots" content="INDEX,FOLLOW">
+
+    
+    <!-- Dynamic Manifest -->
+    <script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/4EDjxXf4knsx6UBM1L2V6cv8/recaptcha__it.js" crossorigin="anonymous" integrity="sha384-mujxeN/NNCyodN5N1x+BOz+utDihB4J8PV/VSFkhs4GtnMaBF9bX4ZvceUD8Bnge"></script><script>
+        var manifestJSON = {
+            "name": "Gemma Estivill ǀ Terapia online y presencial en Sitges y BCN",
+            "short_name": "Gemma Estivill ǀ Terapia online y presencial en Sitges y BCN",
+            "display": "standalone",
+            "icons": [
+                {
+                    "src": "https://cdn.erescambio.com/wp-content/uploads/2022/04/favicon-gemma.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                }
+            ],
+            "background_color": "#FFFFFF",
+            "theme_color": "#FFFFFF"
+        };
+
+        const stringManifest = JSON.stringify(manifestJSON);
+        const blob = new Blob([stringManifest], {type: 'application/json'});
+        const manifestURL = URL.createObjectURL(blob);
+        document.querySelector('#my-manifest-placeholder').setAttribute('href', manifestURL);
+    </script>
+
+        <!-- Google Tag Manager -->
+    <script type="text/plain" data-cookie="" data-category="analytics">
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-P3DVM6KX');
+    </script>
+    <!-- End Google Tag Manager -->
+    
+        <!-- Google Analytics -->
+    <script type="text/plain" src="https://www.googletagmanager.com/gtag/js?id=409051117" async="" data-cookie="" data-category="analytics"></script>
+    <script type="text/plain" data-cookie="" data-category="analytics">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '409051117');
+    </script>
+    <!-- End Google Analytics -->
+    
+        <!-- Facebook Pixel -->
+    <script type="text/plain" data-cookie="" data-category="analytics">
+        setTimeout(function(){
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '232135880622207');
+            fbq('track', 'PageView');
+        }, 3500);
+    </script>
+    <noscript data-cookie="" data-category="analytics">
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=232135880622207&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel -->
+    <link rel="preconnect" href="https://www.erescambio.com"><link rel="dns-prefetch" href="https://www.erescambio.com"><style type="text/css">
+.vue-modal-resizer {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  background: transparent;
+  cursor: se-resize;
+}
+.vue-modal-resizer::after {
+  display: block;
+  position: absolute;
+  content: '';
+  background: transparent;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid #ddd;
+  border-left: 10px solid transparent;
+}
+.vue-modal-resizer.clicked::after {
+  border-bottom: 10px solid #369be9;
+}
+</style><style type="text/css">
+.v--modal-block-scroll {
+  overflow: hidden;
+  width: 100vw;
+}
+.v--modal-overlay {
+  position: fixed;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  opacity: 1;
+}
+.v--modal-overlay.scrollable {
+  height: 100%;
+  min-height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.v--modal-overlay .v--modal-background-click {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+}
+.v--modal-overlay .v--modal-box {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.v--modal-overlay.scrollable .v--modal-box {
+  margin-bottom: 2px;
+}
+.v--modal {
+  background-color: white;
+  text-align: left;
+  border-radius: 3px;
+  box-shadow: 0 20px 60px -2px rgba(27, 33, 58, 0.4);
+  padding: 0;
+}
+.v--modal.v--modal-fullscreen {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  left: 0;
+  top: 0;
+}
+.v--modal-top-right {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.overlay-fade-enter-active,
+.overlay-fade-leave-active {
+  transition: all 0.2s;
+}
+.overlay-fade-enter,
+.overlay-fade-leave-active {
+  opacity: 0;
+}
+.nice-modal-fade-enter-active,
+.nice-modal-fade-leave-active {
+  transition: all 0.4s;
+}
+.nice-modal-fade-enter,
+.nice-modal-fade-leave-active {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+</style><style type="text/css">
+.vue-dialog div {
+  box-sizing: border-box;
+}
+.vue-dialog .dialog-flex {
+  width: 100%;
+  height: 100%;
+}
+.vue-dialog .dialog-content {
+  flex: 1 0 auto;
+  width: 100%;
+  padding: 15px;
+  font-size: 14px;
+}
+.vue-dialog .dialog-c-title {
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.vue-dialog .dialog-c-text {
+}
+.vue-dialog .vue-dialog-buttons {
+  display: flex;
+  flex: 0 1 auto;
+  width: 100%;
+  border-top: 1px solid #eee;
+}
+.vue-dialog .vue-dialog-buttons-none {
+  width: 100%;
+  padding-bottom: 15px;
+}
+.vue-dialog-button {
+  font-size: 12px !important;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  line-height: 40px;
+  height: 40px;
+  color: inherit;
+  font: inherit;
+  outline: none;
+}
+.vue-dialog-button:hover {
+  background: rgba(0, 0, 0, 0.01);
+}
+.vue-dialog-button:active {
+  background: rgba(0, 0, 0, 0.025);
+}
+.vue-dialog-button:not(:first-of-type) {
+  border-left: 1px solid #eee;
+}
+</style><style type="text/css">.cookie-consent_modal{padding:30px;font-family:sans-serif;line-height:20px;color:#7a8990}.cookie-consent_modal:focus{outline:0}.cookie-consent_modal .cookie-consent_modal__header .cookie-consent_modal__header-title{margin:0 0 20px 0;font-size:16px;font-weight:700;color:#142f47}.cookie-consent_modal .cookie-consent_modal__header hr{height:1px;width:100%;border:0;background:#eee}.cookie-consent_modal .cookieConsent-modal__body{margin-top:20px}.cookie-consent_modal .cookie-consent_modal__footer{display:flex;justify-content:flex-end;flex-wrap:nowrap;border:0;margin-top:25px;text-align:right}.cookie-consent_modal .vct__btn{padding:12px 24px;margin-right:10px;border-radius:5px;border:1px solid transparent;line-height:16px;font-size:14px;font-family:sans-serif;white-space:nowrap;vertical-align:middle;cursor:pointer;white-space:normal}.cookie-consent_modal .vct__btn:nth-last-child(1){margin-right:0}.cookie-consent_modal .vct__btn:focus{outline:0}.cookie-consent_modal .vct__btn--default{background:0 0;border:2px solid #e1e7ec;color:#142f47}.cookie-consent_modal .vct__btn--default:hover{background-color:#e1e7ec}.cookie-consent_modal .vct__btn--primary{background-color:#288ede;color:#fff}.cookie-consent_modal .vct__btn--primary:hover{background-color:#1c73b7}</style><style type="text/css">.cookie-enable__message[data-v-51c9604a]{padding:15px 20px;background-color:#e5effa;border-radius:5px;color:#142f47;font-family:sans-serif;text-align:left}.cookie-enable__message svg[data-v-51c9604a]{vertical-align:text-top}</style><link data-vue-meta="1" rel="canonical" href="https://gemmashivali.com"><link data-vue-meta="1" rel="icon" href="https://cdn.erescambio.com/wp-content/uploads/2022/04/favicon-gemma.png"><link data-vue-meta="1" rel="preload" href="https://cdn.erescambio.com/wp-content/uploads/2022/04/favicon-gemma.png" as="image"><link data-vue-meta="1" rel="preload" href="false" as="image"><link data-vue-meta="1" rel="preload" href="https://cdn.erescambio.com/wp-content/uploads/2022/04/CABECERA.jpg" as="image"><link data-vue-meta="1" rel="preload" href="https://cdn.erescambio.com/wp-content/uploads/2022/04/CABECERA-600x310.jpg" as="image"><link data-vue-meta="1" rel="font" as="font" href="/fonts/OpenSans/OpenSans-Bold.woff2" onload="this.onload=null;this.rel='font'" crossorigin="true"><link data-vue-meta="1" rel="font" as="font" href="/fonts/OpenSans/OpenSans-Regular.woff2" onload="this.onload=null;this.rel='font'" crossorigin="true"><link data-vue-meta="1" rel="font" as="font" href="/fontawesome/webfonts/fa-brands-400.woff2" onload="this.onload=null;this.rel='font'" crossorigin="true"><link data-vue-meta="1" rel="font" as="font" href="/fontawesome/webfonts/fa-regular-400.woff2" onload="this.onload=null;this.rel='font'" crossorigin="true"><link data-vue-meta="1" rel="font" as="font" href="/fontawesome/webfonts/fa-solid-900.woff2" onload="this.onload=null;this.rel='font'" crossorigin="true"><style data-vue-meta="1">
+            @font-face {
+              font-family: 'Open Sans'; 
+              font-style: normal;
+              font-display: swap;
+              font-weight: 700;
+              src:  url(/fonts/OpenSans/OpenSans-Bold.woff2) format('woff2');
+              tet: '12'
+            }
+          
+            @font-face {
+              font-family: 'Open Sans'; 
+              font-style: normal;
+              font-display: swap;
+              font-weight: 400;
+              src:  url(/fonts/OpenSans/OpenSans-Regular.woff2) format('woff2');
+              tet: '12'
+            }
+          </style><script recaptcha-v3-script="" async="" defer="" src="https://www.google.com/recaptcha/api.js?render=explicit"></script><style>.grecaptcha-badge{visibility:hidden !important;}</style></head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0" class="v--modal-block-scroll">
+        <div id="initial-loader" style="display: none;">
+        <span class="spinner"></span>
+    </div>
+    <div id="app"><!----><div id="app"><a href="#content" class="visually-hidden focusable skip-link survey-processed"> Saltar al contenido principal </a><header id="header" class="header navbar navbar-expand-lg navbar-dark fixed-top "><div class="container navbar_sub"><a href="https://gemmashivali.com" class="main-logo"><img src="https://cdn.erescambio.com/wp-content/uploads/2022/04/favicon-gemma.png" alt="Logotipo de Gemma Shivali" intrinsicsize="50x50" height="50" width="50" class="logo-imagen-web"><span class="logo-text">Gemma Shivali</span></a><nav id="nav" role="navigation" aria-label="Navegacion principal" class="nav"><ul id="main-menu" class="menu"><li class="menu-item nav-item nav-item-menu-button menu-item-0"><a href="/#sobre-mi" target="_self" class="menu-link">SOBRE MI</a><!----><!----></li><li class="menu-item nav-item nav-item-menu-button menu-item-1"><a href="/nuestros-servicios" target="_self" class="menu-link">SERVICIOS</a><!----><!----></li><li class="menu-item nav-item nav-item-menu-button menu-item-2"><a href="/#contacto" target="_self" class="menu-link">CONTACTO</a><!----><!----></li><li class="menu-item nav-item nav-item-menu-button menu-item-3"><a href="/#calendario" target="_self" class="menu-link">Calendario</a><!----><!----></li><!----></ul><ul class="list-inline social-buttons"></ul><button id="menu-trigger" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir o cerrar menu principal"><i aria-hidden="true" class="fa fa-bars"></i></button></nav></div></header><main role="main" id="content"><section data-v-3787af55="" id="" class="wrapper-bloque wrapper-slider section_0"><style data-v-0638af71="" data-v-3787af55=""> .bloque-slider.bloque-83769 { } .bloque-slider.bloque-83769 .slide-content-text, .bloque-slider.bloque-83769 .slide-element { background-color: #f7f7f5; color: #545454; } .bloque-slider.bloque-83769 .bloque-titulo { color: #938474; } .bloque-slider.bloque-83769 .slide-content-btn { color: #969696; pointer-events: all; } .bloque-slider.bloque-83769 .swiper-button-prev, .bloque-slider.bloque-83769 .swiper-button-next { color: #938474; } </style><!----><div data-v-3787af55="" class="bloque-slider bloque-83769"><div data-v-3787af55="" class="swiper-container swiper swiper-container-fade swiper-container-initialized swiper-container-horizontal"><div class="swiper-wrapper"><!----><div data-v-3787af55="" class="swiper-slide swiper-slide-active" style="width: 764px; opacity: 1; transform: translate3d(0px, 0px, 0px);"><style data-v-0638af71="" data-v-3787af55=""> .bloque-slider.bloque-83769 .slide-element.slide-element-1 { justify-content: flex-end; background-position: center center; background-size: cover; background-repeat: no-repeat; height: 100%; } .bloque-slider.bloque-83769 .slide-content.slide-content-1 { width: 88%; text-align: left;   } .bloque-slider.bloque-83769 .slide-content-text.slide-content-text-1 { background-color: transparent;  /*padding: 0% 66% 0% 0%;*/ margin-right: 66%; border-radius: 0px } .bloque-slider.bloque-83769 .slide-content-text.slide-content-text-1 h1 { color: #ffffff !important; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); font-size: 50px; line-height: 54px;  } .bloque-slider.bloque-83769 .slide-content-text.slide-content-text-1 h2 { color: #ffffff !important; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); font-size: 50px; line-height: 54px;  } .bloque-slider.bloque-83769 .slide-content-text.slide-content-text-0 h2, .bloque-slider.bloque-83769 .slide-content-text.slide-content-text-1 h3 { margin-block-start: 1em; color: #ffffff !important; text-shadow: none; font-size: 24px; line-height: 28px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); } .bloque-slider.bloque-83769 .slide-content .slide-content-btn.slide-content-btn-1 { background-color: #938474; color: #f4e9e7; background-color: #938474; color: #f4e9e7; font-size: 16px; margin-right: 0%; margin-top: 45px; } .bloque-slider.bloque-83769 .slide-element-1 .img-desktop{ aspect-ratio: 1928 / 997; height: auto; object-fit: contain; opacity: 0; } .bloque-slider.bloque-83769 .slide-element-1 .img-mobile { aspect-ratio: 600 / 310; height: auto; object-fit: contain; } @media (max-width: 768px) { .bloque-slider.bloque-83769 .swiper-button-prev, .bloque-slider.bloque-83769 .swiper-button-next{ display: none; } .bloque-slider.bloque-83769 .slide-element.slide-element-1 { background-color: #f4e9e7; justify-content: flex-start; } .bloque-slider.bloque-83769 .slide-content-text.slide-content-text-1 { margin: 0; background-color: transparent !important; border-radius: 0px } .bloque-slider.bloque-83769 .slide-content.slide-content-1 { width: %; padding: 0% 0% 0% 0%; left: initial; flex-direction: column; top: auto; } .bloque-slider.bloque-83769 .slide-content-text.slide-content-text-1 h1 { color:  !important; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); font-size: 30px; line-height: 34px; } .bloque-slider.bloque-83769 .slide-content-text.slide-content-text-1 h2 { color:  !important; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); font-size: 30px; line-height: 34px; } .bloque-slider.bloque-83769 .slide-content-text.slide-content-text-0 h2, .bloque-slider.bloque-83769 .slide-content-text.slide-content-text-1 h3 { color:  !important; text-shadow: none; font-size: 18px; line-height: 22px; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); } .bloque-slider.bloque-83769 .slide-content-text.slide-content-text-1 { background-color: rgba(244, 233, 231, 0.5); text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); } .bloque-slider.bloque-83769 .slide-content .slide-content-btn.slide-content-btn-1 { background-color: ; color: ; } } </style><div data-v-3787af55="" class="slide-element slide-element-1" style="background-image: url(&quot;https://cdn.erescambio.com/wp-content/uploads/2022/04/CABECERA.jpg&quot;);"><img data-v-3787af55="" src="https://cdn.erescambio.com/wp-content/uploads/2022/04/CABECERA.jpg" width="1928" height="997" alt="Cabecera de Recupera tu energía" class="imagen-slider img-desktop"><img data-v-3787af55="" src="https://cdn.erescambio.com/wp-content/uploads/2022/04/CABECERA-600x310.jpg" width="600" height="310" alt="Cabecera de Recupera tu energía" class="imagen-slider img-mobile"><div data-v-3787af55="" data-wow-delay="2s" class="slide-content wow animate__fadeInUp slide-content-1"><div data-v-3787af55="" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" class="slide-content-text slide-content-text-1 aos-init"><h2 data-v-3787af55="">Recupera tu energía</h2><h3 data-v-3787af55="">Reconecta con tu cuerpo y fortalece tu bienestar en cada etapa de tu vida</h3><a data-v-3787af55="" href="https://api.whatsapp.com/send?phone=34630127319&amp;text=Hola%20Gemma%2C%20estoy%20en%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20servicios.%20" title="" class="slide-content-btn slide-content-btn-1">Contáctame</a></div></div></div></div><!----></div><div data-v-3787af55="" aria-label="Cabecera anterior" class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-disabled="true" data-a11y-bound="true"></div><div data-v-3787af55="" aria-label="Cabecera siguiente" class="swiper-button-next swiper-button-disabled" tabindex="-1" role="button" aria-disabled="true" data-a11y-bound="true"></div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div></div></section><section data-v-7a4c4128="" id="" class="wrapper-bloque wrapper-bloque-iconos"><style data-v-0638af71="" data-v-7a4c4128="">
+      .bloque-83772 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #f7f7f5
+      }
+  
+      .bloque-83772 .bloque-title {
+        color: #938474;
+      }
+
+      .bloque-83772 p{
+        color: #545454;
+      }
+
+      .bloque-83772 .boton-generico {
+        background-color: #938474;
+        color: #969696;
+      }
+
+      
+
+        .bloque-83772 .icono .fa-stack {
+          border: 5px solid #938475;
+        }
+
+        .bloque-83772 .icono .icono-title {
+          color: #938474;
+        }
+    
+        .bloque-83772 .icono .icono-texto {
+          color: #545454;
+        }
+    
+        .bloque-83772 .icono .separator {
+          border-color: #545454;
+        }
+    
+        .bloque-83772 .icono a {
+          color: #f7f7f5;
+        }
+        .bloque-83772 .icono .boton {
+          color: #f7f7f5;
+          background-color: #938474;
+        }
+         .bloque-83772 { color: #545454; } .bloque-83772 h1, .bloque-83772 h2, .bloque-83772 h3, .bloque-83772 h4, .bloque-83772 h5, .bloque-83772 h6 { color: #938474; } .bloque-83772 .wrapper-popup.p-active, .bloque-83772 .wrapper-popup.p-active .popup{ background:  !important; color:  !important; } .bloque-83772 .wrapper-popup.p-active .popup h1, .bloque-83772 .wrapper-popup.p-active .popup h2, .bloque-83772 .wrapper-popup.p-active .popup h3, .bloque-83772 .wrapper-popup.p-active .popup h4, .bloque-83772 .wrapper-popup.p-active .popup h5, .bloque-83772 .wrapper-popup.p-active .popup h6{ color:  !important; } .bloque-83772 .wrapper-popup.p-active .popup a{ color:  !important; } .bloque-83772 .wrapper-popup.p-active .popup p{ color:  !important; } .bloque-83772 .wrapper-popup.p-active .popup .close-icon{ color:  !important; background: none; top: 25px; } .bloque-83772 a, .bloque-83772 .popup a { color: #969696; } .bloque-83772 .fa-stack{ border-radius: 10%; } .bloque-83772 .bloque-title.tituloLado { margin-bottom: 20px; text-align: left; font-size: 25px; font-weight: 700; margin-top: 0; } .bloque-83772 .bloque-titulo p, .bloque-83772 .bloque-titulo h1, .bloque-83772 .bloque-titulo h2, .bloque-83772 .bloque-titulo h3, .bloque-83772 .bloque-titulo h4, .bloque-83772 .bloque-titulo h5, .bloque-83772 .bloque-titulo h6 { margin-top: 0 !important; margin-bottom: 25px; line-height: inherit; } .bloque-83772 .iconosCostado .fa-stack { width: 100% !important; height: auto !important; } .bloque-83772 .iconosCostado .icono .icono-title { min-height: unset; font-size: 15px; line-height: normal; margin: 10px 0; margin-top: 15px; } .bloque-83772 .iconosCostado .icono .boton { font-size: 14px; padding: 5px 10px; } .bloque-83772 .iconosCostado .icono .icono-texto { font-size: 12px; padding: 0; line-height: normal; } .bloque-83772 .iconosCostado .icono .separator { margin: 0 auto 10px; } @media (min-width: 991px){ .col-lg-55 { flex: 0 0 20%; max-width: 20%; } } @media (max-width: 991px){ .bloque-83772 .iconosCostado .fa-stack { width: 160px !important; } } @media (max-width: 767px){ .bloque-83772 .iconosCostado .icono .icono-title { min-height: 60px; font-size: larger; margin: 15px 0; } .bloque-83772 .iconosCostado .icono .icono-texto { font-size: 14px; padding: 0 20px; } .bloque-83772 .iconosCostado .icono .boton { font-size: 1rem; padding: 0.5rem 0.75rem; } .bloque-83772 .iconosCostado .icono .separator { margin: 0 auto 30px; } } </style><div data-v-7a4c4128="" class="bloque-iconos bloque-83772"><!----><div data-v-7a4c4128=""><div data-v-7a4c4128="" class="container text-center"><h2 data-v-7a4c4128="" data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="bloque-title aos-init">Un programa para cada etapa vital</h2><!----><div data-v-7a4c4128="" class="row justify-content-around"><!----><div data-v-084ebd9e="" data-v-7a4c4128="" class="icono col-xs-12 col-sm-12 col-lg-4 portfolio-item aos-init" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000"><div data-v-084ebd9e=""><div data-v-084ebd9e="" class="fa-stack "><a data-v-084ebd9e="" href="https://gemmashivali.com/nuestros-servicios" title="Enlace a Empoderamiento y conexión corporal" alt="Enlace a Empoderamiento y conexión corporal" aria-label="Enlace a Empoderamiento y conexión corporal" target="_blank"><img data-v-084ebd9e="" loading="lazy" src="https://cdn.erescambio.com/wp-content/uploads/2022/04/PROGRAMA-01.jpg" alt="Icono de Empoderamiento y conexión corporal" width="200" height="200"></a></div><h3 data-v-084ebd9e="" class="icono-title service-heading">Empoderamiento y conexión corporal</h3><hr data-v-084ebd9e="" class="separator"><p data-v-084ebd9e="" class="icono-texto">Recupera tu confianza y fortaleza interior</p></div><div data-v-084ebd9e=""><a data-v-084ebd9e="" href="https://gemmashivali.com/nuestros-servicios" title="Enlace a Empoderamiento y conexión corporal" alt="Enlace a Empoderamiento y conexión corporal" aria-label="Enlace a Empoderamiento y conexión corporal" target="_blank" class="boton">Saber más</a></div><!----></div><!----><div data-v-084ebd9e="" data-v-7a4c4128="" class="icono col-xs-12 col-sm-12 col-lg-4 portfolio-item aos-init" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000"><div data-v-084ebd9e=""><div data-v-084ebd9e="" class="fa-stack "><a data-v-084ebd9e="" href="https://gemmashivali.com/nuestros-servicios" title="Enlace a Reconexión postparto" alt="Enlace a Reconexión postparto" aria-label="Enlace a Reconexión postparto" target="_blank"><img data-v-084ebd9e="" loading="lazy" src="https://cdn.erescambio.com/wp-content/uploads/2022/04/PROGRAMA-02-1-300x300.jpg" alt="Icono de Reconexión postparto" width="300" height="300"></a></div><h3 data-v-084ebd9e="" class="icono-title service-heading">Reconexión postparto</h3><hr data-v-084ebd9e="" class="separator"><p data-v-084ebd9e="" class="icono-texto">Reconecta contigo tras la maternidad</p></div><div data-v-084ebd9e=""><a data-v-084ebd9e="" href="https://gemmashivali.com/nuestros-servicios" title="Enlace a Reconexión postparto" alt="Enlace a Reconexión postparto" aria-label="Enlace a Reconexión postparto" target="_blank" class="boton">Saber más</a></div><!----></div><!----><div data-v-084ebd9e="" data-v-7a4c4128="" class="icono col-xs-12 col-sm-12 col-lg-4 portfolio-item aos-init" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000"><div data-v-084ebd9e=""><div data-v-084ebd9e="" class="fa-stack "><a data-v-084ebd9e="" href="https://gemmashivali.com/nuestros-servicios" title="Enlace a Vitalidad en la menopausia" alt="Enlace a Vitalidad en la menopausia" aria-label="Enlace a Vitalidad en la menopausia" target="_blank"><img data-v-084ebd9e="" loading="lazy" src="https://cdn.erescambio.com/wp-content/uploads/2022/04/programa-03.jpg" alt="Icono de Vitalidad en la menopausia" width="133" height="133"></a></div><h3 data-v-084ebd9e="" class="icono-title service-heading">Vitalidad en la menopausia</h3><hr data-v-084ebd9e="" class="separator"><p data-v-084ebd9e="" class="icono-texto">Vive esta etapa con plenitud y seguridad</p></div><div data-v-084ebd9e=""><a data-v-084ebd9e="" href="https://gemmashivali.com/nuestros-servicios" title="Enlace a Vitalidad en la menopausia" alt="Enlace a Vitalidad en la menopausia" aria-label="Enlace a Vitalidad en la menopausia" target="_blank" class="boton">Saber más</a></div><!----></div><!----><div data-v-084ebd9e="" data-v-7a4c4128="" class="icono col-xs-12 col-sm-12 col-lg-4 portfolio-item aos-init" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000"><div data-v-084ebd9e=""><div data-v-084ebd9e="" class="fa-stack "><a data-v-084ebd9e="" href="https://gemmashivali.com/nuestros-servicios" title="Enlace a Integración masculino-femenino" alt="Enlace a Integración masculino-femenino" aria-label="Enlace a Integración masculino-femenino" target="_blank"><img data-v-084ebd9e="" loading="lazy" src="https://cdn.erescambio.com/wp-content/uploads/2022/04/PROGRAMA-04-300x300.jpg" alt="Icono de Integración masculino-femenino" width="300" height="300"></a></div><h3 data-v-084ebd9e="" class="icono-title service-heading">Integración masculino-femenino</h3><hr data-v-084ebd9e="" class="separator"><p data-v-084ebd9e="" class="icono-texto">Equilibra tu energía para tener relaciones de pareja más sanas</p></div><div data-v-084ebd9e=""><a data-v-084ebd9e="" href="https://gemmashivali.com/nuestros-servicios" title="Enlace a Integración masculino-femenino" alt="Enlace a Integración masculino-femenino" aria-label="Enlace a Integración masculino-femenino" target="_blank" class="boton">Saber más</a></div><!----></div><!----><div data-v-084ebd9e="" data-v-7a4c4128="" class="icono col-xs-12 col-sm-12 col-lg-4 portfolio-item aos-init" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000"><div data-v-084ebd9e=""><div data-v-084ebd9e="" class="fa-stack "><a data-v-084ebd9e="" href="https://gemmashivali.com/nuestros-servicios" title="Enlace a Renovación y propósito 40+ " alt="Enlace a Renovación y propósito 40+ " aria-label="Enlace a Renovación y propósito 40+" target="_blank"><img data-v-084ebd9e="" loading="lazy" src="https://cdn.erescambio.com/wp-content/uploads/2022/04/PROGRAMA-05.jpg" alt="Icono de Renovación y propósito 40+" width="133" height="133"></a></div><h3 data-v-084ebd9e="" class="icono-title service-heading">Renovación y propósito 40+ </h3><hr data-v-084ebd9e="" class="separator"><p data-v-084ebd9e="" class="icono-texto">Una nueva oportunidad para reinventarte a partir de los 40</p></div><div data-v-084ebd9e=""><a data-v-084ebd9e="" href="https://gemmashivali.com/nuestros-servicios" title="Enlace a Renovación y propósito 40+ " alt="Enlace a Renovación y propósito 40+ " aria-label="Enlace a Renovación y propósito 40+ " target="_blank" class="boton">Saber más</a></div><!----></div><!----><div data-v-084ebd9e="" data-v-7a4c4128="" class="icono col-xs-12 col-sm-12 col-lg-4 portfolio-item aos-init" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000"><div data-v-084ebd9e=""><div data-v-084ebd9e="" class="fa-stack "><a data-v-084ebd9e="" href="https://gemmashivali.com/nuestros-servicios" title="Enlace a Transitar el cambio" alt="Enlace a Transitar el cambio" aria-label="Enlace a Transitar el cambio" target="_blank"><img data-v-084ebd9e="" loading="lazy" src="https://cdn.erescambio.com/wp-content/uploads/2022/04/PROGRAMA-06.jpg" alt="Icono de Transitar el cambio" width="133" height="133"></a></div><h3 data-v-084ebd9e="" class="icono-title service-heading">Transitar el cambio</h3><hr data-v-084ebd9e="" class="separator"><p data-v-084ebd9e="" class="icono-texto">Encuentra claridad en tiempos de transformación</p></div><div data-v-084ebd9e=""><a data-v-084ebd9e="" href="https://gemmashivali.com/nuestros-servicios" title="Enlace a Transitar el cambio" alt="Enlace a Transitar el cambio" aria-label="Enlace a Transitar el cambio" target="_blank" class="boton">Saber más</a></div><!----></div></div></div></div></div></section><section id="" class="wrapper-bloque wrapper-bloque-texto"><style data-v-0638af71="">
+      .bloque-83817 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #f4e9e7
+      }
+  
+      .bloque-83817 .bloque-title {
+        color: #938474;
+      }
+
+      .bloque-83817 p{
+        color: #545454;
+      }
+
+      .bloque-83817 .boton-generico {
+        background-color: #938474;
+        color: #005c76;
+      }
+
+       .bloque-83817 a { color: #005c76; } .bloque-83817 h1, .bloque-83817 h2, .bloque-83817 h3, .bloque-83817 h4, .bloque-83817 h5, .bloque-83817 h6 { color: #938474; } .bloque-83817 .text { padding: 75px 6% 6% !important; font-size: 14px !important; line-height: 26px !important; color: #545454; } .bloque-83817 .text p , .bloque-83817 .geodir_post_meta, .bloque-83817 .geodir_post_meta p{ font-size: 14px !important; line-height: 26px !important; line-height: 1.5 !important; } .bloque-83817 .bg-image{ background-size: cover; } .bloque-83817 .boton-generico{ margin-bottom: 30px; } @media (max-width: 991px){ .bloque-83817 .bg-image{ background-size: cover; } } </style><div class="bg bloque-texto bloque-83817"><div class="container-fluid contenido"><div class="row"><!----><!----><!----><div data-wow-duration="2s" class="col-sm-12 col-md-12 col-12 text wow fadeIn text-center center"><div><h2 data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="bloque-title text-center aos-init">Estos programas son para ti si...</h2><div data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="aos-init"><p><span style="font-size: 24px;"><strong>Estás en un momento de cambio, dudas o transformación, <br>
+y sientes que necesitas recuperar tu energía, tu confianza y tu equilibrio.</strong></span></p>
+<p><span style="font-size: 20px;">A lo largo de la vida, pasamos por <strong>momentos complejos</strong> que nos pueden hacer sentir desconectadas de nosotras mismas. Puede que te falte energía, que sientas dudas sobre tu rumbo o que necesites reconciliarte con los cambios que tu cuerpo está experimentando en este momento.</span></p>
+<p><strong><span style="font-size: 24px;">Te identificas con alguna de estas preguntas</span></strong></p>
+<p><span style="font-size: 20px;">¿No te sientes cómoda con tu cuerpo? – ¿Te cuesta conectar con tu energía vital? – ¿Sientes que has perdido seguridad y claridad sobre tu rumbo en la vida? – ¿Quieres sentirte más fuerte, segura y alineada con quien eres hoy? –&nbsp;</span><span style="font-size: 20px;">¿Estás en una etapa de cambio y necesitas herramientas para transitarla? – </span><span style="font-size: 20px;">¿Te sientes atrapada en relaciones tóxicas pero no sabes cómo romper el ciclo?</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 20px;"><span style="font-size: 24px;"><strong>¿Cómo puedo ayudarte?</strong></span></span></p>
+<p><span style="font-size: 20px;">Mi trabajo consiste en acompañarte en este proceso, ayudándote a <strong>reconectar con tu cuerpo como fuente de fortaleza, confianza y claridad</strong>. A través de técnicas corporales y energéticas como la bioenergética, el rebirthing, el qigong y el tantra, crearemos un espacio de transformación para que recuperes tu seguridad, te sientas alineada con quién eres y te conectes con todo el potencial que te trae esta nueva etapa de tu vida.</span></p>
+</div><!----></div></div><!----><!----></div></div></div></section><section data-v-f7a3753c="" id="" class="wrapper-bloque wrapper-bloque-call-actions"><style data-v-0638af71="" data-v-f7a3753c="">
+      .bloque-83775 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #f7f7f5
+      }
+  
+      .bloque-83775 .bloque-title {
+        color: #938474;
+      }
+
+      .bloque-83775 p{
+        color: #545454;
+      }
+
+      .bloque-83775 .boton-generico {
+        background-color: #938474;
+        color: #969696;
+      }
+
+      </style><div data-v-f7a3753c="" class="bloque-call-actions bloque-83775"><div data-v-f7a3753c="" class="container text-center"><h2 data-v-f7a3753c="" data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="bloque-title bloque-title-small aos-init">¿Tienes dudas?</h2><div data-v-f7a3753c="" class="row"><div data-v-f7a3753c="" data-aos="fade" data-aos-once="true" data-aos-duration="1300" class="col text-center aos-init"><p><span style="font-size: 20px;">Si sientes que necesitas un cambio y no sabes por dónde empezar, cuéntame en qué punto estás <br>
+y juntas encontraremos el camino que mejor se adapte a ti.</span></p>
+</div></div><div data-v-f7a3753c="" class="row"><div data-v-f7a3753c="" class="col"><div data-v-f7a3753c="" data-aos="fade-up" data-aos-once="true" data-aos-duration="1500" class="bloques-ctas aos-init"><a data-v-f7a3753c="" href="tel:+34 630 12 73 19" aria-label="phone" target="_blank"><i data-v-f7a3753c="" class="global-icons fa fa-phone icon-phone"></i></a><a data-v-f7a3753c="" href="mailto:gemmaestivill@gmail.com" aria-label="email" target="_blank"><i data-v-f7a3753c="" class="global-icons fa fa-envelope icon-email"></i></a><a data-v-f7a3753c="" href="https://api.whatsapp.com/send?phone=34630127319" aria-label="whatsapp" target="_blank"><i data-v-f7a3753c="" class="global-icons fab fa-whatsapp icon-whatsapp"></i></a></div></div></div></div></div></section><section id="sobre-mi" class="wrapper-bloque wrapper-bloque-texto"><style data-v-0638af71="">
+      .bloque-83776 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #f4e9e7
+      }
+  
+      .bloque-83776 .bloque-title {
+        color: #938474;
+      }
+
+      .bloque-83776 p{
+        color: #545454;
+      }
+
+      .bloque-83776 .boton-generico {
+        background-color: #938474;
+        color: #005c76;
+      }
+
+       .bloque-83776 a { color: #005c76; } .bloque-83776 h1, .bloque-83776 h2, .bloque-83776 h3, .bloque-83776 h4, .bloque-83776 h5, .bloque-83776 h6 { color: #938474; } .bloque-83776 .text { padding: 75px 6% 6% !important; font-size: 14px !important; line-height: 26px !important; color: #545454; } .bloque-83776 .text p , .bloque-83776 .geodir_post_meta, .bloque-83776 .geodir_post_meta p{ font-size: 14px !important; line-height: 26px !important; line-height: 1.5 !important; } .bloque-83776 .bg-image{ background-size: cover; } .bloque-83776 .boton-generico{ margin-bottom: 30px; } @media (max-width: 991px){ .bloque-83776 .bg-image{ background-size: cover; } } </style><div class="bg bloque-texto bloque-83776"><div class="container-fluid contenido"><div class="row"><div data-wow-duration="2s" class="col-sm-12 col-md-12 col-lg-4 bg_cover text-right bg-image wow fadeIn p-0 izq" style="background-image: url(&quot;https://cdn.erescambio.com/wp-content/uploads/2022/04/sobre-mi-02.jpg&quot;);"><img loading="lazy" src="https://cdn.erescambio.com/wp-content/uploads/2022/04/sobre-mi-02.jpg" alt="Imagen del bloque a la izquierda: Gemma Shivali" class="img_entera bg_cover"></div><div class="image-full"><img loading="lazy" src="https://cdn.erescambio.com/wp-content/uploads/2022/04/sobre-mi-02.jpg" alt="Imagen del bloque a la izquierda: Gemma Shivali"></div><!----><div data-wow-duration="2s" class="col-sm-12 col-md-12 col-12 col-lg-8 text wow fadeIn text-left left"><div><h2 data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="bloque-title text-left aos-init">Gemma Shivali</h2><div data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="aos-init"><p><strong><span style="font-size: 24px;">Sobre mí</span></strong></p>
+<p><span style="font-size: 20px;">Soy <strong>Gemma Shivali</strong>, terapeuta especializada en procesos de transformación a través del cuerpo y la energía. Mi misión es acompañar a personas, especialmente mujeres, en momentos de cambio y transición para que recuperen su <strong>confianza, vitalidad y equilibrio interior</strong>.</span></p>
+<p><span style="font-size: 20px;">A lo largo de más de 30 años, me he formado con maestros de prestigio mundial en diversas disciplinas como <strong>rebirthing, codependencia</strong>, <strong>bioenergética, tantra </strong>y <strong>qigong</strong>, herramientas que utilizo para ayudar a mis clientes y alumnos a reconectar consigo mismos.</span></p>
+<p><span style="font-size: 20px;">Mi trabajo no se centra solo en el uso de estas técnicas, sino en <strong>crear un espacio seguro y de apoyo</strong>, donde cada persona pueda escucharse, comprenderse y recuperar su fuerza interior para afrontar con seguridad la etapa vital en la que se encuentra.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 24px;"><strong>Mi filosofía</strong></span></p>
+<p><span style="font-size: 20px;">Creo en el <strong>cuerpo como nuestro mayor aliado</strong> en los procesos de transformación. A través de la conciencia corporal y energética, podemos acceder a la confianza, la claridad y el bienestar físico y emocional que buscamos.</span></p>
+<p><span style="font-size: 20px;"><strong>Trabajo desde la integración cuerpo-mente-emoción.</strong> No se trata solo de entender lo que nos pasa, sino de experimentarlo y sanarlo desde lo corporal.</span></p>
+<p><span style="font-size: 20px;"><strong>Cada persona es única.</strong> No hay una sola forma de avanzar. Por eso, mi enfoque es personalizado, adaptando cada proceso a lo que realmente necesitas.</span></p>
+<p><span style="font-size: 20px;"><strong>El cambio empieza por la conexión con uno mismo.</strong> Cuando aprendemos a escucharnos y a sentirnos, encontramos la seguridad y la claridad que necesitamos para nuestro camino.Si sientes que ha llegado el momento de <strong>reencontrarte contigo y recuperar tu energía</strong>, estoy aquí para acompañarte en ese proceso.</span></p>
+<p></p>
+<h3 data-start="125" data-end="183"><span style="font-size: 24px; color: #000000;"><strong data-start="131" data-end="183">El tantra como camino hacia la libertad interior</strong></span></h3>
+<p data-start="185" data-end="1134"><span style="font-size: 20px;">El <strong>tantra</strong> forma parte de mi esencia de vida. Me enseñó a vivir de una forma más consciente y plena. A través de este camino, aprendí a reconocer la sexualidad no solo como un acto físico, sino como una <strong>energía sagrada</strong>, creativa y profundamente <strong>transformadora</strong>.</span></p>
+<p data-start="185" data-end="1134"><span style="font-size: 20px;">Ser consciente de mi sexualidad me llevó a sentir mi cuerpo con atención, a habitarlo con respeto y a honrar cada sensación sin juicio ni prisa. Aprendí a respirar con cada caricia, a mirar a los ojos como un acto de entrega y de conexión, y a transformar el placer en una meditación.</span> <span style="font-size: 20px;">El tantra me ayudó a liberar memorias, a sanar heridas y a soltar condicionamientos sociales. <strong>Dejé de buscar la validación fuera</strong> y empecé a sentirme completa en mí misma, reconociendo que el éxtasis no viene del otro, sino de mi presencia total en el momento.</span></p>
+<p data-start="185" data-end="1134"><span style="font-size: 20px;">Desde esa visión, <strong>la sexualidad dejó de ser un tabú o una meta</strong> y se transformó en un <strong>camino sagrado</strong> hacia el amor, la unidad y la libertad interior. </span><span style="font-size: 20px;">Hoy comparto y aplico esta filosofía en mis programas y sesiones, para acompañar a otras personas a <strong>liberar bloqueos</strong>, a <strong>reconectar con su cuerpo</strong> y a <strong>recuperar su energía vital</strong>. Porque cuando te habitas con presencia, el cambio empieza a suceder desde dentro.</span></p>
+<p><span style="font-size: 20px;">&nbsp;</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div><a href="https://gemmashivali.com/nuestros-servicios" target="_blank" data-aos="fade-up" data-aos-once="true" data-aos-duration="2000" class="boton-generico aos-init" style="border-color: rgb(147, 132, 116) !important; background: rgb(147, 132, 116) !important; color: rgb(244, 233, 231) !important;">Descubre cómo puedo ayudarte </a></div></div><!----><!----></div></div></div></section><section id="contacto" class="wrapper-bloque wrapper-bloque-formulario"><style data-v-0638af71="">
+      .bloque-83784 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #f7f7f5
+      }
+  
+      .bloque-83784 .bloque-title {
+        color: #938474;
+      }
+
+      .bloque-83784 p{
+        color: #545454;
+      }
+
+      .bloque-83784 .boton-generico {
+        background-color: #938474;
+        color: #969696;
+      }
+
+      
+        .bloque-formulario.bloque-83784 a {
+          color: #545454;
+        }
+
+        .bloque-formulario.bloque-83784 label {
+          color: #545454;
+        }
+
+        .bloque-83784 .btn {
+          color: #f7f7f5;
+          background-color: #545454;
+        }
+         .bloque-83784 { color: #545454; } .bloque-83784 a{ color: #545454 !important; } .bloque-83784 .bloque-title{ color: #938474 !important; } .bloque-83784 .btn{ color: #f7f7f5 !important; background: #938474 !important; border-color: #938474 !important; } </style><div class="bloque-formulario bloque-83784" style="background-image: url(&quot;/img/map-image.png&quot;);"><div class="container"><h2 data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="bloque-title bloque-title-small aos-init">Contacto</h2><div data-aos="fade" data-aos-once="true" data-aos-duration="1300" class="row aos-init"><div class="col-md-6"><p class="text-right sm-text-center"><a href="tel:+34630127319" target="_blank"> +34 630 127 319 <i class="fa fa-phone"></i></a></p><p class="text-right sm-text-center"><a href="https://api.whatsapp.com/send?l=es&amp;phone=34630127319" target="_blank"> +34 630 127 319 <i class="fa fa-whatsapp"></i></a></p><p class="text-right sm-text-center"><a href="mailto:gemmaestivill@gmail.com" target="_blank"> gemmaestivill@gmail.com <i class="fa fa-envelope"></i></a></p><p class="text-right sm-text-center"><a href="https://gemmashivali.com/" target="_blank"> https://gemmashivali.com/ <i class="fa fa-globe"></i></a></p></div><div class="col-md-6"><p><a href="https://www.google.es/maps/place/Sesiones online · Sesiones presenciales en Barcelona y Sitges" target="_blank"><i class="fa fa-map-marker-alt"></i> Sesiones online · Sesiones presenciales en Barcelona y Sitges </a></p></div></div><br><br><form id="contactForm" action="https://www.erescambio.com/wp-content/themes/hello-theme-child/v3/mail/contact_me.php" data-ref="form_83784" name="sentMessage" novalidate="novalidate"><input id="from" name="para" type="hidden" value="gemmaestivill@gmail.com"><input id="web" name="web" type="hidden" value="https://gemmashivali.com"><input id="autor" name="autor" type="hidden" value="2711"><input id="desc" name="desc" type="hidden" value=""><input id="lang" name="lang" type="hidden" value="es_ES"><div class="row"><div data-aos="fade-right" data-aos-once="true" data-aos-duration="2000" class="col-md-6 aos-init"><div class="form-group form-floating"><input id="name" name="name" type="text" placeholder="Nombre *" aria-label="Nombre *" aria-required="true" required="required" data-validation-required-message="Campo requerido" class="form-control"><label for="name">Nombre *</label><p class="help-block text-danger"></p></div><div class="form-group form-floating"><input id="email" name="email" type="email" placeholder="Email *" aria-label="Email *" aria-required="true" required="required" data-validation-required-message="Campo requerido" data-validation-email-message="Dirección de email incorrecta." class="form-control"><label for="email">Email *</label><p class="help-block text-danger"></p></div><div class="form-group form-floating"><input id="phone" name="phone" type="tel" placeholder="Teléfono *" aria-label="Teléfono *" aria-required="true" required="required" data-validation-required-message="Campo requerido" class="form-control"><label for="phone">Teléfono *</label><p class="help-block text-danger"></p></div></div><div data-aos="fade-left" data-aos-once="true" data-aos-duration="2000" class="col-md-6 aos-init"><div class="form-group form-floating"><textarea id="message" name="message" placeholder="Mensaje *" aria-label="Mensaje *" aria-required="true" required="required" data-validation-required-message="Campo requerido" class="form-control"></textarea><label for="message">Mensaje *</label><p class="help-block text-danger"></p></div></div><div class="clearfix"></div><div class="col-md-6"><span class="mandatory">(*) Los campos marcados con * son obligatorios.</span><!----></div><div data-aos="fade-left" data-aos-once="true" data-aos-duration="2000" class="col-md-6 text-left aos-init"><div class="form-group"><input type="checkbox" id="politica" name="politica" aria-required="true" required="required" data-validation-required-message="Debes aceptar la política de privacidad."><label for="politica"> He leído y acepto la <a href="/politica-de-privacidad" target="_blank"> Política de privacidad </a></label><p class="help-block text-danger"></p></div></div><div class="clearfix"></div><div data-aos="fade-up" data-aos-once="true" data-aos-duration="2000" class="col-lg-12 text-center aos-init"><div id="success"></div><button id="sendMessageButton" type="submit" class="btn btn-xl contactame">Enviar</button></div></div></form></div></div></section><section id="calendario" class="wrapper-bloque wrapper-bloque-eventos"><style data-v-0638af71="">
+      .bloque-83781 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #f4e9e7
+      }
+  
+      .bloque-83781 .bloque-title {
+        color: #938474;
+      }
+
+      .bloque-83781 p{
+        color: #545454;
+      }
+
+      .bloque-83781 .boton-generico {
+        background-color: #938474;
+        color: #969696;
+      }
+
+       .bloque-83781 a{ color: #969696; } .bloque-83781 .col-md-12.wow, .bloque-83781 .col-md-12.wow, .bloque-83781 .col-md-12.wow, .bloque-83781 .col-md-12.wow, .bloque-83781 .col-md-12.wow, .bloque-83781 .col-md-12.wow{ color: #545454 !important; } .bloque-83781 .col-md-12.wow h1, .bloque-83781 .col-md-12.wow h2, .bloque-83781 .col-md-12.wow h3, .bloque-83781 .col-md-12.wow h4, .bloque-83781 .col-md-12.wow h5, .bloque-83781 .col-md-12.wow h6{ color: #938474 !important; } .bloque-83781 .col-md-12.wow a{ color: #969696 !important; } .bloque-83781 .ajde_evcal_calendar.ul .evcal_month_line p { color: #938474 !important; } .bloque-83781 #evcal_list .eventon_list_event .evcal_desc span.evcal_event_title{ color: #969696 !important; } .bloque-83781 .mes_cabecera{ color: #938474 !important; margin: 30px 0 5px 0px; font-weight: 600; } .bloque-83781 .elementor-41295 .btn_map a.elementor-button{ background: #969696 !important; color: #f7f7f5 !important; } .bloque-83781 .elementor-41295 .evento_mini, .bloque-83781 .elementor-41295 .collapse-evento{ background: #f7f7f5 !important; } .bloque-83781 .elementor-41295 .evento_mini .fecha_mini{ padding: 15px 0; } .bloque-83781 .geodir-field-post_content h1, .bloque-83781 .geodir-field-post_content h2, .bloque-83781 .geodir-field-post_content h3, .bloque-83781 .geodir-field-post_content h4, .bloque-83781 .geodir-field-post_content h5, .bloque-83781 .geodir-field-post_content h6, .bloque-83781 .elementor-41295 .collapse-evento .elementor-widget-heading .elementor-heading-title, .bloque-83781 .elementor-41295 .elementor-widget-heading h3.elementor-heading-title a, .bloque-83781 .elementor-41295 .elementor-element.elementor-widget-heading:before{ color: #938474 !important; } .bloque-83781 .elementor-41295 .elementor-widget-heading h3.elementor-heading-title{ pointer-events: none; color: #938474 !important; } .bloque-83781 .elementor-41295 .ficha_post.mini .bloq_autor a strong, .bloque-83781 .elementor-41295 .reservar-fechas-shortcode .geodir-schedules .geodir-schedule .fecha { color: #969696 !important; } .bloque-83781 .reservar-fechas-shortcode .geodir-schedules .geodir-schedule a, .bloque-83781 #evento_exporter input[type=submit]{ border-color: #969696 !important; cursor: pointer; background: #969696 !important; color: #f7f7f5 !important; } .bloque-83781 #evento_exporter_google.btn.btn-primary{ color: #969696 !important; border-color: #969696 !important; background: #f7f7f5 !important; font-size: 13px; padding: 6px 12px; font-weight: 600; border-width: 2px; text-transform: none; } .bloque-83781 .reservar-fechas-shortcode .geodir-schedules .geodir-schedule a:hover, .bloque-83781 #evento_exporter input[type=submit]:hover, .bloque-83781 #evento_exporter_google.btn.btn-primary:hover{ color: #ffffff !important; border-color: #969696 !important; background: #969696 !important; } .bloque-83781 .elementor-41295 .elementor-widget-heading .elementor-heading-title, .bloque-83781 .elementor-41295 .evento_mini .fecha_mini, .bloque-83781 .geodir-field-lugar, .bloque-83781 .geodir-field-post_content, .bloque-83781 .geodir-field-post_content p, .bloque-83781 .geodir-field-address, .bloque-83781 .reservar-fechas-shortcode .geodir-schedules .geodir-schedule .horas, .bloque-83781 .reservar-fechas-shortcode .geodir-schedules .no_fechas { color: #545454 !important; } .bloque-83781 .geodir-field-post_content a, .bloque-83781 #evento_sharer a{ color: #969696 !important; } .bloque-83781 #evento_sharer > a:hover{ background-color: #969696; color: #f7f7f5 !important; } .bloque-83781 .reservar-fechas-shortcode .geodir-schedules .geodir-schedule a.fecha_link, .bloque-83781 .reservar-fechas-shortcode .geodir-schedules .geodir-schedule a.fecha_link:hover{ border: none !important; background: none !important; } .bloque-83781 .detalles-evento-lista{ padding: 0; } .bloque-83781 .detalles-evento-lista > li { border-bottom: 1px solid #f7f7f5; background: #969696; color: #f7f7f5; padding: 10px; } </style><div class="bloque-eventos bloque-83781"><div class="container text-center"><h2 class="bloque-title">Talleres</h2><div class="row"><div data-aos="fade" data-aos-once="true" data-aos-duration="1300" class="col text-center aos-init"></div></div><div class="row"><div class="col"><div id="html-evento-83781"></div></div></div></div></div></section></main><footer role="contentinfo" class="footer"><style data-v-0638af71="">
+      .footer {
+        background-color: #938474;
+        color: #000000;
+      }
+      .footer a,
+      .footer ul.social-buttons li a {
+        color: #000000;
+      }
+      .footer .copyright,
+      .footer .legal {
+        opacity: 1;
+        color: #000000;
+      }
+      </style><div class="container"><div class="legal"><div><ul class="unlist"><li><a href="/nota-legal">Nota legal</a></li><li> | </li><li><a href="/politica-de-privacidad">Política de privacidad</a></li><li> | </li><li><a href="/politica-de-cookies">Política de cookies</a></li><li> | </li><li><a href="/declaracion-de-accesibilidad">Declaración de accesibilidad</a></li></ul></div></div><div class="copyright">Copyright ©2026</div></div><div class="container container_bottom"><div class="col-md-10 text-left links_personal"><div><ul class="unlist"><li><a href="" target="_blank" aria-label="Abrir enlace">  </a></li></ul></div></div><div class="col-md-2 text-right legal"><!----></div></div><!----><!----><div class="cookie-toggler-wrapper"><div><div data-modal="gdpr-modal" class="v--modal-overlay scrollable"><div class="v--modal-background-click"><div class="v--modal-top-right"></div> <div role="dialog" aria-modal="true" class="v--modal-box v--modal" aria-labelledby="cookieConsentModalLabel" style="top: 68px; left: 129px; width: 505px; height: auto;" tabindex="-1"><div id="cookieConsentModal" tabindex="-1" role="dialog" aria-labelledby="cookieConsentModalLabel" class="cookie-consent_modal"><div class="cookieConsent-modal__content"><div class="cookie-consent_modal__header"><p id="cookieConsentModalLabel" class="cookie-consent_modal__header-title cookie-modal-title"> Valoramos tu privacidad </p> <hr></div> <div class="cookieConsent-modal__body"> <div class="cookie-banner-message"> Usamos cookies para mejorar su experiencia de navegación, mostrarle anuncios o contenidos personalizados y analizar nuestro tráfico. Al hacer clic en "Aceptar todo" usted da su consentimiento a nuestro uso de las cookies. <a href="/politica-de-cookies">Política de cookies</a></div> <!----></div> <div class="cookie-consent_modal__footer"><button class="vct__btn vct__btn--default cookie-banner-btn btn-settings"> Personalizar </button><button class="vct__btn vct__btn--secondary cookie-banner-btn btn-reject"> Rechazar todas </button><button class="vct__btn vct__btn--primary cookie-banner-btn btn-accept"> Aceptar todo </button></div></div></div> <!----></div></div></div></div></div><!----><style data-v-0638af71="">
+      @import url("https://fonts.googleapis.com/css2?family=Open Sans&display=swap");
+      body{
+          font-family: 'Open Sans' !important;
+          font-size: 14px;
+          line-height: 26px; 
+      }
+      body.popup-active {
+        overflow: hidden !important;
+      }	
+      .header {
+        background-color: rgba(247,247,245,1);
+      }
+      .header.fijada {
+        background-color: rgb(247,247,245);
+      }
+      .header > .navbar_sub > .main-logo > span {
+        font-family: 'Open Sans';
+      }
+      .header ul.menu > li.menu-item > a{
+        font-size: 0.9rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        white-space: normal;
+        font-family: 'Open Sans';
+        text-transform: uppercase;
+      }
+      ::-moz-selection { /* Code for Firefox */
+        color: white;
+        background: #3297FD;
+      }
+      ::selection {
+        color: white;
+        background: #3297FD;
+      }
+      @media(max-width: 992px){
+        .header {
+          opacity: 1;
+          background-color: rgb(247,247,245);
+        }
+        .header > .container {
+          padding: 0;
+        }
+        .header ul.menu {
+          background-color: #f7f7f5;
+        }        
+      }
+        .header a {
+          color: #938474;
+        }
+        .header a:hover,
+        .header .menu-item.active a.menu-link,
+        .header .menu-item a.dropdown-item.active{
+          color: ;
+        }
+          .header a span {
+            color: #938474;
+          }
+          .header img {
+            border-radius: 50%;
+          }
+          @media(max-width: 992px){
+            .header li.menu-item a {
+              /*border-bottom: solid 1px #93847433;*/
+            }
+          }
+        .header .main-logo {
+          font-size: 26px;
+        }
+        @media(max-width: 992px){
+          .header .main-logo {
+            font-size: 20px;
+          }
+        }
+        .header #menu-trigger {
+          color: #938474;
+        }
+        
+        h1, 
+        h2,
+        h3,
+        h4,
+        h5,
+        h6{
+          font-family: 'Open Sans' !important;
+        }
+        
+        .h1, .h2, h1, h2{
+          font-size: 45px;
+        }
+        
+        
+        .bg .text{
+          padding: 75px 6%;
+          font-size: 14px;
+          line-height: 26px;
+        }
+       .header .main-logo span{ color: #938474; } .header ul.menu > li.menu-item > a{ font-size: 14px; } ul.social-buttons li a{ color: #938474; } .dropdown-menu{ background: rgb(247,247,245); } .dropdown-menu a{ font-size: 12px !important; line-height: 12px !important; } .dropdown-toggle{ color: #938474; } #autor-popup{ background: ; color: ; } #autor-popup .autor-popup-details a.btn{ background-color:  !important; color:  !important; border: 2px solid  !important; } #autor-popup .autor-popup-details a.btn:hover{ color:  !important; border: 2px solid  !important; background-color:  !important; } #autor-popup .autor-popup-details a{ color: ; } #autor-popup .autor-popup-details h3 a{ color: ; } #autor-popup .box-formulario{ background: ; color: ; } #autor-popup .wpcf7-form label { color: ; } #autor-popup .wpcf7-form a { color: ; } #autor-popup .wpcf7-form input[type=submit]{ cursor: pointer; background-color:  !important; color:  !important; border: 2px solid  !important; } #autor-popup .wpcf7-form input[type=submit]:hover{ color:  !important; border: 2px solid  !important; background-color:  !important; } #autor-popup .ec-author-follow{ color:  !important; background:  !important; border: 2px solid  !important; } .wrapper-popup .popup, .wrapper-popup .popup p, .wrapper-popup .popup h1, .wrapper-popup .popup h2, .wrapper-popup .popup h3, .wrapper-popup .popup h4, .wrapper-popup .popup h5, .wrapper-popup .popup h6 { color: #938474 !important; } .wrapper-popup.p-active { background: #f7f7f5 !important; color:  !important; } </style><style data-v-0638af71=""> .footer > .container{ border-bottom: none; } </style><!----></footer><!----></div></div>
+
+    <script src="/js/chunk-vendors.fc1c89fd77.js?v=1792433363"></script>
+
+    <script src="/js/app.9f163af677.js?v=1792433363"></script>
+
+    
+
+
+<div><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" width="256" height="60" role="presentation" name="a-rl8298yppb0t" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Ld2AssUAAAAABnQFyaOXKxQyzcPfLJumeq8-8_V&amp;co=aHR0cHM6Ly9nZW1tYXNoaXZhbGkuY29tOjQ0Mw..&amp;hl=it&amp;v=4EDjxXf4knsx6UBM1L2V6cv8&amp;size=invisible&amp;anchor-ms=20000&amp;execute-ms=30000&amp;cb=z5ug1ke9fm4o"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;" aria-label="recaptcha"></textarea></div></div></body></html>

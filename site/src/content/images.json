@@ -1,0 +1,162 @@
+{
+  "hero.jpg": {
+    "width": 1920,
+    "height": 993,
+    "bytes": 167262
+  },
+  "logo.jpg": {
+    "width": 480,
+    "height": 480,
+    "bytes": 50293
+  },
+  "about-gemma.jpg": {
+    "width": 600,
+    "height": 757,
+    "bytes": 98020
+  },
+  "program-empowerment.jpg": {
+    "width": 200,
+    "height": 200,
+    "bytes": 10403
+  },
+  "program-postpartum.jpg": {
+    "width": 556,
+    "height": 556,
+    "bytes": 26034
+  },
+  "program-menopause.jpg": {
+    "width": 133,
+    "height": 133,
+    "bytes": 6184
+  },
+  "program-masculine-feminine.jpg": {
+    "width": 700,
+    "height": 700,
+    "bytes": 99085
+  },
+  "program-40plus.jpg": {
+    "width": 133,
+    "height": 133,
+    "bytes": 5765
+  },
+  "program-transition.jpg": {
+    "width": 133,
+    "height": 133,
+    "bytes": 7086
+  },
+  "services-intro.jpg": {
+    "width": 646,
+    "height": 507,
+    "bytes": 46096
+  },
+  "services-individual.jpg": {
+    "width": 1000,
+    "height": 806,
+    "bytes": 111720
+  },
+  "services-workshops.jpg": {
+    "width": 1200,
+    "height": 801,
+    "bytes": 89139
+  },
+  "services-retreats.jpg": {
+    "width": 444,
+    "height": 667,
+    "bytes": 78238
+  },
+  "program-menopause-detail.jpg": {
+    "width": 667,
+    "height": 1000,
+    "bytes": 90124
+  },
+  "tantra-retreat.jpg": {
+    "width": 900,
+    "height": 1125,
+    "bytes": 127908
+  },
+  "qigong.jpg": {
+    "width": 800,
+    "height": 1200,
+    "bytes": 114257
+  },
+  "tantra.jpg": {
+    "width": 800,
+    "height": 1200,
+    "bytes": 129142
+  },
+  "og-cover.jpg": {
+    "width": 1200,
+    "height": 630,
+    "bytes": 83668
+  },
+  "hero-sea.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "bytes": 204513
+  },
+  "hero-sea-mobile.jpg": {
+    "width": 900,
+    "height": 1200,
+    "bytes": 161175
+  },
+  "hero-meditation.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "bytes": 224795
+  },
+  "hero-meditation-mobile.jpg": {
+    "width": 900,
+    "height": 1200,
+    "bytes": 137461
+  },
+  "hero-session.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "bytes": 159165
+  },
+  "hero-session-mobile.jpg": {
+    "width": 900,
+    "height": 1200,
+    "bytes": 92550
+  },
+  "hero-circle.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "bytes": 221158
+  },
+  "hero-circle-mobile.jpg": {
+    "width": 900,
+    "height": 1200,
+    "bytes": 127836
+  },
+  "hero-retreat.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "bytes": 207868
+  },
+  "hero-retreat-mobile.jpg": {
+    "width": 900,
+    "height": 1200,
+    "bytes": 134097
+  },
+  "hero-qigong.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "bytes": 177238
+  },
+  "hero-qigong-mobile.jpg": {
+    "width": 900,
+    "height": 1200,
+    "bytes": 105997
+  },
+  "hero-tantra.jpg": {
+    "width": 1920,
+    "height": 1080,
+    "bytes": 218007
+  },
+  "hero-tantra-mobile.jpg": {
+    "width": 900,
+    "height": 1200,
+    "bytes": 110399
+  }
+}

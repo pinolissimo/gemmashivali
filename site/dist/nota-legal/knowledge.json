@@ -1,0 +1,48 @@
+{
+  "protocol": "VDS-KNOWLEDGE-SURFACE/1",
+  "canonical": "https://gemmashivali.com/nota-legal/",
+  "primaryEntityId": "gemma-shivali",
+  "entities": [
+    {
+      "id": "gemma-shivali",
+      "name": "Gemma Shivali",
+      "type": "Person",
+      "description": "Terapeuta especializada en procesos de transformación a través del cuerpo y la energía, con más de 30 años de formación en rebirthing, codependencia, bioenergética, tantra y qigong."
+    }
+  ],
+  "relations": [],
+  "answers": [
+    {
+      "id": "answer-nota-legal",
+      "question": "¿Qué información contiene la aviso legal de Gemma Shivali?",
+      "answer": "El aviso legal de Gemma Shivali identifica a la titular del sitio, Gemma Shivali (NIF 43417740L), con domicilio en Calle Santaló, Barcelona, y correo gemmaestivill@gmail.com. Regula el uso del portal, la propiedad intelectual y la legislación aplicable.",
+      "entityIds": [
+        "gemma-shivali"
+      ],
+      "claimIds": [
+        "claim-nota-legal"
+      ],
+      "fragment": "#respuesta-legal"
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-nota-legal",
+      "text": "El aviso legal de Gemma Shivali identifica a la titular del sitio, Gemma Shivali (NIF 43417740L), con domicilio en Calle Santaló, Barcelona, y correo gemmaestivill@gmail.com. Regula el uso del portal, la propiedad intelectual y la legislación aplicable.",
+      "entityId": "gemma-shivali",
+      "kind": "fact",
+      "sourceIds": [
+        "fuente-nota-legal"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "fuente-nota-legal",
+      "title": "Aviso legal",
+      "url": "https://gemmashivali.com/nota-legal/",
+      "verifiedAt": "2026-10-19T00:00:00Z"
+    }
+  ],
+  "verifiedAt": "2026-10-19T00:00:00Z"
+}

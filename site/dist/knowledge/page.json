@@ -1,0 +1,48 @@
+{
+  "protocol": "VDS-KNOWLEDGE-SURFACE/1",
+  "canonical": "https://gemmashivali.com/",
+  "primaryEntityId": "gemma-shivali",
+  "entities": [
+    {
+      "id": "gemma-shivali",
+      "name": "Gemma Shivali",
+      "type": "Person",
+      "description": "Terapeuta especializada en procesos de transformación a través del cuerpo y la energía, con más de 30 años de formación en rebirthing, codependencia, bioenergética, tantra y qigong."
+    }
+  ],
+  "relations": [],
+  "answers": [
+    {
+      "id": "answer-que-es",
+      "question": "¿Qué es Gemma Shivali?",
+      "answer": "Gemma Shivali es terapeuta especializada en procesos de transformación a través del cuerpo y la energía. Acompaña especialmente a mujeres en etapas de cambio con programas online, sesiones individuales, talleres, retiros, qigong y tantra.",
+      "entityIds": [
+        "gemma-shivali"
+      ],
+      "claimIds": [
+        "claim-terapia-integral"
+      ],
+      "fragment": "#en-breve"
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-terapia-integral",
+      "text": "Gemma Shivali ofrece terapia online y presencial en Sitges y Barcelona, con programas de transformación, sesiones individuales, talleres, retiros, qigong y tantra.",
+      "entityId": "gemma-shivali",
+      "kind": "fact",
+      "sourceIds": [
+        "fuente-oficial"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "fuente-oficial",
+      "title": "Sitio web oficial de Gemma Shivali",
+      "url": "https://gemmashivali.com/",
+      "verifiedAt": "2026-10-19T00:00:00Z"
+    }
+  ],
+  "verifiedAt": "2026-10-19T00:00:00Z"
+}

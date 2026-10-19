@@ -1,0 +1,698 @@
+{
+  "site": {
+    "name": "Gemma Shivali",
+    "legalName": "Tantra y consciencia emocional Gemma Shivali",
+    "tagline": "Terapia online y presencial en Sitges y Barcelona",
+    "description": "Terapia online y presencial en Sitges y Barcelona: programas de transformación, sesiones individuales, talleres, retiros, qigong y tantra.",
+    "origin": "https://gemmashivali.com",
+    "email": "gemmaestivill@gmail.com",
+    "phone": "+34 630 127 319",
+    "phoneHref": "tel:+34630127319",
+    "whatsapp": "https://api.whatsapp.com/send?phone=34630127319&text=Hola%20Gemma%2C%20estoy%20en%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20servicios.",
+    "whatsappPrograms": "https://api.whatsapp.com/send?phone=34630127319&text=Hola%20Gemma%2C%20estoy%20en%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20programa:%20",
+    "whatsappRetreats": "https://api.whatsapp.com/send?phone=34630127319&text=Hola%20Gemma%2C%20estoy%20en%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20retiros.%20",
+    "whatsappTantraRetreat": "https://api.whatsapp.com/send?phone=34630127319&text=Hola%20Gemma%2C%20estoy%20en%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20retiro%20de%20tantra.%20",
+    "whatsappQigong": "https://api.whatsapp.com/send?phone=34630127319&text=Hola%20Gemma%2C%20estoy%20en%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20talleres%20de%20Qigong.%20",
+    "whatsappTantra": "https://api.whatsapp.com/send?phone=34630127319&text=Hola%20Gemma%2C%20estoy%20en%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20pr%C3%B3ximas%20actividades%20de%20tantra.",
+    "whatsappCalendar": "https://api.whatsapp.com/send?phone=34630127319&text=Hola%20Gemma%2C%20me%20gustar%C3%ADa%20recibir%20el%20calendario%20de%20pr%C3%B3ximos%20talleres%20y%20retiros.",
+    "location": "Sesiones online · Sesiones presenciales en Barcelona y Sitges",
+    "address": "Calle Santaló, Barcelona",
+    "nif": "43417740L",
+    "logo": "logo.jpg",
+    "heroImage": "hero.jpg",
+    "ogImage": "og-cover.jpg"
+  },
+  "nav": [
+    {
+      "label": "Sobre mí",
+      "href": "/#sobre-mi"
+    },
+    {
+      "label": "Servicios",
+      "href": "/nuestros-servicios/"
+    },
+    {
+      "label": "Calendario",
+      "href": "/#calendario"
+    },
+    {
+      "label": "Contacto",
+      "href": "/#contacto"
+    }
+  ],
+  "home": {
+    "hero": {
+      "eyebrow": "Terapia online y presencial · Sitges y Barcelona",
+      "title": "Recupera tu energía",
+      "subtitle": "Reconecta con tu cuerpo y fortalece tu bienestar en cada etapa de tu vida",
+      "support": "Programas, sesiones, talleres y retiros para acompañarte en los momentos de cambio.",
+      "cta": {
+        "label": "Contáctame",
+        "href": "whatsapp"
+      },
+      "secondary": {
+        "label": "Ver servicios",
+        "href": "/nuestros-servicios/"
+      },
+      "image": "hero-sea.jpg",
+      "alt": "Gemma Shivali frente al mar, con los brazos abiertos y una sonrisa",
+      "slides": [
+        {
+          "desktop": "hero-sea.jpg",
+          "mobile": "hero-sea-mobile.jpg",
+          "focus": "58% 28%",
+          "focusMobile": "center",
+          "still": true
+        },
+        {
+          "desktop": "hero-meditation.jpg",
+          "mobile": "hero-meditation-mobile.jpg",
+          "focus": "62% 42%",
+          "focusMobile": "center"
+        },
+        {
+          "desktop": "hero-session.jpg",
+          "mobile": "hero-session-mobile.jpg",
+          "focus": "66% 45%",
+          "focusMobile": "center"
+        },
+        {
+          "desktop": "hero-circle.jpg",
+          "mobile": "hero-circle-mobile.jpg",
+          "focus": "60% 48%",
+          "focusMobile": "center"
+        },
+        {
+          "desktop": "hero-retreat.jpg",
+          "mobile": "hero-retreat-mobile.jpg",
+          "focus": "62% 48%",
+          "focusMobile": "center"
+        },
+        {
+          "desktop": "hero-qigong.jpg",
+          "mobile": "hero-qigong-mobile.jpg",
+          "focus": "42% 45%",
+          "focusMobile": "center"
+        },
+        {
+          "desktop": "hero-tantra.jpg",
+          "mobile": "hero-tantra-mobile.jpg",
+          "focus": "52% 45%",
+          "focusMobile": "center"
+        },
+        {
+          "desktop": "hero-sea.jpg",
+          "mobile": "hero-sea-mobile.jpg",
+          "focus": "58% 28%",
+          "focusMobile": "center",
+          "still": true
+        }
+      ]
+    },
+    "programs": {
+      "eyebrow": "Programas de transformación",
+      "title": "Un acompañamiento para cada etapa de tu vida",
+      "intro": "Todos nuestros programas son online, se realizan en riguroso streaming, y están diseñados para personas que quieren hacer un trabajo profundo en su proceso de transformación.",
+      "items": [
+        {
+          "title": "Empoderamiento y conexión corporal",
+          "detail": "Recupera tu confianza y fortaleza interior",
+          "image": "program-empowerment.jpg",
+          "alt": "Mujer en un entorno natural conectando con su cuerpo",
+          "href": "/nuestros-servicios/#programas"
+        },
+        {
+          "title": "Reconexión postparto",
+          "detail": "Reconecta contigo tras la maternidad",
+          "image": "program-postpartum.jpg",
+          "alt": "Madre con su bebé en un momento de calma",
+          "href": "/nuestros-servicios/#programas"
+        },
+        {
+          "title": "Vitalidad en la menopausia",
+          "detail": "Vive esta etapa con plenitud y seguridad",
+          "image": "program-menopause.jpg",
+          "alt": "Mujer sonriendo con vitalidad",
+          "href": "/nuestros-servicios/#programas"
+        },
+        {
+          "title": "Integración masculino-femenino",
+          "detail": "Equilibra tu energía para tener relaciones de pareja más sanas",
+          "image": "program-masculine-feminine.jpg",
+          "alt": "Pareja sonriendo abrazada",
+          "href": "/nuestros-servicios/#programas"
+        },
+        {
+          "title": "Renovación y propósito 40+",
+          "detail": "Una nueva oportunidad para reinventarte a partir de los 40",
+          "image": "program-40plus.jpg",
+          "alt": "Mujer en un camino de otoño",
+          "href": "/nuestros-servicios/#programas"
+        },
+        {
+          "title": "Transitar el cambio",
+          "detail": "Encuentra claridad en tiempos de transformación",
+          "image": "services-retreats.jpg",
+          "alt": "Mujer caminando en un bosque de otoño",
+          "href": "/nuestros-servicios/#programas"
+        }
+      ]
+    },
+    "intro": {
+      "title": "Estás en un momento de cambio, dudas o transformación",
+      "lead": "Y sientes que necesitas recuperar tu energía, tu confianza y tu equilibrio.",
+      "paragraphs": [
+        "A lo largo de la vida, pasamos por momentos complejos que nos pueden hacer sentir desconectadas de nosotras mismas. Puede que te falte energía, que sientas dudas sobre tu rumbo o que necesites reconciliarte con los cambios que tu cuerpo está experimentando en este momento."
+      ],
+      "questionsTitle": "Te identificas con alguna de estas preguntas",
+      "questions": [
+        "¿No te sientes cómoda con tu cuerpo?",
+        "¿Te cuesta conectar con tu energía vital?",
+        "¿Sientes que has perdido seguridad y claridad sobre tu rumbo en la vida?",
+        "¿Quieres sentirte más fuerte, segura y alineada con quien eres hoy?",
+        "¿Estás en una etapa de cambio y necesitas herramientas para transitarla?",
+        "¿Te sientes atrapada en relaciones tóxicas pero no sabes cómo romper el ciclo?"
+      ],
+      "helpTitle": "¿Cómo puedo ayudarte?",
+      "helpText": "Mi trabajo consiste en acompañarte en este proceso, ayudándote a reconectar con tu cuerpo como fuente de fortaleza, confianza y claridad. A través de técnicas corporales y energéticas como la bioenergética, el rebirthing, el qigong y el tantra, crearemos un espacio de transformación para que recuperes tu seguridad, te sientas alineada con quién eres y te conectes con todo el potencial que te trae esta nueva etapa de tu vida."
+    },
+    "process": {
+      "eyebrow": "Cómo trabajo",
+      "title": "Un camino que empieza por el cuerpo",
+      "intro": "No hay una única forma de avanzar. Creamos un espacio seguro y adaptamos el proceso a lo que realmente necesitas.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Escuchar",
+          "text": "Partimos de donde estás, sin juicio. Escuchamos lo que el cuerpo y las emociones están pidiendo en este momento."
+        },
+        {
+          "number": "02",
+          "title": "Habitar el cuerpo",
+          "text": "Usamos la respiración, el movimiento, la bioenergética, el qigong y el tantra como puertas de acceso a tu energía vital."
+        },
+        {
+          "number": "03",
+          "title": "Integrar el cambio",
+          "text": "Llevamos el cambio a la vida cotidiana con herramientas concretas y un acompañamiento personalizado."
+        }
+      ]
+    },
+    "quote": {
+      "text": "El cambio empieza por la conexión con uno mismo.",
+      "author": "Gemma Shivali"
+    },
+    "about": {
+      "title": "Sobre mí",
+      "paragraphs": [
+        "Soy Gemma Shivali, terapeuta especializada en procesos de transformación a través del cuerpo y la energía. Mi misión es acompañar a personas, especialmente mujeres, en momentos de cambio y transición para que recuperen su confianza, vitalidad y equilibrio interior.",
+        "A lo largo de más de 30 años, me he formado con maestros de prestigio mundial en diversas disciplinas como rebirthing, codependencia, bioenergética, tantra y qigong, herramientas que utilizo para ayudar a mis clientes y alumnos a reconectar consigo mismos.",
+        "Mi trabajo no se centra solo en el uso de estas técnicas, sino en crear un espacio seguro y de apoyo, donde cada persona pueda escucharse, comprenderse y recuperar su fuerza interior para afrontar con seguridad la etapa vital en la que se encuentra."
+      ],
+      "philosophyTitle": "Mi filosofía",
+      "philosophy": [
+        "Creo en el cuerpo como nuestro mayor aliado en los procesos de transformación. A través de la conciencia corporal y energética, podemos acceder a la confianza, la claridad y el bienestar físico y emocional que buscamos.",
+        "Trabajo desde la integración cuerpo-mente-emoción. No se trata solo de entender lo que nos pasa, sino de experimentarlo y sanarlo desde lo corporal.",
+        "Cada persona es única. No hay una sola forma de avanzar. Por eso, mi enfoque es personalizado, adaptando cada proceso a lo que realmente necesitas.",
+        "El cambio empieza por la conexión con uno mismo. Cuando aprendemos a escucharnos y a sentirnos, encontramos la seguridad y la claridad que necesitamos para nuestro camino. Si sientes que ha llegado el momento de reencontrarte contigo y recuperar tu energía, estoy aquí para acompañarte en ese proceso."
+      ],
+      "tantraTitle": "El tantra como camino hacia la libertad interior",
+      "tantra": [
+        "El tantra forma parte de mi esencia de vida. Me enseñó a vivir de una forma más consciente y plena. A través de este camino, aprendí a reconocer la sexualidad no solo como un acto físico, sino como una energía sagrada, creativa y profundamente transformadora.",
+        "Ser consciente de mi sexualidad me llevó a sentir mi cuerpo con atención, a habitarlo con respeto y a honrar cada sensación sin juicio ni prisa. Aprendí a respirar con cada caricia, a mirar a los ojos como un acto de entrega y de conexión, y a transformar el placer en una meditación. El tantra me ayudó a liberar memorias, a sanar heridas y a soltar condicionamientos sociales. Dejé de buscar la validación fuera y empecé a sentirme completa en mí misma, reconociendo que el éxtasis no viene del otro, sino de mi presencia total en el momento.",
+        "Desde esa visión, la sexualidad dejó de ser un tabú o una meta y se transformó en un camino sagrado hacia el amor, la unidad y la libertad interior. Hoy comparto y aplico esta filosofía en mis programas y sesiones, para acompañar a otras personas a liberar bloqueos, a reconectar con su cuerpo y a recuperar su energía vital. Porque cuando te habitas con presencia, el cambio empieza a suceder desde dentro."
+      ],
+      "cta": {
+        "label": "Descubre cómo puedo ayudarte",
+        "href": "/nuestros-servicios/"
+      },
+      "image": "about-gemma.jpg",
+      "alt": "Gemma Shivali sentada en unas escaleras de piedra"
+    },
+    "servicesTeaser": {
+      "eyebrow": "Nuestros servicios",
+      "title": "¿Cómo puedo acompañarte?",
+      "intro": "Te ofrezco diferentes formas de acompañamiento, según lo que mejor se adapte a ti.",
+      "items": [
+        {
+          "title": "Programas de transformación",
+          "text": "Acompañamientos estructurados, online y en streaming, para hacer un trabajo profundo en cada etapa vital.",
+          "href": "/nuestros-servicios/#programas"
+        },
+        {
+          "title": "Sesiones individuales",
+          "text": "Un espacio personalizado y flexible para trabajar en profundidad tus bloqueos y desafíos.",
+          "href": "/nuestros-servicios/#sesiones"
+        },
+        {
+          "title": "Talleres presenciales",
+          "text": "Experiencias intensivas de un día para vivir la transformación desde el cuerpo y la energía.",
+          "href": "/nuestros-servicios/#talleres"
+        },
+        {
+          "title": "Retiros",
+          "text": "Experiencias inmersivas en la naturaleza para desconectar, respirar y reconectar contigo.",
+          "href": "/nuestros-servicios/#retiros"
+        },
+        {
+          "title": "Qi Gong",
+          "text": "Una gimnasia terapéutica oriental para recuperar vitalidad, calma y presencia.",
+          "href": "/nuestros-servicios/#qigong"
+        },
+        {
+          "title": "Tantra",
+          "text": "Un camino de reconexión con el cuerpo, la energía sexual y la espiritualidad.",
+          "href": "/nuestros-servicios/#tantra"
+        }
+      ]
+    },
+    "calendar": {
+      "eyebrow": "Calendario",
+      "title": "Próximos encuentros",
+      "intro": "Consulta las próximas fechas de talleres, clases y retiros. Si quieres recibir el calendario completo, escríbeme y te lo envío.",
+      "event": {
+        "date": "Del 24 al 26 de octubre",
+        "title": "Retiro de tantra para mujeres",
+        "subtitle": "Despierta tu feminidad y florece",
+        "text": "Una experiencia inmersiva de tantra, qigong, respiración y trabajo corporal en un entorno natural y seguro.",
+        "href": "/nuestros-servicios/#retiro-tantra"
+      },
+      "cta": {
+        "label": "Quiero recibir el calendario",
+        "href": "whatsappCalendar"
+      }
+    },
+    "doubts": {
+      "title": "¿Tienes dudas?",
+      "text": "Si sientes que necesitas un cambio y no sabes por dónde empezar, cuéntame en qué punto estás y juntas encontraremos el camino que mejor se adapte a ti.",
+      "ctas": [
+        {
+          "type": "whatsapp",
+          "label": "WhatsApp",
+          "href": "whatsapp"
+        },
+        {
+          "type": "phone",
+          "label": "+34 630 127 319",
+          "href": "phone"
+        },
+        {
+          "type": "email",
+          "label": "gemmaestivill@gmail.com",
+          "href": "email"
+        }
+      ]
+    },
+    "contact": {
+      "eyebrow": "Contacto",
+      "title": "Hablemos",
+      "intro": "Cuéntame en qué momento estás y qué necesitas. Te responderé lo antes posible.",
+      "location": "Sesiones online · Sesiones presenciales en Barcelona y Sitges",
+      "form": {
+        "action": "mailto:gemmaestivill@gmail.com",
+        "method": "post",
+        "enctype": "text/plain",
+        "submit": "Enviar",
+        "note": "Al enviar, se abrirá tu programa de correo con el mensaje preparado. También puedes escribir directamente a gemmaestivill@gmail.com o por WhatsApp.",
+        "fields": {
+          "name": "Nombre",
+          "email": "Email",
+          "phone": "Teléfono",
+          "message": "Mensaje",
+          "privacy": "He leído y acepto la"
+        }
+      }
+    }
+  },
+  "services": {
+    "eyebrow": "Nuestros servicios",
+    "title": "El cambio es una constante",
+    "description": "Programas de transformación, sesiones individuales, talleres presenciales, retiros, Qi Gong y Tantra. Terapia online y presencial en Sitges y Barcelona.",
+    "intro": {
+      "paragraphs": [
+        "A lo largo de la vida, todos atravesamos momentos de cambio que pueden generar dudas, bloqueos o la sensación de estar desconectados de nosotros mismos. Mi enfoque de trabajo te ayuda a encontrar el equilibrio y la seguridad que necesitas en cada etapa de tu vida, reconectando con tu cuerpo y tu energía.",
+        "Te ofrezco diferentes formas de acompañamiento, según lo que mejor se adapte a ti:"
+      ],
+      "image": "services-intro.jpg",
+      "alt": "Gemma Shivali en un entorno natural"
+    },
+    "quickNav": [
+      {
+        "label": "Programas",
+        "href": "#programas"
+      },
+      {
+        "label": "Sesiones",
+        "href": "#sesiones"
+      },
+      {
+        "label": "Talleres",
+        "href": "#talleres"
+      },
+      {
+        "label": "Retiros",
+        "href": "#retiros"
+      },
+      {
+        "label": "Qi Gong",
+        "href": "#qigong"
+      },
+      {
+        "label": "Tantra",
+        "href": "#tantra"
+      },
+      {
+        "label": "FAQ",
+        "href": "#faq"
+      }
+    ],
+    "programs": {
+      "id": "programas",
+      "number": "1",
+      "title": "Programas de transformación",
+      "paragraphs": [
+        "Todos nuestros programas son online, se realizan en riguroso streaming, y están diseñados para personas que quieren hacer un trabajo profundo en su proceso de transformación. Son acompañamientos estructurados en los que combinamos sesiones grupales, sesiones individuales y herramientas de trabajo personal.",
+        "Cada uno de ellos está pensado para un momento específico de la vida y te ayudará a recuperar tu confianza, tu vitalidad y tu bienestar a través del cuerpo y la energía.",
+        "Estos son los programas disponibles:"
+      ],
+      "items": [
+        "Vitalidad en la menopausia",
+        "Empoderamiento y conexión corporal",
+        "Reconexión post-parto",
+        "Integración masculino-femenino",
+        "Renovación y propósito 40+",
+        "Transitar el cambio"
+      ],
+      "closing": "Escríbeme, dime cuál te interesa y te haré llegar toda la información.",
+      "cta": {
+        "label": "Quiero saber más sobre los programas",
+        "href": "whatsappPrograms"
+      }
+    },
+    "menopause": {
+      "id": "menopausia",
+      "title": "Vitalidad en la menopausia",
+      "subtitle": "Vive esta etapa con plenitud y seguridad",
+      "paragraphs": [
+        "Para mujeres en menopausia que quieren equilibrar su energía, conectar con su fuerza interna y redefinir su bienestar con confianza."
+      ],
+      "structureTitle": "Estructura del programa",
+      "structure": [
+        "1 taller grupal inicial (3 horas)",
+        "7 sesiones grupales semanales (90 min cada una)",
+        "1 sesión individual (60 min)",
+        "Material complementario: meditaciones, ejercicios de qigong y bioenergética"
+      ],
+      "facts": [
+        {
+          "label": "Duración",
+          "value": "14,5 horas"
+        },
+        {
+          "label": "Precio",
+          "value": "340 € en dos pagos de 170 € · 280 € en pago único"
+        },
+        {
+          "label": "Calendario (edición 2025)",
+          "value": "Taller grupal: sábado 10/02/2025 de 10h a 13h. Sesiones semanales: miércoles, del 14/05/25 al 25/06, de 19:30h a 21:00h. Sesión individual: entre el 14/05/25 y el 25/06/25, en fecha y horario a convenir. Consulta la próxima convocatoria."
+        }
+      ],
+      "closing": "¿Quieres saber más? Escríbeme para reservar una sesión gratuita de 20 minutos donde resolveremos todas tus dudas.",
+      "cta": {
+        "label": "Quiero una sesión gratuita",
+        "href": "whatsapp"
+      },
+      "image": "program-menopause-detail.jpg",
+      "alt": "Mujer en un momento de calma y bienestar"
+    },
+    "sessions": {
+      "id": "sesiones",
+      "number": "2",
+      "title": "Sesiones individuales",
+      "paragraphs": [
+        "Si necesitas un acompañamiento personalizado y flexible, las sesiones individuales son la mejor opción para trabajar en profundidad los bloqueos o desafíos que estás atravesando.",
+        "Las sesiones te ayudarán a recuperar claridad, soltar lo que te limita y reconectar con tu fuerza interior a través del trabajo corporal y energético.",
+        "Te ofrezco dos tipos de sesiones (en función de su duración):"
+      ],
+      "pricing": [
+        {
+          "duration": "120 minutos por sesión",
+          "format": "Online o presencial (Barcelona/Sitges)",
+          "price": "120 €"
+        },
+        {
+          "duration": "90 minutos por sesión",
+          "format": "Online o presencial (Barcelona/Sitges)",
+          "price": "90 €"
+        }
+      ],
+      "closing": "Si quieres saber más sobre las sesiones individuales o reservar una cita, escríbeme y me pondré en contacto contigo lo antes posible.",
+      "cta": {
+        "label": "Hablemos",
+        "href": "whatsapp"
+      },
+      "image": "services-individual.jpg",
+      "alt": "Gemma Shivali en su espacio de trabajo"
+    },
+    "workshops": {
+      "id": "talleres",
+      "number": "3",
+      "title": "Talleres presenciales",
+      "paragraphs": [
+        "Los talleres son experiencias intensivas diseñadas para vivir la transformación desde el cuerpo y la energía en un solo día. Son ideales si quieres hacer un trabajo profundo en poco tiempo y conectar con otras mujeres que están en el mismo proceso que tú.",
+        "Ejemplos de talleres disponibles:"
+      ],
+      "examples": [
+        "Reconexión con el cuerpo y la autoestima",
+        "Gestión de la energía femenina en la menopausia",
+        "Sanación y realineación energética"
+      ],
+      "facts": [
+        {
+          "label": "Formato",
+          "value": "Presencial (Barcelona/Sitges)"
+        },
+        {
+          "label": "Duración",
+          "value": "1 jornada (4 a 8 horas)"
+        },
+        {
+          "label": "Precio",
+          "value": "Desde 60 €"
+        }
+      ],
+      "closing": "Si quieres recibir el calendario de los próximos talleres, escríbeme y te enviaré la programación de los próximos meses.",
+      "cta": {
+        "label": "Sí, quiero el calendario",
+        "href": "whatsapp"
+      },
+      "image": "services-workshops.jpg",
+      "alt": "Grupo de mujeres en un taller presencial"
+    },
+    "retreats": {
+      "id": "retiros",
+      "number": "4",
+      "title": "Retiros",
+      "paragraphs": [
+        "Los retiros son experiencias inmersivas diseñadas para desconectar de la rutina y conectar contigo misma en un entorno natural y seguro.",
+        "A través del trabajo corporal, la meditación, el movimiento y la introspección, vivirás un proceso profundo de transformación, equilibrio y autoconocimiento, en un entorno de profunda conexión con la naturaleza.",
+        "Tipos de retiros:"
+      ],
+      "types": [
+        "Renovación y propósito",
+        "Reconexión con la energía femenina y la vitalidad",
+        "Reencuentro con tu fuerza interior",
+        "Vitalidad en la menopausia"
+      ],
+      "facts": [
+        {
+          "label": "Formato",
+          "value": "Presencial en entorno natural"
+        },
+        {
+          "label": "Duración",
+          "value": "2-3 días"
+        },
+        {
+          "label": "Precio",
+          "value": "Desde 350 € (incluye alojamiento y comidas)"
+        }
+      ],
+      "closing": "Si quieres recibir el calendario de los próximos retiros, escríbeme y te enviaré la programación de los próximos meses.",
+      "cta": {
+        "label": "Sí, quiero el calendario",
+        "href": "whatsappRetreats"
+      },
+      "image": "services-retreats.jpg",
+      "alt": "Mujer caminando en un bosque de otoño"
+    },
+    "tantraRetreat": {
+      "id": "retiro-tantra",
+      "date": "Del 24 al 26 de octubre",
+      "title": "Retiro de tantra para mujeres",
+      "subtitle": "Despierta tu feminidad y florece",
+      "lead": "Enraízate en tu poder y ábrete al gozo",
+      "paragraphs": [
+        "Imagina que floreces desde dentro. Que permites que tu energía femenina se despliegue con libertad y confianza. Que tu cuerpo, tu emoción y tu alma vuelven a bailar juntos.",
+        "A través del tantra, el qigong, la respiración y el trabajo corporal, liberarás bloqueos, calmarás tu mente y abrirás tu cuerpo al gozo, la escucha y la presencia."
+      ],
+      "forWhoTitle": "Este retiro es para ti si:",
+      "forWho": [
+        "te relacionas más desde el miedo que desde el amor",
+        "te cuesta soltar el control y disfrutar del placer",
+        "estás siempre en modo hacer y te olvidas de sentirte"
+      ],
+      "factsTitle": "Sobre el retiro",
+      "facts": [
+        {
+          "label": "Ubicación",
+          "value": "Cal Codina (cerca de Igualada)"
+        },
+        {
+          "label": "Inicio",
+          "value": "Viernes 24/10 a partir de las 19:00h"
+        },
+        {
+          "label": "Final",
+          "value": "Domingo 26/10 después de comer"
+        },
+        {
+          "label": "Precio",
+          "value": "390 € (350 € si lo pagas antes del 30/09)"
+        },
+        {
+          "label": "Incluye",
+          "value": "Alojamiento y comidas"
+        },
+        {
+          "label": "Reserva",
+          "value": "100 € (Bizum) indicando en el asunto: NOMBRE COMPLETO y RETIRO TANTRA"
+        }
+      ],
+      "urgency": "Solo hay 10 plazas disponibles. Reserva la tuya ya.",
+      "cta": {
+        "label": "Quiero saber más",
+        "href": "whatsappTantraRetreat"
+      },
+      "image": "tantra-retreat.jpg",
+      "alt": "Retiro de tantra para mujeres en la naturaleza"
+    },
+    "qigong": {
+      "id": "qigong",
+      "number": "5",
+      "title": "Talleres de Qi Gong",
+      "paragraphs": [
+        "El Qi Gong es una gimnasia terapéutica oriental que proviene de la medicina china, que combina suaves movimientos, dinámicos y estáticos en el cuerpo, una respiración adecuada y una concentración mental.",
+        "Llamada fuente de la juventud, estas técnicas son un manantial inagotable de paz, salud, vitalidad y un ejercicio idóneo para mantenerse en forma.",
+        "La práctica de ejercicios de qigong aumenta y mejora la cantidad y calidad de la energía vital y su flujo por el cuerpo."
+      ],
+      "benefitsTitle": "Beneficios",
+      "benefitGroups": [
+        {
+          "title": "A nivel físico",
+          "items": [
+            "Aumenta la energía vital.",
+            "Mejora la circulación sanguínea y linfática.",
+            "Aumenta la flexibilidad, fuerza y equilibrio corporal.",
+            "Fortalece el sistema inmunológico.",
+            "Regula el sistema nervioso autónomo."
+          ]
+        },
+        {
+          "title": "A nivel mental",
+          "items": [
+            "Reduce el estrés, la ansiedad y la fatiga mental.",
+            "Mejora la concentración, la claridad mental y la memoria.",
+            "Facilita estados de atención plena y calma interior."
+          ]
+        },
+        {
+          "title": "A nivel emocional y energético",
+          "items": [
+            "Libera bloqueos emocionales y estancamiento energético.",
+            "Aumenta la auto-conciencia emocional y la capacidad de autorregulación.",
+            "Potencia sentimientos de bienestar, serenidad y alegría interior.",
+            "Restablece la armonía entre cuerpo, mente y espíritu."
+          ]
+        }
+      ],
+      "closing": "Si quieres recibir el calendario de los próximos talleres de Qi Gong, escríbeme y te enviaré la programación de los próximos meses.",
+      "cta": {
+        "label": "Quiero el calendario de Qi Gong",
+        "href": "whatsappQigong"
+      },
+      "image": "qigong.jpg",
+      "alt": "Práctica de Qi Gong"
+    },
+    "tantra": {
+      "id": "tantra",
+      "number": "6",
+      "title": "Sexualidad consciente y tantra",
+      "paragraphs": [
+        "El tantra es un camino de reconexión contigo mismo, una práctica ancestral que honra el cuerpo, la energía sexual y la espiritualidad como vías de transformación y autoconocimiento. A través de la respiración, el movimiento, la presencia y el placer consciente, el tantra invita a liberar bloqueos, sanar la relación con el cuerpo y vivir la sexualidad desde el amor y la autenticidad.",
+        "Entre otras modalidades, ofrezco un enfoque específico para mujeres, enfocado en despertar la energía femenina (Shakti) y recuperar el placer de habitar el cuerpo con libertad, sin miedo ni vergüenza. En este espacio se trabaja el equilibrio entre lo femenino y lo masculino interior, se aprenden límites sanos y se cultivan vínculos más conscientes.",
+        "Modalidades disponibles:"
+      ],
+      "modalities": "Sesiones individuales y en pareja · Clases · Talleres presenciales · Retiros en la naturaleza",
+      "closing": "Si quieres recibir el calendario de los próximos talleres, clases y retiros de tantra, escríbeme y te enviaré el calendario de los próximos meses.",
+      "cta": {
+        "label": "Quiero recibir el calendario",
+        "href": "whatsappTantra"
+      },
+      "image": "tantra.jpg",
+      "alt": "Práctica de tantra y sexualidad consciente"
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "intro": "Respuestas rápidas para ayudarte a elegir el acompañamiento que mejor se adapta a ti.",
+      "items": [
+        {
+          "id": "faq-programas-online",
+          "question": "¿Los programas son online?",
+          "answer": "Sí. Todos los programas son online y se realizan en riguroso streaming, combinando sesiones grupales, sesiones individuales y herramientas de trabajo personal."
+        },
+        {
+          "id": "faq-sesiones-presenciales",
+          "question": "¿Dónde son las sesiones presenciales?",
+          "answer": "Las sesiones individuales y los talleres presenciales se realizan en Barcelona y Sitges. También puedes elegir el formato online."
+        },
+        {
+          "id": "faq-precio-sesiones",
+          "question": "¿Cuánto cuestan las sesiones individuales?",
+          "answer": "La sesión de 90 minutos cuesta 90 € y la de 120 minutos, 120 €. El formato puede ser online o presencial en Barcelona y Sitges."
+        },
+        {
+          "id": "faq-retiros",
+          "question": "¿Qué incluye un retiro?",
+          "answer": "Los retiros combinan trabajo corporal, meditación, movimiento e introspección en un entorno natural. Cuando se indica, el precio incluye alojamiento y comidas."
+        },
+        {
+          "id": "faq-reservas",
+          "question": "¿Cómo reservo o pido información?",
+          "answer": "Puedes escribir por WhatsApp al +34 630 127 319 o por email a gemmaestivill@gmail.com. Te responderé lo antes posible."
+        }
+      ]
+    },
+    "doubts": {
+      "title": "¿Tienes dudas?",
+      "text": "Si sientes que necesitas un cambio y no sabes por dónde empezar, cuéntame en qué punto estás y juntas encontraremos el camino que mejor se adapte a ti.",
+      "ctas": [
+        {
+          "type": "whatsapp",
+          "label": "WhatsApp",
+          "href": "whatsapp"
+        },
+        {
+          "type": "phone",
+          "label": "+34 630 127 319",
+          "href": "phone"
+        },
+        {
+          "type": "email",
+          "label": "gemmaestivill@gmail.com",
+          "href": "email"
+        }
+      ]
+    }
+  }
+}

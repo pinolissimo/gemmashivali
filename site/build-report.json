@@ -1,0 +1,412 @@
+{
+  "protocol": "VDS-SITE-BUILD/1",
+  "siteOrigin": "https://gemmashivali.com",
+  "generatedAt": "2026-10-19T20:15:26.197Z",
+  "pages": [
+    {
+      "path": "/",
+      "canonical": "https://gemmashivali.com/",
+      "htmlPath": "index.html",
+      "knowledgePath": "knowledge/page.json",
+      "htmlBytes": 32241,
+      "htmlDigest": "1145d8dbfec93d202fc22a0af04e93f3348e51d89afb0f7a425e98c08ff53c0c",
+      "precompiled": true,
+      "indexable": true,
+      "intent": "informational",
+      "role": "home",
+      "clusterId": null,
+      "enhancements": []
+    },
+    {
+      "path": "/nuestros-servicios/",
+      "canonical": "https://gemmashivali.com/nuestros-servicios/",
+      "htmlPath": "nuestros-servicios/index.html",
+      "knowledgePath": "nuestros-servicios/knowledge.json",
+      "htmlBytes": 32148,
+      "htmlDigest": "00a4ed423a93b8a368149227c58cbad5e341ec65f05bac66aa080d24268d4ced",
+      "precompiled": true,
+      "indexable": true,
+      "intent": "commercial",
+      "role": "service",
+      "clusterId": null,
+      "enhancements": []
+    },
+    {
+      "path": "/nota-legal/",
+      "canonical": "https://gemmashivali.com/nota-legal/",
+      "htmlPath": "nota-legal/index.html",
+      "knowledgePath": "nota-legal/knowledge.json",
+      "htmlBytes": 19528,
+      "htmlDigest": "f78385ed1288d78720d58c960c5a264078cbacb0f020931e8f824936a4b9514c",
+      "precompiled": true,
+      "indexable": true,
+      "intent": "informational",
+      "role": "legal",
+      "clusterId": null,
+      "enhancements": []
+    },
+    {
+      "path": "/politica-de-privacidad/",
+      "canonical": "https://gemmashivali.com/politica-de-privacidad/",
+      "htmlPath": "politica-de-privacidad/index.html",
+      "knowledgePath": "politica-de-privacidad/knowledge.json",
+      "htmlBytes": 17194,
+      "htmlDigest": "db66e2969e27e26aa1aa1736855a16205234af0ce5fea1fb664f373bcfc7139b",
+      "precompiled": true,
+      "indexable": true,
+      "intent": "informational",
+      "role": "legal",
+      "clusterId": null,
+      "enhancements": []
+    },
+    {
+      "path": "/politica-de-cookies/",
+      "canonical": "https://gemmashivali.com/politica-de-cookies/",
+      "htmlPath": "politica-de-cookies/index.html",
+      "knowledgePath": "politica-de-cookies/knowledge.json",
+      "htmlBytes": 24331,
+      "htmlDigest": "29519425298a3ccc7eac76a348d43fbe7c940e081bef33603a91ea91e988412c",
+      "precompiled": true,
+      "indexable": true,
+      "intent": "informational",
+      "role": "legal",
+      "clusterId": null,
+      "enhancements": []
+    },
+    {
+      "path": "/declaracion-de-accesibilidad/",
+      "canonical": "https://gemmashivali.com/declaracion-de-accesibilidad/",
+      "htmlPath": "declaracion-de-accesibilidad/index.html",
+      "knowledgePath": "declaracion-de-accesibilidad/knowledge.json",
+      "htmlBytes": 10794,
+      "htmlDigest": "42c0ba002814df800911761b6de731478d12e440d416da9ce79c5e60d78dfa1d",
+      "precompiled": true,
+      "indexable": true,
+      "intent": "informational",
+      "role": "legal",
+      "clusterId": null,
+      "enhancements": []
+    }
+  ],
+  "architecture": {
+    "protocol": "VDS-SITE-QUALITY/1",
+    "passed": true,
+    "summary": {
+      "pages": 6,
+      "indexablePages": 6,
+      "passedPages": 6,
+      "agenticRequiredPages": 0,
+      "agenticPassedPages": 0,
+      "sitemapUrls": 6,
+      "failures": 0,
+      "warnings": 1
+    },
+    "warnings": [
+      {
+        "type": "intent-entity-collision-candidate",
+        "language": "es",
+        "entityId": "gemma-shivali",
+        "intent": "informational",
+        "paths": [
+          "/",
+          "/declaracion-de-accesibilidad/",
+          "/nota-legal/",
+          "/politica-de-cookies/",
+          "/politica-de-privacidad/"
+        ]
+      }
+    ]
+  },
+  "publicAssets": 41,
+  "artifacts": [
+    {
+      "path": "index.html",
+      "bytes": 32241,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "knowledge/page.json",
+      "bytes": 1591,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "nuestros-servicios/index.html",
+      "bytes": 32148,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "nuestros-servicios/knowledge.json",
+      "bytes": 5711,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "nota-legal/index.html",
+      "bytes": 19528,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "nota-legal/knowledge.json",
+      "bytes": 1736,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "politica-de-privacidad/index.html",
+      "bytes": 17194,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "politica-de-privacidad/knowledge.json",
+      "bytes": 1890,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "politica-de-cookies/index.html",
+      "bytes": 24331,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "politica-de-cookies/knowledge.json",
+      "bytes": 1693,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "declaracion-de-accesibilidad/index.html",
+      "bytes": 10794,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "declaracion-de-accesibilidad/knowledge.json",
+      "bytes": 1794,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "sitemap.xml",
+      "bytes": 560,
+      "contentType": "application/xml; charset=utf-8"
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 106,
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "llms.txt",
+      "bytes": 1574,
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "knowledge/index.json",
+      "bytes": 3654,
+      "contentType": "application/json; charset=utf-8"
+    },
+    {
+      "path": "assets/site.css",
+      "bytes": 40337,
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "path": "assets/images/about-gemma.jpg",
+      "bytes": 98020,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/hero-circle-mobile.jpg",
+      "bytes": 127836,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/hero-circle.jpg",
+      "bytes": 221158,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/hero-meditation-mobile.jpg",
+      "bytes": 137461,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/hero-meditation.jpg",
+      "bytes": 224795,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/hero-qigong-mobile.jpg",
+      "bytes": 105997,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/hero-qigong.jpg",
+      "bytes": 177238,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/hero-retreat-mobile.jpg",
+      "bytes": 134097,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/hero-retreat.jpg",
+      "bytes": 207868,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/hero-sea-mobile.jpg",
+      "bytes": 161175,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/hero-sea.jpg",
+      "bytes": 204513,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/hero-session-mobile.jpg",
+      "bytes": 92550,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/hero-session.jpg",
+      "bytes": 159165,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/hero-tantra-mobile.jpg",
+      "bytes": 110399,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/hero-tantra.jpg",
+      "bytes": 218007,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/hero.jpg",
+      "bytes": 167262,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/logo.jpg",
+      "bytes": 50293,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/og-cover.jpg",
+      "bytes": 83668,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/program-40plus.jpg",
+      "bytes": 5765,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/program-empowerment.jpg",
+      "bytes": 10403,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/program-masculine-feminine.jpg",
+      "bytes": 99085,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/program-menopause-detail.jpg",
+      "bytes": 90124,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/program-menopause.jpg",
+      "bytes": 6184,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/program-postpartum.jpg",
+      "bytes": 26034,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/program-transition.jpg",
+      "bytes": 7086,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/qigong.jpg",
+      "bytes": 114257,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/services-individual.jpg",
+      "bytes": 111720,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/services-intro.jpg",
+      "bytes": 46096,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/services-retreats.jpg",
+      "bytes": 78238,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/services-workshops.jpg",
+      "bytes": 89139,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/tantra-retreat.jpg",
+      "bytes": 127908,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/tantra.jpg",
+      "bytes": 129142,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/whatsapp-glyph-white.svg",
+      "bytes": 1168,
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "assets/images/whatsapp-glyph.svg",
+      "bytes": 1181,
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "assets/fonts/CormorantGaramond-Italic.woff2",
+      "bytes": 39260,
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "assets/fonts/CormorantGaramond-Variable.woff2",
+      "bytes": 37640,
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "assets/fonts/OpenSans-Bold.woff2",
+      "bytes": 15056,
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "assets/fonts/OpenSans-Regular.woff2",
+      "bytes": 14380,
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "favicon.png",
+      "bytes": 9711,
+      "contentType": "image/png"
+    },
+    {
+      "path": "apple-touch-icon.png",
+      "bytes": 71389,
+      "contentType": "image/png"
+    }
+  ],
+  "written": {
+    "files": 57,
+    "bytes": 4009350
+  }
+}

@@ -1,0 +1,34 @@
+# Secrets and local environment
+.env
+.env.*
+*.key
+*.pem
+openai-key.txt
+
+# External VDS engine dependency (clone separately)
+engine/
+
+# Provided WhatsApp brand archive; only the used glyphs are vendored in site/public
+WhatsApp-Brand-Resource-Center/
+
+# Research and reference downloads
+source/pexels/
+source/pexels-*.html
+source/unsplash-*.html
+source/generated/test.png
+source/generated/contact-sheet.jpg
+source/generated/pair-*.jpg
+
+# QA screenshots and temporary browser output
+site/screenshots/
+site/dist/_preview.html
+site/dist/_inspect.html
+site/dist/_preview-mobile.html
+
+# Python and OS/editor noise
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

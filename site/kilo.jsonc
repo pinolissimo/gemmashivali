@@ -1,0 +1,9 @@
+// Visual Design Studio — VDS Engine 9
+// Created: 2026-10
+// Purpose: Load VDS9 project-specific Kilo Code rules. AGENTS.md and CONTEXT.md are auto-discovered by Kilo Code.
+{
+  "$schema": "https://app.kilo.ai/config.json",
+  "instructions": [
+    ".kilo/rules/*.md"
+  ]
+}

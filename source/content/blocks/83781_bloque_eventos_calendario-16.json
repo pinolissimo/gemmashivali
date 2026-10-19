@@ -1,0 +1,65 @@
+{
+  "bloque": {
+    "ID": 83781,
+    "post_author": "2711",
+    "post_date": "2022-04-11 18:02:32",
+    "post_date_gmt": "2022-04-11 17:02:32",
+    "post_content": "",
+    "post_title": "Calendario",
+    "post_excerpt": "",
+    "post_status": "publish",
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "post_password": "",
+    "post_name": "calendario-16",
+    "to_ping": "",
+    "pinged": "",
+    "post_modified": "2022-06-02 11:12:49",
+    "post_modified_gmt": "2022-06-02 10:12:49",
+    "post_content_filtered": "",
+    "post_parent": 0,
+    "guid": "https://www.erescambio.com/?bloque_eventos=calendario-16",
+    "menu_order": 0,
+    "post_type": "bloque_eventos",
+    "post_mime_type": "",
+    "comment_count": "0",
+    "filter": "raw"
+  },
+  "extended": {
+    "evento": false,
+    "categorias_de_la_web": {
+      "tipo_evento": [],
+      "temas_de_la_web": false,
+      "tecnicas_de_la_web": false
+    },
+    "numero_de_meses": "12",
+    "incremento": "0",
+    "mostrar_un_unico_evento": false,
+    "estilos": {
+      "color_de_fondo": "#f4e9e7",
+      "color_de_titulo": "#938474",
+      "color_de_texto": "#545454",
+      "color_de_enlace": "#969696",
+      "colores_personalizados": 0,
+      "": null,
+      "color_de_fondo_evento": "#f7f7f5",
+      "color_de_cabeceras": "#938474",
+      "color_de_texto_evento": "#545454",
+      "color_de_enlace_evento": "#969696",
+      "colores": "principal",
+      "fuentes": {
+        "fuente_cabecera": "'Open Sans', sans-serif",
+        "tamano_fuente_cabecera": "45",
+        "fuente_body": "'Open Sans', sans-serif",
+        "tamano_fuente_textos": "14",
+        "alto_de_linea_textos": "26"
+      }
+    },
+    "descripcion": "",
+    "mostrar_eventos_repetitivos": true,
+    "mostrar_cancelados": false,
+    "mostrar_eventos_exclusivos_para_clientes": "-1",
+    "texto_si_no_hay_eventos": "",
+    "eventos": ""
+  }
+}

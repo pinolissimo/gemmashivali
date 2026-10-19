@@ -1,0 +1,63 @@
+﻿
+ Gemma Estivill ǀ Terapia online y presencial en Sitges y BCN
+ Saltar al contenido principal 
+Gemma Shivali
+SOBRE MI
+SERVICIOS
+CONTACTO
+Calendario
+Declaración de accesibilidad de Tantra y consciencia emocional Gemma Shivali
+Resultado: Parcialmente conforme 
+Tantra y consciencia emocional Gemma Shivali se ha comprometido a hacer accesible su sitio web de conformidad con el Real Decreto 1112/2018, de 7 de septiembre.
+A fecha de 15/02/2023, El equipo de ADDAW ha realizado una auditoría de accesibilidad del sitio https://gemmashivali.com siguiendo la metodología establecida en la norma UNE-EN 301549:2022
+El resultado de la auditoría es parcialmente conforme con el RD 1112/2018 y la norma UNE-EN 301549:2022 debido a las excepciones y a la falta de conformidad que se detallan en el informe descargable
+Fecha de la conformidad
+15/02/2023
+Versión
+UNE-EN 301549:2022
+Uri
+Descargar
+Nivel de cumplimiento
+AA
+Tecnologías presentes
+CSS
+http://www.w3.org/Style/CSS/specs/
+HTML5
+http://www.w3.org/TR/html5/
+PHP
+https://www.php.net/
+Vue.js
+https://vuejs.org/
+WAI-ARIA
+https://www.w3.org/TR/wai-aria/
+javascript
+https://developer.mozilla.org/es/docs/Web/JavaScript
+Herramientas utilizadas
+Browser DevTools/Inspector
+HTML Validation
+Keyboard only
+VoiceOver Screen Reader
+WAVE Browser Extension
+ZoomText Fusion
+Agentes de usuario empleados
+Chrome – Latest
+Chrome for Android
+Edge – Latest
+Firefox – Latest
+Contacto
+Puede realizar comunicaciones sobre requisitos de accesibilidad (artículo 10.2.a) del RD 1112/2018 como por ejemplo:
+Informar sobre cualquier posible cumplimiento por parte de este sitio web
+Transmitir otras dificultades de acceso al contenido
+Formular cualquier otra consulta o sugerencia de mejora relativa a la accesibilidad del sitio web
+A través de la cuenta de correo gemmaestivill@gmail.com.
+Nota legal
+ | 
+Política de privacidad
+ | 
+Política de cookies
+ | 
+Declaración de accesibilidad
+Copyright ©2026
+ Valoramos tu privacidad 
+ Usamos cookies para mejorar su experiencia de navegación, mostrarle anuncios o contenidos personalizados y analizar nuestro tráfico. Al hacer clic en "Aceptar todo" usted da su consentimiento a nuestro uso de las cookies. Política de cookies 
+ Personalizar Rechazar todas Aceptar todo

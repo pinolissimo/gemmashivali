@@ -1,0 +1,78 @@
+{
+  "bloque": {
+    "ID": 83775,
+    "post_author": "2711",
+    "post_date": "2022-04-11 18:02:31",
+    "post_date_gmt": "2022-04-11 17:02:31",
+    "post_content": "",
+    "post_title": "Dudas",
+    "post_excerpt": "",
+    "post_status": "publish",
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "post_password": "",
+    "post_name": "dudas-7",
+    "to_ping": "",
+    "pinged": "",
+    "post_modified": "2025-04-17 11:47:49",
+    "post_modified_gmt": "2025-04-17 10:47:49",
+    "post_content_filtered": "",
+    "post_parent": 0,
+    "guid": "https://www.erescambio.com/?bloque_calls_actions=dudas-7",
+    "menu_order": 0,
+    "post_type": "bloque_calls_actions",
+    "post_mime_type": "",
+    "comment_count": "0",
+    "filter": "raw"
+  },
+  "extended": {
+    "descripcion": "<p><span style=\"font-size: 20px;\">Si sientes que necesitas un cambio y no sabes por dónde empezar, cuéntame en qué punto estás <br />\ny juntas encontraremos el camino que mejor se adapte a ti.</span></p>\n",
+    "telefono": "+34 630 12 73 19",
+    "email": "gemmaestivill@gmail.com",
+    "whatsapp": "+34630127319",
+    "skype": "",
+    "estilos": {
+      "color_de_fondo": "#f7f7f5",
+      "color_de_titulo": "#938474",
+      "color_de_texto": "#545454",
+      "color_de_enlace": "#969696",
+      "colores_personalizados": 0,
+      "colores": "contraste",
+      "fuentes": {
+        "fuente_cabecera": "'Open Sans', sans-serif",
+        "tamano_fuente_cabecera": "45",
+        "fuente_body": "'Open Sans', sans-serif",
+        "tamano_fuente_textos": "14",
+        "alto_de_linea_textos": "26"
+      }
+    },
+    "texto_whatsapp": "",
+    "video": "",
+    "telegram": "",
+    "agenda": "",
+    "calls_actions": [
+      {
+        "tipo": "phone",
+        "valor": "+34 630 12 73 19",
+        "href": "tel:+34 630 12 73 19",
+        "clase": "icon-phone",
+        "icono": "fa fa-phone"
+      },
+      {
+        "tipo": "email",
+        "valor": "gemmaestivill@gmail.com",
+        "href": "mailto:gemmaestivill@gmail.com",
+        "clase": "icon-email",
+        "icono": "fa fa-envelope"
+      },
+      {
+        "tipo": "whatsapp",
+        "valor": "+34630127319",
+        "href": "https://api.whatsapp.com/send?phone=34630127319",
+        "clase": "icon-whatsapp",
+        "icono": "fab fa-whatsapp",
+        "texto": ""
+      }
+    ]
+  }
+}

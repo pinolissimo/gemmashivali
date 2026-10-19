@@ -1,0 +1,785 @@
+﻿<!DOCTYPE html>
+<html lang="es" amp=""><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        #initial-loader {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -70px;
+        }
+
+        .spinner {
+            color: #24a7ff;
+            font-size: 10px;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            position: relative;
+            text-indent: -9999em;
+            animation: mulShdSpin 1.3s infinite linear;
+            transform: translateZ(0);
+        }
+
+        @keyframes mulShdSpin {
+
+            0%,
+            100% {
+                box-shadow: 0 -3em 0 0.2em,
+                    2em -2em 0 0em, 3em 0 0 -1em,
+                    2em 2em 0 -1em, 0 3em 0 -1em,
+                    -2em 2em 0 -1em, -3em 0 0 -1em,
+                    -2em -2em 0 0;
+            }
+
+            12.5% {
+                box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em,
+                    3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em,
+                    -2em 2em 0 -1em, -3em 0 0 -1em,
+                    -2em -2em 0 -1em;
+            }
+
+            25% {
+                box-shadow: 0 -3em 0 -0.5em,
+                    2em -2em 0 0, 3em 0 0 0.2em,
+                    2em 2em 0 0, 0 3em 0 -1em,
+                    -2em 2em 0 -1em, -3em 0 0 -1em,
+                    -2em -2em 0 -1em;
+            }
+
+            37.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+                    3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em,
+                    -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+
+            50% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+                    3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em,
+                    -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+            }
+
+            62.5% {
+                box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+                    3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0,
+                    -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+            }
+
+            75% {
+                box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em,
+                    3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+                    -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+            }
+
+            87.5% {
+                box-shadow: 0em -3em 0 0, 2em -2em 0 -1em,
+                    3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em,
+                    -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://connect.facebook.net">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://connect.facebook.net">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
+    <!-- Font Awesome CSS for icons -->
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
+
+    <link href="/css/app.b1a9a82077.css?v=1792433384" rel="preload" as="style">
+    <link href="/css/chunk-vendors.1a06b43d77.css?v=1792433384" rel="preload" as="style">
+
+    <link href="/js/app.9f163af677.js?v=1792433384" rel="preload" as="script">
+    <link href="/js/chunk-vendors.fc1c89fd77.js?v=1792433384" rel="preload" as="script">
+
+    <link href="/css/chunk-vendors.1a06b43d77.css?v=1792433384" rel="stylesheet">
+    <link href="/css/app.b1a9a82077.css?v=1792433384" rel="stylesheet">
+
+    <link rel="manifest" href="blob:https://gemmashivali.com/14874281-42ec-449d-a77d-48c5414529ad" id="my-manifest-placeholder">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    
+    <meta name="meta-web" content="https://www.erescambio.com/wp-json/wp/v2/ztudio_webs_metas2/?web=gemmashivali.com/nuestros-servicios/">
+
+    <!-- Primary Meta Tags -->
+    <title>NUESTROS SERVICIOS | Gemma Shivali</title>
+    <meta name="title" content="NUESTROS SERVICIOS | Gemma Shivali">
+    <meta name="description" content="Recupera tu energía, reconecta con tu cuerpo y fortalece tu bienestar en cada etapa de tu vida">
+    <link rel="canonical" href="https://gemmashivali.com/nuestros-servicios">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gemmashivali.com/nuestros-servicios">
+    <meta property="og:title" content="NUESTROS SERVICIOS | Gemma Shivali">
+    <meta property="og:description" content="Recupera tu energía, reconecta con tu cuerpo y fortalece tu bienestar en cada etapa de tu vida">
+    <meta property="og:image" content="https://cdn.erescambio.com/wp-content/uploads/2022/04/FAVICON-02.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gemmashivali.com/nuestros-servicios">
+    <meta property="twitter:title" content="NUESTROS SERVICIOS | Gemma Shivali">
+    <meta property="twitter:description" content="Recupera tu energía, reconecta con tu cuerpo y fortalece tu bienestar en cada etapa de tu vida">
+    <meta property="twitter:image" content="https://cdn.erescambio.com/wp-content/uploads/2022/04/FAVICON-02.jpg">
+
+    <link rel="apple-touch-icon" sizes="192x192" href="https://cdn.erescambio.com/wp-content/uploads/2022/04/FAVICON-02.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.erescambio.com/wp-content/uploads/2022/04/FAVICON-02.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.erescambio.com/wp-content/uploads/2022/04/FAVICON-02.jpg">
+
+    <meta name="robots" content="index,follow">
+
+    
+    <!-- Dynamic Manifest -->
+    <script>
+        var manifestJSON = {
+            "name": "NUESTROS SERVICIOS | Gemma Shivali",
+            "short_name": "NUESTROS SERVICIOS | Gemma Shivali",
+            "display": "standalone",
+            "icons": [
+                {
+                    "src": "https://cdn.erescambio.com/wp-content/uploads/2022/04/FAVICON-02.jpg",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                }
+            ],
+            "background_color": "#FFFFFF",
+            "theme_color": "#FFFFFF"
+        };
+
+        const stringManifest = JSON.stringify(manifestJSON);
+        const blob = new Blob([stringManifest], {type: 'application/json'});
+        const manifestURL = URL.createObjectURL(blob);
+        document.querySelector('#my-manifest-placeholder').setAttribute('href', manifestURL);
+    </script>
+
+        <!-- Google Tag Manager -->
+    <script type="text/plain" data-cookie="" data-category="analytics">
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-P3DVM6KX');
+    </script>
+    <!-- End Google Tag Manager -->
+    
+        <!-- Google Analytics -->
+    <script type="text/plain" src="https://www.googletagmanager.com/gtag/js?id=409051117" async="" data-cookie="" data-category="analytics"></script>
+    <script type="text/plain" data-cookie="" data-category="analytics">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '409051117');
+    </script>
+    <!-- End Google Analytics -->
+    
+        <!-- Facebook Pixel -->
+    <script type="text/plain" data-cookie="" data-category="analytics">
+        setTimeout(function(){
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '232135880622207');
+            fbq('track', 'PageView');
+        }, 3500);
+    </script>
+    <noscript data-cookie="" data-category="analytics">
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=232135880622207&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel -->
+    <link rel="preconnect" href="https://www.erescambio.com"><link rel="dns-prefetch" href="https://www.erescambio.com"><style type="text/css">
+.vue-modal-resizer {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: 0;
+  bottom: 0;
+  z-index: 9999999;
+  background: transparent;
+  cursor: se-resize;
+}
+.vue-modal-resizer::after {
+  display: block;
+  position: absolute;
+  content: '';
+  background: transparent;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid #ddd;
+  border-left: 10px solid transparent;
+}
+.vue-modal-resizer.clicked::after {
+  border-bottom: 10px solid #369be9;
+}
+</style><style type="text/css">
+.v--modal-block-scroll {
+  overflow: hidden;
+  width: 100vw;
+}
+.v--modal-overlay {
+  position: fixed;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  opacity: 1;
+}
+.v--modal-overlay.scrollable {
+  height: 100%;
+  min-height: 100vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.v--modal-overlay .v--modal-background-click {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+}
+.v--modal-overlay .v--modal-box {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.v--modal-overlay.scrollable .v--modal-box {
+  margin-bottom: 2px;
+}
+.v--modal {
+  background-color: white;
+  text-align: left;
+  border-radius: 3px;
+  box-shadow: 0 20px 60px -2px rgba(27, 33, 58, 0.4);
+  padding: 0;
+}
+.v--modal.v--modal-fullscreen {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  left: 0;
+  top: 0;
+}
+.v--modal-top-right {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.overlay-fade-enter-active,
+.overlay-fade-leave-active {
+  transition: all 0.2s;
+}
+.overlay-fade-enter,
+.overlay-fade-leave-active {
+  opacity: 0;
+}
+.nice-modal-fade-enter-active,
+.nice-modal-fade-leave-active {
+  transition: all 0.4s;
+}
+.nice-modal-fade-enter,
+.nice-modal-fade-leave-active {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+</style><style type="text/css">
+.vue-dialog div {
+  box-sizing: border-box;
+}
+.vue-dialog .dialog-flex {
+  width: 100%;
+  height: 100%;
+}
+.vue-dialog .dialog-content {
+  flex: 1 0 auto;
+  width: 100%;
+  padding: 15px;
+  font-size: 14px;
+}
+.vue-dialog .dialog-c-title {
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.vue-dialog .dialog-c-text {
+}
+.vue-dialog .vue-dialog-buttons {
+  display: flex;
+  flex: 0 1 auto;
+  width: 100%;
+  border-top: 1px solid #eee;
+}
+.vue-dialog .vue-dialog-buttons-none {
+  width: 100%;
+  padding-bottom: 15px;
+}
+.vue-dialog-button {
+  font-size: 12px !important;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  line-height: 40px;
+  height: 40px;
+  color: inherit;
+  font: inherit;
+  outline: none;
+}
+.vue-dialog-button:hover {
+  background: rgba(0, 0, 0, 0.01);
+}
+.vue-dialog-button:active {
+  background: rgba(0, 0, 0, 0.025);
+}
+.vue-dialog-button:not(:first-of-type) {
+  border-left: 1px solid #eee;
+}
+</style><style type="text/css">.cookie-consent_modal{padding:30px;font-family:sans-serif;line-height:20px;color:#7a8990}.cookie-consent_modal:focus{outline:0}.cookie-consent_modal .cookie-consent_modal__header .cookie-consent_modal__header-title{margin:0 0 20px 0;font-size:16px;font-weight:700;color:#142f47}.cookie-consent_modal .cookie-consent_modal__header hr{height:1px;width:100%;border:0;background:#eee}.cookie-consent_modal .cookieConsent-modal__body{margin-top:20px}.cookie-consent_modal .cookie-consent_modal__footer{display:flex;justify-content:flex-end;flex-wrap:nowrap;border:0;margin-top:25px;text-align:right}.cookie-consent_modal .vct__btn{padding:12px 24px;margin-right:10px;border-radius:5px;border:1px solid transparent;line-height:16px;font-size:14px;font-family:sans-serif;white-space:nowrap;vertical-align:middle;cursor:pointer;white-space:normal}.cookie-consent_modal .vct__btn:nth-last-child(1){margin-right:0}.cookie-consent_modal .vct__btn:focus{outline:0}.cookie-consent_modal .vct__btn--default{background:0 0;border:2px solid #e1e7ec;color:#142f47}.cookie-consent_modal .vct__btn--default:hover{background-color:#e1e7ec}.cookie-consent_modal .vct__btn--primary{background-color:#288ede;color:#fff}.cookie-consent_modal .vct__btn--primary:hover{background-color:#1c73b7}</style><style type="text/css">.cookie-enable__message[data-v-51c9604a]{padding:15px 20px;background-color:#e5effa;border-radius:5px;color:#142f47;font-family:sans-serif;text-align:left}.cookie-enable__message svg[data-v-51c9604a]{vertical-align:text-top}</style><link data-vue-meta="1" rel="canonical" href="https://"><link data-vue-meta="1" rel="icon" href="https://cdn.erescambio.com/wp-content/uploads/2022/04/FAVICON-02.jpg"><link data-vue-meta="1" rel="preload" href="https://cdn.erescambio.com/wp-content/uploads/2022/04/FAVICON-02.jpg" as="image"><link data-vue-meta="1" rel="font" as="font" href="/fonts/OpenSans/OpenSans-Bold.woff2" onload="this.onload=null;this.rel='font'" crossorigin="true"><link data-vue-meta="1" rel="font" as="font" href="/fonts/OpenSans/OpenSans-Regular.woff2" onload="this.onload=null;this.rel='font'" crossorigin="true"><link data-vue-meta="1" rel="font" as="font" href="/fontawesome/webfonts/fa-brands-400.woff2" onload="this.onload=null;this.rel='font'" crossorigin="true"><link data-vue-meta="1" rel="font" as="font" href="/fontawesome/webfonts/fa-regular-400.woff2" onload="this.onload=null;this.rel='font'" crossorigin="true"><link data-vue-meta="1" rel="font" as="font" href="/fontawesome/webfonts/fa-solid-900.woff2" onload="this.onload=null;this.rel='font'" crossorigin="true"><style data-vue-meta="1">
+            @font-face {
+              font-family: 'Open Sans'; 
+              font-style: normal;
+              font-display: swap;
+              font-weight: 700;
+              src:  url(/fonts/OpenSans/OpenSans-Bold.woff2) format('woff2');
+              tet: '12'
+            }
+          
+            @font-face {
+              font-family: 'Open Sans'; 
+              font-style: normal;
+              font-display: swap;
+              font-weight: 400;
+              src:  url(/fonts/OpenSans/OpenSans-Regular.woff2) format('woff2');
+              tet: '12'
+            }
+          </style></head>
+
+<body class="pbody v--modal-block-scroll" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+        <div id="initial-loader" style="display: none;">
+        <span class="spinner"></span>
+    </div>
+    <div id="app"><!----><div id="app"><a href="#content" class="visually-hidden focusable skip-link survey-processed"> Saltar al contenido principal </a><header id="header" class="header navbar navbar-expand-lg navbar-dark fixed-top "><div class="container navbar_sub"><a href="https://gemmashivali.com" class="main-logo"><img src="https://cdn.erescambio.com/wp-content/uploads/2022/04/FAVICON-02.jpg" alt="Logotipo de Gemma Shivali" intrinsicsize="50x50" height="50" width="50" class="logo-imagen-web"><span class="logo-text">Gemma Shivali</span></a><nav id="nav" role="navigation" aria-label="Navegacion principal" class="nav"><ul id="main-menu" class="menu"><li class="menu-item nav-item nav-item-menu-button menu-item-0"><a href="/#sobre-mi" target="_self" class="menu-link">SOBRE MI</a><!----><!----></li><li class="menu-item nav-item nav-item-menu-button menu-item-1 active"><a href="/nuestros-servicios" target="_self" aria-current="page" class="menu-link">SERVICIOS</a><!----><!----></li><li class="menu-item nav-item nav-item-menu-button menu-item-2"><a href="/#contacto" target="_self" class="menu-link">CONTACTO</a><!----><!----></li><li class="menu-item nav-item nav-item-menu-button menu-item-3"><a href="/#calendario" target="_self" class="menu-link">Calendario</a><!----><!----></li><!----></ul><!----><button id="menu-trigger" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir o cerrar menu principal"><i aria-hidden="true" class="fa fa-bars"></i></button></nav></div></header><main role="main" id="content"><section id="" class="wrapper-bloque wrapper-bloque-texto"><style data-v-0638af71="">
+      .bloque-170070 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #f4e9e7
+      }
+  
+      .bloque-170070 .bloque-title {
+        color: #938474;
+      }
+
+      .bloque-170070 p{
+        color: #545454;
+      }
+
+      .bloque-170070 .boton-generico {
+        background-color: #938474;
+        color: #005c76;
+      }
+
+       .bloque-170070 a { color: #005c76; } .bloque-170070 h1, .bloque-170070 h2, .bloque-170070 h3, .bloque-170070 h4, .bloque-170070 h5, .bloque-170070 h6 { color: #938474; } .bloque-170070 .text { padding: 75px 6% 6% !important; font-size: 14px !important; line-height: 26px !important; color: #545454; } .bloque-170070 .text p , .bloque-170070 .geodir_post_meta, .bloque-170070 .geodir_post_meta p{ font-size: 14px !important; line-height: 26px !important; line-height: 1.5 !important; } .bloque-170070 .bg-image{ background-size: cover; } .bloque-170070 .boton-generico{ margin-bottom: 30px; } @media (max-width: 991px){ .bloque-170070 .bg-image{ background-size: cover; } } </style><div class="bg bloque-texto bloque-170070"><div class="container-fluid contenido"><div class="row"><div data-wow-duration="2s" class="col-sm-12 col-md-12 col-lg-4 bg_cover text-right bg-image wow fadeIn p-0 izq" style="background-image: url(&quot;https://cdn.erescambio.com/wp-content/uploads/2022/07/INTRO-SERVICIOS.jpg&quot;);"><img loading="lazy" src="https://cdn.erescambio.com/wp-content/uploads/2022/07/INTRO-SERVICIOS.jpg" alt="Imagen del bloque a la izquierda: El cambio es una constante" class="img_entera bg_cover"></div><div class="image-full"><img loading="lazy" src="https://cdn.erescambio.com/wp-content/uploads/2022/07/INTRO-SERVICIOS.jpg" alt="Imagen del bloque a la izquierda: El cambio es una constante"></div><!----><div data-wow-duration="2s" class="col-sm-12 col-md-12 col-12 col-lg-8 text wow fadeIn text-left left"><div><h2 data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="bloque-title text-left aos-init aos-animate">El cambio es una constante</h2><div data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="aos-init aos-animate"><p><span style="font-size: 20px;">A lo largo de la vida, todos atravesamos momentos de cambio que pueden generar dudas, bloqueos o la sensación de estar desconectados de nosotros mismos. Mi enfoque de trabajo te ayuda a encontrar el equilibrio y la seguridad que necesitas en cada etapa de tu vida, reconectando con tu cuerpo y tu energía.</span></p>
+<p><span style="font-size: 20px;">Te ofrezco diferentes formas de acompañamiento, según lo que mejor se adapte a ti:</span></p>
+</div><!----></div></div><!----><!----></div></div></div></section><section id="" class="wrapper-bloque wrapper-bloque-texto"><style data-v-0638af71="">
+      .bloque-83778 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #f7f7f5
+      }
+  
+      .bloque-83778 .bloque-title {
+        color: #938474;
+      }
+
+      .bloque-83778 p{
+        color: #545454;
+      }
+
+      .bloque-83778 .boton-generico {
+        background-color: #938474;
+        color: #969696;
+      }
+
+       .bloque-83778 a { color: #969696; } .bloque-83778 h1, .bloque-83778 h2, .bloque-83778 h3, .bloque-83778 h4, .bloque-83778 h5, .bloque-83778 h6 { color: #938474; } .bloque-83778 .text { padding: 75px 6% 6% !important; font-size: 14px !important; line-height: 26px !important; color: #545454; } .bloque-83778 .text p , .bloque-83778 .geodir_post_meta, .bloque-83778 .geodir_post_meta p{ font-size: 14px !important; line-height: 26px !important; line-height: 1.5 !important; } .bloque-83778 .bg-image{ background-size: cover; } .bloque-83778 .boton-generico{ margin-bottom: 30px; } @media (max-width: 991px){ .bloque-83778 .bg-image{ background-size: cover; } } </style><div class="bg bloque-texto bloque-83778"><div class="container-fluid contenido"><div class="row"><!----><!----><!----><div data-wow-duration="2s" class="col-sm-12 col-md-12 col-12 text wow fadeIn text-left left"><div><h2 data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="bloque-title text-left aos-init">1- Programas de transformación</h2><div data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="aos-init"><p><span style="font-size: 20px;">Todos nuestros <strong>programas</strong> son <strong>online</strong>, se realizan en riguroso <strong>streaming</strong>, y están diseñados para personas que quieren hacer un <strong>trabajo profundo</strong> en su proceso de transformación. Son acompañamientos estructurados en los que combinamos sesiones grupales, sesiones individuales y herramientas de trabajo personal.</span></p>
+<p><span style="font-size: 20px;">Cada uno de ellos está pensado para un momento específico de la vida y te ayudará a <strong>recuperar tu confianza, tu vitalidad y tu bienestar a través del cuerpo y la energía.</strong></span></p><strong>
+</strong><p><strong></strong></p>
+<p><strong><span style="font-size: 20px;">Estos son los programas disponibles:</span></strong></p>
+<ul>
+<li><span style="font-size: 20px;">Vitalidad en la menopausia </span></li>
+<li><span style="font-size: 20px;">Empoderamiento y conexión corporal</span></li>
+<li><span style="font-size: 20px;">Reconexión post-parto</span></li>
+<li><span style="font-size: 20px;">Integración masculino-femenino</span></li>
+<li><span style="font-size: 20px;">Renovación y propósito 40+</span></li>
+<li><span style="font-size: 20px;">Transitar el cambio</span></li>
+</ul>
+<p><span style="font-size: 20px;">Escríbeme, dime cuál te interesa y te haré llegar toda la información.</span></p>
+<p><span style="font-size: 20px;"><strong>&nbsp;</strong></span></p>
+</div><a href="https://api.whatsapp.com/send?phone=34630127319&amp;text=Hola%20Gemma%2C%20estoy%20en%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20programa:%20" target="_blank" data-aos="fade-up" data-aos-once="true" data-aos-duration="2000" class="boton-generico aos-init" style="border-color: rgb(147, 132, 116) !important; background: rgb(147, 132, 116) !important; color: rgb(247, 247, 245) !important;">QUIERO SABER MÁS SOBRE LOS PROGRAMAS</a></div></div><!----><!----></div></div></div></section><section id="" class="wrapper-bloque wrapper-bloque-texto"><style data-v-0638af71="">
+      .bloque-86663 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #f4e9e7
+      }
+  
+      .bloque-86663 .bloque-title {
+        color: #938474;
+      }
+
+      .bloque-86663 p{
+        color: #545454;
+      }
+
+      .bloque-86663 .boton-generico {
+        background-color: #938474;
+        color: #005c76;
+      }
+
+       .bloque-86663 a { color: #005c76; } .bloque-86663 h1, .bloque-86663 h2, .bloque-86663 h3, .bloque-86663 h4, .bloque-86663 h5, .bloque-86663 h6 { color: #938474; } .bloque-86663 .text { padding: 75px 6% 6% !important; font-size: 14px !important; line-height: 26px !important; color: #545454; } .bloque-86663 .text p , .bloque-86663 .geodir_post_meta, .bloque-86663 .geodir_post_meta p{ font-size: 14px !important; line-height: 26px !important; line-height: 1.5 !important; } .bloque-86663 .bg-image{ background-size: cover; } .bloque-86663 .boton-generico{ margin-bottom: 30px; } @media (max-width: 991px){ .bloque-86663 .bg-image{ background-size: cover; } } </style><div class="bg bloque-texto bloque-86663"><div class="container-fluid contenido"><div class="row"><div data-wow-duration="2s" class="col-sm-12 col-md-12 col-lg-4 bg_cover text-right bg-image wow fadeIn p-0 izq" style="background-image: url(&quot;https://cdn.erescambio.com/wp-content/uploads/2022/07/074B2404-gemma-1-horizontal-064.jpg&quot;);"><img loading="lazy" src="https://cdn.erescambio.com/wp-content/uploads/2022/07/074B2404-gemma-1-horizontal-064.jpg" alt="Imagen del bloque a la izquierda: 2- Sesiones individuales" class="img_entera bg_cover"></div><div class="image-full"><img loading="lazy" src="https://cdn.erescambio.com/wp-content/uploads/2022/07/074B2404-gemma-1-horizontal-064.jpg" alt="Imagen del bloque a la izquierda: 2- Sesiones individuales"></div><!----><div data-wow-duration="2s" class="col-sm-12 col-md-12 col-12 col-lg-8 text wow fadeIn text-left left"><div><h2 data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="bloque-title text-left aos-init">2- Sesiones individuales</h2><div data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="aos-init"><p><span style="font-size: 20px;">Si necesitas un acompañamiento <strong>personalizado y flexible</strong>, las sesiones individuales son la mejor opción para trabajar en profundidad los bloqueos o desafíos que estás atravesando.</span></p>
+<p><span style="font-size: 20px;">Las sesiones te ayudarán a <strong>recuperar claridad, soltar lo que te limita y reconectar con tu fuerza interior</strong> a través del trabajo corporal y energético.</span></p>
+<p><span style="font-size: 20px;">Te ofrezco <strong>dos tipos de sesiones</strong> (en función de su duración):</span></p>
+<p>
+<span style="font-size: 20px;"><strong>Duración: </strong>120 minutos por sesión<strong><br>
+</strong></span><span style="font-size: 20px;"><strong>Formato:</strong> Online o presencial (Barcelona/Sitges)</span><br>
+<span style="font-size: 20px;"><strong>Precio:</strong> 120€&nbsp;</span></p>
+<p><span style="font-size: 20px;"><strong>Duración: </strong>90 minutos por sesión<strong><br>
+Formato:</strong> Online o presencial (Barcelona/Sitges)</span><br>
+<span style="font-size: 20px;"><strong>Precio:</strong> 90€&nbsp;</span></p>
+<p><span style="font-size: 20px;">Si quieres saber más sobre las sesiones individuales o reservar una cita, <strong>haz link aquí</strong> y me pondré en contacto contigo lo antes posible.</span></p>
+</div><a href="https://api.whatsapp.com/send?phone=34630127319&amp;text=Hola%20Gemma%2C%20estoy%20en%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20servicios.%20" target="_blank" data-aos="fade-up" data-aos-once="true" data-aos-duration="2000" class="boton-generico aos-init" style="border-color: rgb(147, 132, 116) !important; background: rgb(147, 132, 116) !important; color: rgb(244, 233, 231) !important;">HABLEMOS</a></div></div><!----><!----></div></div></div></section><section id="" class="wrapper-bloque wrapper-bloque-texto"><style data-v-0638af71="">
+      .bloque-86669 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #f7f7f5
+      }
+  
+      .bloque-86669 .bloque-title {
+        color: #938474;
+      }
+
+      .bloque-86669 p{
+        color: #545454;
+      }
+
+      .bloque-86669 .boton-generico {
+        background-color: #938474;
+        color: #969696;
+      }
+
+       .bloque-86669 a { color: #969696; } .bloque-86669 h1, .bloque-86669 h2, .bloque-86669 h3, .bloque-86669 h4, .bloque-86669 h5, .bloque-86669 h6 { color: #938474; } .bloque-86669 .text { padding: 75px 6% 6% !important; font-size: 14px !important; line-height: 26px !important; color: #545454; } .bloque-86669 .text p , .bloque-86669 .geodir_post_meta, .bloque-86669 .geodir_post_meta p{ font-size: 14px !important; line-height: 26px !important; line-height: 1.5 !important; } .bloque-86669 .bg-image{ background-size: contain; } .bloque-86669 .boton-generico{ margin-bottom: 30px; } @media (max-width: 991px){ .bloque-86669 .bg-image{ background-size: contain; } } </style><div class="bg bloque-texto bloque-86669"><div class="container-fluid contenido"><div class="row"><!----><div class="image-full"><img loading="lazy" src="https://cdn.erescambio.com/wp-content/uploads/2022/04/1653650095197-1024x684.jpg" alt="Imagen del bloque a la izquierda: 3- Talleres presenciales"></div><!----><div data-wow-duration="2s" class="col-sm-12 col-md-12 col-12 col-lg-8 text wow fadeIn text-left left"><div><h2 data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="bloque-title text-left aos-init">3- Talleres presenciales</h2><div data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="aos-init"><p><span style="font-size: 20px;">Los talleres son experiencias intensivas diseñadas para <strong>vivir la transformación desde el cuerpo y la energía en un solo día</strong>. </span><span style="font-size: 20px;">Son ideales si quieres hacer un trabajo profundo en poco tiempo y conectar con otras mujeres que están en el mismo proceso que tú.</span></p>
+<p><span style="font-size: 20px;"><strong>Ejemplos de talleres disponibles:</strong></span></p>
+<ul>
+<li><span style="font-size: 20px;"><em>Reconexión con el cuerpo y la autoestima</em></span></li>
+<li><span style="font-size: 20px;"><em>Gestión de la energía femenina en la menopausia</em></span></li>
+<li><span style="font-size: 20px;"><em>Sanación y realineación energética</em></span></li>
+</ul>
+<p><span style="font-size: 20px;"><strong>Formato:</strong> Presencial (Barcelona/Sitges)</span><br>
+<span style="font-size: 20px;"><strong>Duración:</strong> 1 jornada (4 a 8 horas)</span><br>
+<span style="font-size: 20px;"><strong>Precio:</strong> Desde 60€</span></p>
+<p><span style="font-size: 20px;">Si quieres recibir el <strong>calendario</strong> de los próximos talleres, haz link aquí y te enviaré la programación de los próximos meses.</span></p>
+<p>&nbsp;</p>
+</div><a href="https://api.whatsapp.com/send?phone=34630127319&amp;text=Hola%20Gemma%2C%20estoy%20en%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20servicios.%20" target="_blank" data-aos="fade-up" data-aos-once="true" data-aos-duration="2000" class="boton-generico aos-init" style="border-color: rgb(147, 132, 116) !important; background: rgb(147, 132, 116) !important; color: rgb(247, 247, 245) !important;">Sí, quiero el calendario</a></div></div><div data-wow-duration="2s" class="col-sm-12 col-md-12 col-lg-4 bg_contain text-right bg-image wow fadeIn p-0 izq" style="background-image: url(&quot;https://cdn.erescambio.com/wp-content/uploads/2022/04/1653650095197-1024x684.jpg&quot;);"><img loading="lazy" src="https://cdn.erescambio.com/wp-content/uploads/2022/04/1653650095197-1024x684.jpg" alt="Imagen del bloque a la derecha: 3- Talleres presenciales" class="img_entera bg_contain"></div><!----></div></div></div></section><section id="" class="wrapper-bloque wrapper-bloque-texto"><style data-v-0638af71="">
+      .bloque-83773 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #f4e9e7
+      }
+  
+      .bloque-83773 .bloque-title {
+        color: #938474;
+      }
+
+      .bloque-83773 p{
+        color: #545454;
+      }
+
+      .bloque-83773 .boton-generico {
+        background-color: #938474;
+        color: #005c76;
+      }
+
+       .bloque-83773 a { color: #005c76; } .bloque-83773 h1, .bloque-83773 h2, .bloque-83773 h3, .bloque-83773 h4, .bloque-83773 h5, .bloque-83773 h6 { color: #938474; } .bloque-83773 .text { padding: 75px 6% 6% !important; font-size: 14px !important; line-height: 26px !important; color: #545454; } .bloque-83773 .text p , .bloque-83773 .geodir_post_meta, .bloque-83773 .geodir_post_meta p{ font-size: 14px !important; line-height: 26px !important; line-height: 1.5 !important; } .bloque-83773 .bg-image{ background-size: cover; } .bloque-83773 .boton-generico{ margin-bottom: 30px; } @media (max-width: 991px){ .bloque-83773 .bg-image{ background-size: cover; } } </style><div class="bg bloque-texto bloque-83773"><div class="container-fluid contenido"><div class="row"><!----><div class="image-full"><img loading="lazy" src="https://cdn.erescambio.com/wp-content/uploads/2022/04/retiros.jpg" alt="Imagen del bloque a la izquierda: 4- Retiros"></div><!----><div data-wow-duration="2s" class="col-sm-12 col-md-12 col-12 col-lg-8 text wow fadeIn text-left left"><div><h2 data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="bloque-title text-left aos-init">4- Retiros</h2><div data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="aos-init"><p><span style="font-size: 20px;">Los <strong>retiros</strong> son experiencias inmersivas diseñadas para <strong>desconectar de la rutina y conectar contigo misma en un entorno natural y seguro</strong>.</span></p>
+<p><span style="font-size: 20px;">A través del trabajo corporal, la meditación, el movimiento y la introspección, vivirás un proceso profundo de transformación, equilibrio y autoconocimiento, en un entorno de profunda conexión con la naturaleza.</span></p>
+<p><span style="font-size: 24px;"><strong>Tipos de retiros:</strong></span></p>
+<ul>
+<li><span style="font-size: 20px;"><em>Renovación y propósito</em></span></li>
+<li><span style="font-size: 20px;"><em>Reconexión con la energía femenina y la vitalidad</em></span></li>
+<li><span style="font-size: 20px;"><em>Reencuentro con tu fuerza interior</em></span></li>
+<li><span style="font-size: 20px;"><em>Vitalidad en la menopausia</em></span></li>
+</ul>
+<p><span style="font-size: 20px;"><strong>Formato:</strong> Presencial en entorno natural</span></p>
+<p><span style="font-size: 20px;"><strong>Duración:</strong> 2-3 días</span></p>
+<p><span style="font-size: 20px;"><strong>Precio:</strong> Desde 350€ (incluye alojamiento y comidas)</span></p>
+<p><span style="font-size: 20px;">Si quieres recibir el <strong>calendario</strong> de los próximos retiros, haz link aquí y te enviaré la programación de los próximos meses.</span></p>
+</div><a href="https://api.whatsapp.com/send?phone=34630127319&amp;text=Hola%20Gemma%2C%20estoy%20en%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20retiros.%20" target="_blank" data-aos="fade-up" data-aos-once="true" data-aos-duration="2000" class="boton-generico aos-init" style="border-color: rgb(147, 132, 116) !important; background: rgb(147, 132, 116) !important; color: rgb(244, 233, 231) !important;">Si, quiero el calendario</a></div></div><div data-wow-duration="2s" class="col-sm-12 col-md-12 col-lg-4 bg_cover text-right bg-image wow fadeIn p-0 izq" style="background-image: url(&quot;https://cdn.erescambio.com/wp-content/uploads/2022/04/retiros.jpg&quot;);"><img loading="lazy" src="https://cdn.erescambio.com/wp-content/uploads/2022/04/retiros.jpg" alt="Imagen del bloque a la derecha: 4- Retiros" class="img_entera bg_cover"></div><!----></div></div></div></section><section id="" class="wrapper-bloque wrapper-bloque-texto"><style data-v-0638af71="">
+      .bloque-180104 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #f4e9e7
+      }
+  
+      .bloque-180104 .bloque-title {
+        color: #938474;
+      }
+
+      .bloque-180104 p{
+        color: #545454;
+      }
+
+      .bloque-180104 .boton-generico {
+        background-color: #938474;
+        color: #005c76;
+      }
+
+       .bloque-180104 a { color: #005c76; } .bloque-180104 h1, .bloque-180104 h2, .bloque-180104 h3, .bloque-180104 h4, .bloque-180104 h5, .bloque-180104 h6 { color: #938474; } .bloque-180104 .text { padding: 75px 6% 6% !important; font-size: 14px !important; line-height: 26px !important; color: #545454; } .bloque-180104 .text p , .bloque-180104 .geodir_post_meta, .bloque-180104 .geodir_post_meta p{ font-size: 14px !important; line-height: 26px !important; line-height: 1.5 !important; } .bloque-180104 .bg-image{ background-size: cover; } .bloque-180104 .boton-generico{ margin-bottom: 30px; } @media (max-width: 991px){ .bloque-180104 .bg-image{ background-size: cover; } } </style><div class="bg bloque-texto bloque-180104"><div class="container-fluid contenido"><div class="row"><div data-wow-duration="2s" class="col-sm-12 col-md-12 col-lg-4 bg_cover text-right bg-image wow fadeIn p-0 izq" style="background-image: url(&quot;https://cdn.erescambio.com/wp-content/uploads/2025/08/WEB-RETIRO.001-819x1024.jpeg&quot;);"><img loading="lazy" src="https://cdn.erescambio.com/wp-content/uploads/2025/08/WEB-RETIRO.001-819x1024.jpeg" alt="Imagen del bloque a la izquierda: Retiro de tantra para mujeres" class="img_entera bg_cover"></div><div class="image-full"><img loading="lazy" src="https://cdn.erescambio.com/wp-content/uploads/2025/08/WEB-RETIRO.001-819x1024.jpeg" alt="Imagen del bloque a la izquierda: Retiro de tantra para mujeres"></div><!----><div data-wow-duration="2s" class="col-sm-12 col-md-12 col-12 col-lg-8 text wow fadeIn text-left left"><div><h2 data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="bloque-title text-left aos-init">Retiro de tantra para mujeres</h2><div data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="aos-init"><p>Del 24 al 26 de octubre</p>
+<p>RETIRO DE TANTRA PARA MUJERES</p>
+<p><span style="font-size: 28px;"><strong>DESPIERTA TU FEMINIDAD Y FLORECE</strong></span></p>
+<p>Enraízate en tu poder y ábrete al gozo</p>
+<p>Imagina que floreces desde dentro. Que permites que tu energía femenina se despliegue con libertad y confianza. Que tu cuerpo, tu emoción y tu alma vuelven a bailar juntos.</p>
+<p>A través del tantra, el qigong, la respiración y el trabajo corporal, liberarás bloqueos, calmarás tu mente y abrirás tu cuerpo al gozo, la escucha y la presencia.</p>
+<p>Este retiro es para ti si:</p>
+<ul>
+<li>te relacionas más desde el miedo que desde el amor</li>
+<li>te cuesta soltar el control y disfrutar del placer</li>
+<li>estás siempre en modo hacer y te olvidas de sentirte</li>
+</ul>
+<p><b>SOBRE EL RETIRO</b></p>
+<p><b>Ubicación:</b> Cal Codina (cerca de Igualada)</p>
+<p><b>Inicio: </b>Viernes 26/10 a partir de las 19:00h</p>
+<p><b>Final:</b><span class="Apple-converted-space">&nbsp; </span>Domingo 28/10 después de comer</p>
+<p><b>Precio:</b> 390€<span class="Apple-converted-space"> (</span>350€ si lo pagas antes del 30/09)</p>
+<p><b>Incluye:</b> Alojamiento y comidas</p>
+<p><b>Reserva:</b> 100€ (Bizum) indicando en el asunto: NOMBRE COMPLETO y RETIRO TANTRA</p>
+<p>
+SOLO HAY 10 PLAZAS DISPONIBLES. RESERVA LA TUYA YA.</p>
+</div><a href="https://api.whatsapp.com/send?phone=34630127319&amp;text=Hola%20Gemma%2C%20estoy%20en%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20retiro%20de%20tantra.%20" target="_self" data-aos="fade-up" data-aos-once="true" data-aos-duration="2000" class="boton-generico aos-init" style="border-color: rgb(147, 132, 116) !important; background: rgb(147, 132, 116) !important; color: rgb(244, 233, 231) !important;">Quiero saber más</a></div></div><!----><!----></div></div></div></section><section id="" class="wrapper-bloque wrapper-bloque-texto"><style data-v-0638af71="">
+      .bloque-178224 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #f7f7f5
+      }
+  
+      .bloque-178224 .bloque-title {
+        color: #938474;
+      }
+
+      .bloque-178224 p{
+        color: #545454;
+      }
+
+      .bloque-178224 .boton-generico {
+        background-color: #938474;
+        color: #969696;
+      }
+
+       .bloque-178224 a { color: #969696; } .bloque-178224 h1, .bloque-178224 h2, .bloque-178224 h3, .bloque-178224 h4, .bloque-178224 h5, .bloque-178224 h6 { color: #938474; } .bloque-178224 .text { padding: 75px 6% 6% !important; font-size: 14px !important; line-height: 26px !important; color: #545454; } .bloque-178224 .text p , .bloque-178224 .geodir_post_meta, .bloque-178224 .geodir_post_meta p{ font-size: 14px !important; line-height: 26px !important; line-height: 1.5 !important; } .bloque-178224 .bg-image{ background-size: cover; } .bloque-178224 .boton-generico{ margin-bottom: 30px; } @media (max-width: 991px){ .bloque-178224 .bg-image{ background-size: cover; } } </style><div class="bg bloque-texto bloque-178224"><div class="container-fluid contenido"><div class="row"><div data-wow-duration="2s" class="col-sm-12 col-md-12 col-lg-4 bg_cover text-right bg-image wow fadeIn p-0 izq" style="background-image: url(&quot;https://cdn.erescambio.com/wp-content/uploads/2025/08/QIGONG-683x1024.png&quot;);"><img loading="lazy" src="https://cdn.erescambio.com/wp-content/uploads/2025/08/QIGONG-683x1024.png" alt="Imagen del bloque a la izquierda: 5-Qigong" class="img_entera bg_cover"></div><div class="image-full"><img loading="lazy" src="https://cdn.erescambio.com/wp-content/uploads/2025/08/QIGONG-683x1024.png" alt="Imagen del bloque a la izquierda: 5-Qigong"></div><!----><div data-wow-duration="2s" class="col-sm-12 col-md-12 col-12 col-lg-8 text wow fadeIn text-left left"><div><h2 data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="bloque-title text-left aos-init">5-Qigong</h2><div data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="aos-init"><p><strong><span style="font-size: 24px; color: #333333;">Talleres de Qi Gong</span></strong></p>
+<p><span style="font-size: 20px;">El Qi Gong es una gimnasia terapéutica oriental que proviene de la medicina china, que combina suaves movimientos, dinámicos y estáticos en el cuerpo, una respiración adecuada y una concentración mental .</span></p>
+<p><span style="font-size: 20px;">Llamada fuente de la juventud, estas técnicas son un manantial inagotable de paz, salud, vitalidad y un ejercicio idoneo para mantenerse en forma.</span></p>
+<p><span style="font-size: 20px;">La practica de ejercicios de qigong aumenta y mejora la cantidad y calidad de la energía vital y su flujo por el cuerpo.</span></p>
+<p><span style="font-size: 20px;"><b>BENEFICIOS</b></span></p>
+<p><span style="font-size: 20px;"><b>A nivel fisico:</b></span></p>
+<ul>
+<li><span style="font-size: 20px;">Aumenta la energia vital.</span></li>
+<li><span style="font-size: 20px;">Mejora la circulación sanguínea y linfática.</span></li>
+<li><span style="font-size: 20px;">Aumenta la flexibilidad, fuerza y equilibrio corporal.</span></li>
+<li><span style="font-size: 20px;">Fortalece el sistema inmunológico .</span></li>
+<li><span style="font-size: 20px;">Regula el sistema nervioso autónomo.</span></li>
+</ul>
+<p><span style="font-size: 20px;"><b>A nivel mental</b></span></p>
+<ul>
+<li><span style="font-size: 20px;">Reduce el estrés, la ansiedad y la fatiga mental.</span></li>
+<li><span style="font-size: 20px;">Mejora la concentración, la claridad mental y la memoria.</span></li>
+<li><span style="font-size: 20px;">Facilita estados de atención plena y calma interior.</span></li>
+</ul>
+<p><span style="font-size: 20px;"><b>A nivel emocional y energético</b></span></p>
+<ul>
+<li><span style="font-size: 20px;">Libera bloqueos emocionales y estancamiento energético.</span></li>
+<li><span style="font-size: 20px;">Aumenta la auto-conciencia emocional y la capacidad de autorregulación.</span></li>
+<li><span style="font-size: 20px;">Potencia sentimientos de bienestar, serenidad y alegría interior.</span></li>
+<li><span style="font-size: 20px;">Restablece la armonía entre cuerpo, mente y espíritu.</span></li>
+</ul>
+<p><span style="font-size: 20px;">Si quieres recibir el <strong>calendario</strong> de los próximos talleres de Qi Gong, haz link aquí y te enviaré la programación de los próximos meses.</span></p>
+</div><a href="https://api.whatsapp.com/send?phone=34630127319&amp;text=Hola%20Gemma%2C%20estoy%20en%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20talleres%20de%20Qigong.%20" target="_self" data-aos="fade-up" data-aos-once="true" data-aos-duration="2000" class="boton-generico aos-init" style="border-color: rgb(147, 132, 116) !important; background: rgb(147, 132, 116) !important; color: rgb(247, 247, 245) !important;">QUIERO EL CALENDARIO DE QIGONG</a></div></div><!----><!----></div></div></div></section><section id="" class="wrapper-bloque wrapper-bloque-texto"><style data-v-0638af71="">
+      .bloque-178220 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #f4e9e7
+      }
+  
+      .bloque-178220 .bloque-title {
+        color: #938474;
+      }
+
+      .bloque-178220 p{
+        color: #545454;
+      }
+
+      .bloque-178220 .boton-generico {
+        background-color: #938474;
+        color: #005c76;
+      }
+
+       .bloque-178220 a { color: #005c76; } .bloque-178220 h1, .bloque-178220 h2, .bloque-178220 h3, .bloque-178220 h4, .bloque-178220 h5, .bloque-178220 h6 { color: #938474; } .bloque-178220 .text { padding: 75px 6% 6% !important; font-size: 14px !important; line-height: 26px !important; color: #545454; } .bloque-178220 .text p , .bloque-178220 .geodir_post_meta, .bloque-178220 .geodir_post_meta p{ font-size: 14px !important; line-height: 26px !important; line-height: 1.5 !important; } .bloque-178220 .bg-image{ background-size: cover; } .bloque-178220 .boton-generico{ margin-bottom: 30px; } @media (max-width: 991px){ .bloque-178220 .bg-image{ background-size: cover; } } </style><div class="bg bloque-texto bloque-178220"><div class="container-fluid contenido"><div class="row"><!----><div class="image-full"><img loading="lazy" src="https://cdn.erescambio.com/wp-content/uploads/2025/08/TANTRA-683x1024.png" alt="Imagen del bloque a la izquierda: 6- Tantra"></div><!----><div data-wow-duration="2s" class="col-sm-12 col-md-12 col-12 col-lg-8 text wow fadeIn text-left left"><div><h2 data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="bloque-title text-left aos-init">6- Tantra</h2><div data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="aos-init"><h3 data-start="159" data-end="193"><span style="font-size: 24px;">Sexualidad consciente y tantra</span></h3>
+<p data-start="195" data-end="580"><span style="font-size: 20px;">El tantra es un camino de reconexión contigo mismo, una práctica ancestral que honra el cuerpo, la energía sexual y la espiritualidad como vías de transformación y autoconocimiento. A través de la respiración, el movimiento, la presencia y el placer consciente, el tantra invita a liberar bloqueos, sanar la relación con el cuerpo y vivir la sexualidad desde el amor y la autenticidad.</span></p>
+<p data-start="582" data-end="912"><span style="font-size: 20px;">Entre otras modalidades, ofrezco un <strong>enfoque específico para mujeres</strong>, enfocado en despertar la energía femenina (Shakti) y recuperar el placer de habitar el cuerpo con libertad, sin miedo ni vergüenza. En este espacio se trabaja el equilibrio entre lo femenino y lo masculino interior, se aprenden límites sanos y se cultivan vínculos más conscientes.</span></p>
+<p data-start="914" data-end="1038"><span style="font-size: 20px;"><strong data-start="914" data-end="942">Modalidades disponibles:</strong></span><br data-start="942" data-end="945"><br>
+<span style="font-size: 20px;">Sesiones individuales y en pareja · Clases · Talleres presenciales · Retiros en la naturaleza</span></p>
+<p><span style="font-size: 20px;">Si quieres recibir el calendario de los próximos talleres, clases y retiros de tantra, escríbeme y te enviaré el calendario de los próximos meses.</span></p>
+</div><a href="https://api.whatsapp.com/send?phone=34630127319&amp;text=Hola%20Gemma%2C%20estoy%20en%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20próximas%20actividades%20de%20tantra." target="_self" data-aos="fade-up" data-aos-once="true" data-aos-duration="2000" class="boton-generico aos-init" style="border-color: rgb(147, 132, 116) !important; background: rgb(147, 132, 116) !important; color: rgb(244, 233, 231) !important;">QUIERO RECIBIR EL CALENDARIO</a></div></div><div data-wow-duration="2s" class="col-sm-12 col-md-12 col-lg-4 bg_cover text-right bg-image wow fadeIn p-0 izq" style="background-image: url(&quot;https://cdn.erescambio.com/wp-content/uploads/2025/08/TANTRA-683x1024.png&quot;);"><img loading="lazy" src="https://cdn.erescambio.com/wp-content/uploads/2025/08/TANTRA-683x1024.png" alt="Imagen del bloque a la derecha: 6- Tantra" class="img_entera bg_cover"></div><!----></div></div></div></section><section data-v-f7a3753c="" id="" class="wrapper-bloque wrapper-bloque-call-actions"><style data-v-0638af71="" data-v-f7a3753c="">
+      .bloque-83775 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #f7f7f5
+      }
+  
+      .bloque-83775 .bloque-title {
+        color: #938474;
+      }
+
+      .bloque-83775 p{
+        color: #545454;
+      }
+
+      .bloque-83775 .boton-generico {
+        background-color: #938474;
+        color: #969696;
+      }
+
+      </style><div data-v-f7a3753c="" class="bloque-call-actions bloque-83775"><div data-v-f7a3753c="" class="container text-center"><h2 data-v-f7a3753c="" data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="bloque-title bloque-title-small aos-init">¿Tienes dudas?</h2><div data-v-f7a3753c="" class="row"><div data-v-f7a3753c="" data-aos="fade" data-aos-once="true" data-aos-duration="1300" class="col text-center aos-init"><p><span style="font-size: 20px;">Si sientes que necesitas un cambio y no sabes por dónde empezar, cuéntame en qué punto estás <br>
+y juntas encontraremos el camino que mejor se adapte a ti.</span></p>
+</div></div><div data-v-f7a3753c="" class="row"><div data-v-f7a3753c="" class="col"><div data-v-f7a3753c="" data-aos="fade-up" data-aos-once="true" data-aos-duration="1500" class="bloques-ctas aos-init"><a data-v-f7a3753c="" href="tel:+34 630 12 73 19" aria-label="phone" target="_blank"><i data-v-f7a3753c="" class="global-icons fa fa-phone icon-phone"></i></a><a data-v-f7a3753c="" href="mailto:gemmaestivill@gmail.com" aria-label="email" target="_blank"><i data-v-f7a3753c="" class="global-icons fa fa-envelope icon-email"></i></a><a data-v-f7a3753c="" href="https://api.whatsapp.com/send?phone=34630127319" aria-label="whatsapp" target="_blank"><i data-v-f7a3753c="" class="global-icons fab fa-whatsapp icon-whatsapp"></i></a></div></div></div></div></div></section></main><footer role="contentinfo" class="footer"><style data-v-0638af71="">
+      .footer {
+        background-color: #938474;
+        color: #000000;
+      }
+      .footer a,
+      .footer ul.social-buttons li a {
+        color: #000000;
+      }
+      .footer .copyright,
+      .footer .legal {
+        opacity: 1;
+        color: #000000;
+      }
+      </style><div class="container"><div class="legal"><div><ul class="unlist"><li><a href="/nota-legal">Nota legal</a></li><li> | </li><li><a href="/politica-de-privacidad">Política de privacidad</a></li><li> | </li><li><a href="/politica-de-cookies">Política de cookies</a></li><li> | </li><li><a href="/declaracion-de-accesibilidad">Declaración de accesibilidad</a></li></ul></div></div><div class="copyright">Copyright ©2026</div></div><div class="container container_bottom"><div class="col-md-10 text-left links_personal"><div><ul class="unlist"><li><a href="" target="_blank" aria-label="Abrir enlace">  </a></li></ul></div></div><div class="col-md-2 text-right legal"><ul class="list-inline social-buttons" style="margin-top: 0px;"></ul></div></div><!----><!----><div class="cookie-toggler-wrapper"><div><div data-modal="gdpr-modal" class="v--modal-overlay scrollable"><div class="v--modal-background-click"><div class="v--modal-top-right"></div> <div role="dialog" aria-modal="true" class="v--modal-box v--modal v-enter v-enter-active" aria-labelledby="cookieConsentModalLabel" style="top: 68px; left: 129px; width: 505px; height: auto;" tabindex="-1"><div id="cookieConsentModal" tabindex="-1" role="dialog" aria-labelledby="cookieConsentModalLabel" class="cookie-consent_modal"><div class="cookieConsent-modal__content"><div class="cookie-consent_modal__header"><p id="cookieConsentModalLabel" class="cookie-consent_modal__header-title cookie-modal-title"> Valoramos tu privacidad </p> <hr></div> <div class="cookieConsent-modal__body"> <div class="cookie-banner-message"> Usamos cookies para mejorar su experiencia de navegación, mostrarle anuncios o contenidos personalizados y analizar nuestro tráfico. Al hacer clic en "Aceptar todo" usted da su consentimiento a nuestro uso de las cookies. <a href="/politica-de-cookies">Política de cookies</a></div> <!----></div> <div class="cookie-consent_modal__footer"><button class="vct__btn vct__btn--default cookie-banner-btn btn-settings"> Personalizar </button><button class="vct__btn vct__btn--secondary cookie-banner-btn btn-reject"> Rechazar todas </button><button class="vct__btn vct__btn--primary cookie-banner-btn btn-accept"> Aceptar todo </button></div></div></div> <!----></div></div></div></div></div><!----><style data-v-0638af71="">
+      @import url("https://fonts.googleapis.com/css2?family=Open Sans&display=swap");
+      body{
+          font-family: 'Open Sans' !important;
+          font-size: 14px;
+          line-height: 26px; 
+      }
+      body.popup-active {
+        overflow: hidden !important;
+      }	
+      .header {
+        background-color: rgba(247,247,245,1);
+      }
+      .header.fijada {
+        background-color: rgb(247,247,245);
+      }
+      .header > .navbar_sub > .main-logo > span {
+        font-family: 'Open Sans';
+      }
+      .header ul.menu > li.menu-item > a{
+        font-size: 0.9rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        white-space: normal;
+        font-family: 'Open Sans';
+        text-transform: uppercase;
+      }
+      ::-moz-selection { /* Code for Firefox */
+        color: white;
+        background: #3297FD;
+      }
+      ::selection {
+        color: white;
+        background: #3297FD;
+      }
+      @media(max-width: 992px){
+        .header {
+          opacity: 1;
+          background-color: rgb(247,247,245);
+        }
+        .header > .container {
+          padding: 0;
+        }
+        .header ul.menu {
+          background-color: #f7f7f5;
+        }        
+      }
+        .header a {
+          color: #938474;
+        }
+        .header a:hover,
+        .header .menu-item.active a.menu-link,
+        .header .menu-item a.dropdown-item.active{
+          color: ;
+        }
+          .header a span {
+            color: #938474;
+          }
+          .header img {
+            border-radius: 50%;
+          }
+          @media(max-width: 992px){
+            .header li.menu-item a {
+              /*border-bottom: solid 1px #93847433;*/
+            }
+          }
+        .header .main-logo {
+          font-size: 26px;
+        }
+        @media(max-width: 992px){
+          .header .main-logo {
+            font-size: 20px;
+          }
+        }
+        .header #menu-trigger {
+          color: #938474;
+        }
+        
+        h1, 
+        h2,
+        h3,
+        h4,
+        h5,
+        h6{
+          font-family: 'Open Sans' !important;
+        }
+        
+        .h1, .h2, h1, h2{
+          font-size: 45px;
+        }
+        
+        
+        .bg .text{
+          padding: 75px 6%;
+          font-size: 14px;
+          line-height: 26px;
+        }
+       .header .main-logo span{ color: #938474; } .header ul.menu > li.menu-item > a{ font-size: 14px; } ul.social-buttons li a{ color: #938474; } .dropdown-menu{ background: rgb(247,247,245); } .dropdown-menu a{ font-size: 12px !important; line-height: 12px !important; } .dropdown-toggle{ color: #938474; } #autor-popup{ background: ; color: ; } #autor-popup .autor-popup-details a.btn{ background-color:  !important; color:  !important; border: 2px solid  !important; } #autor-popup .autor-popup-details a.btn:hover{ color:  !important; border: 2px solid  !important; background-color:  !important; } #autor-popup .autor-popup-details a{ color: ; } #autor-popup .autor-popup-details h3 a{ color: ; } #autor-popup .box-formulario{ background: ; color: ; } #autor-popup .wpcf7-form label { color: ; } #autor-popup .wpcf7-form a { color: ; } #autor-popup .wpcf7-form input[type=submit]{ cursor: pointer; background-color:  !important; color:  !important; border: 2px solid  !important; } #autor-popup .wpcf7-form input[type=submit]:hover{ color:  !important; border: 2px solid  !important; background-color:  !important; } #autor-popup .ec-author-follow{ color:  !important; background:  !important; border: 2px solid  !important; } .wrapper-popup .popup, .wrapper-popup .popup p, .wrapper-popup .popup h1, .wrapper-popup .popup h2, .wrapper-popup .popup h3, .wrapper-popup .popup h4, .wrapper-popup .popup h5, .wrapper-popup .popup h6 { color: #938474 !important; } .wrapper-popup.p-active { background: #f7f7f5 !important; color:  !important; } </style><style data-v-0638af71=""> .footer > .container{ border-bottom: none; } </style><!----></footer><!----></div></div>
+
+    <script src="/js/chunk-vendors.fc1c89fd77.js?v=1792433384"></script>
+
+    <script src="/js/app.9f163af677.js?v=1792433384"></script>
+
+    
+
+
+</body></html>

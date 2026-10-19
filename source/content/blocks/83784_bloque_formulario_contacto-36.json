@@ -1,0 +1,73 @@
+{
+  "bloque": {
+    "ID": 83784,
+    "post_author": "2711",
+    "post_date": "2022-04-11 18:02:32",
+    "post_date_gmt": "2022-04-11 17:02:32",
+    "post_content": "",
+    "post_title": "Contacto",
+    "post_excerpt": "",
+    "post_status": "publish",
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "post_password": "",
+    "post_name": "contacto-36",
+    "to_ping": "",
+    "pinged": "",
+    "post_modified": "2025-04-13 11:42:06",
+    "post_modified_gmt": "2025-04-13 10:42:06",
+    "post_content_filtered": "",
+    "post_parent": 0,
+    "guid": "https://www.erescambio.com/?bloque_formulario=contacto-36",
+    "menu_order": 0,
+    "post_type": "bloque_formulario",
+    "post_mime_type": "",
+    "comment_count": "0",
+    "filter": "raw"
+  },
+  "extended": {
+    "coger_de_ficha": false,
+    "estilos": {
+      "color_de_fondo": "#f7f7f5",
+      "color_de_titulo": "#938474",
+      "color_de_texto": "#545454",
+      "color_de_enlace": "#969696",
+      "colores_personalizados": 0,
+      "colores": "contraste",
+      "fuentes": {
+        "fuente_cabecera": "'Open Sans', sans-serif",
+        "tamano_fuente_cabecera": "45",
+        "fuente_body": "'Open Sans', sans-serif",
+        "tamano_fuente_textos": "14",
+        "alto_de_linea_textos": "26"
+      }
+    },
+    "telefono": "+34 630 127 319",
+    "mobil": "+34 630 127 319",
+    "email": "gemmaestivill@gmail.com",
+    "web": "https://gemmashivali.com/",
+    "direccion": "Sesiones online · Sesiones presenciales en Barcelona y Sitges",
+    "descripcion": "",
+    "datos_contacto": {
+      "telefono": "+34 630 127 319",
+      "mobil": "+34 630 127 319",
+      "email": "gemmaestivill@gmail.com",
+      "web": "https://gemmashivali.com/",
+      "direccion": "Sesiones online · Sesiones presenciales en Barcelona y Sitges",
+      "txt_he_leido": "He leído y acepto la",
+      "txt_politica_de_privacidad": "política de privacidad",
+      "txt_declaracion_de_accesibilidad": "Declaración de Accesibilidad",
+      "txt_nombre": "Nombre",
+      "txt_email": "Email",
+      "txt_telefono": "Teléfono",
+      "txt_mensaje": "Mensaje",
+      "txt_enviar": "Enviar",
+      "txt_requerido": "Campo requerido",
+      "txt_email_ok": "Mensaje enviado correctamente.",
+      "txt_email_ko": "Error sending the message. Please try again.",
+      "txt_mandatory": "(*) Los campos marcados con * son obligatorios.",
+      "sedes": [],
+      "mensaje_texto_adicional": null
+    }
+  }
+}

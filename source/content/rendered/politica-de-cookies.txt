@@ -1,0 +1,151 @@
+﻿
+ Gemma Estivill ǀ Terapia online y presencial en Sitges y BCN
+ Saltar al contenido principal 
+Gemma Shivali
+SOBRE MI
+SERVICIOS
+CONTACTO
+Calendario
+Política de Cookies
+1. Quién es el responsable
+El sitio web https://gemmashivali.com (en adelante, el sitio web) es titularidad de Gemma Shivali (en adelante Tantra y consciencia emocional Gemma Shivali), con domicilio a estos efectos en CALLE SANTALO número de C.I.F./N.I.F.: 43417740L, inscrita en el . Correo electrónico de contacto: gemmaestivill@gmail.com. El resto de datos identificativos está en la Nota legal.
+Esta política explica qué cookies y tecnologías similares utiliza el sitio web, con qué finalidad, quién las gestiona, cuánto tiempo se conservan y cómo puedes aceptarlas, rechazarlas o cambiar tu decisión. Se ha redactado conforme al artículo 22.2 de la Ley 34/2002, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI), al Reglamento (UE) 2016/679 (RGPD), a la Ley Orgánica 3/2018 (LOPDGDD) y a la Guía sobre el uso de las cookies de la Agencia Española de Protección de Datos (AEPD).
+2. Qué son las cookies y las tecnologías similares
+Las cookies son pequeños archivos de texto que los sitios web guardan en tu navegador (ordenador, móvil o tableta) cuando los visitas. Sirven, por ejemplo, para recordar tus preferencias, reconocer tu dispositivo en visitas posteriores o medir cómo se utiliza la web.
+Esta política se aplica también a otras tecnologías con una función parecida: el almacenamiento local del navegador (localStorage), que guarda información en tu dispositivo de forma similar a una cookie, y los píxeles o etiquetas de seguimiento, pequeños fragmentos de código que envían información a un tercero cuando se carga una página.
+3. Tipos de cookies
+Según quién las gestiona. Las cookies propias se envían a tu dispositivo desde el propio sitio web. Las cookies de terceros las gestiona otra empresa (por ejemplo, Google o Meta) que trata los datos obtenidos con sus propias finalidades.
+Según su finalidad. Las cookies técnicas o necesarias permiten que el sitio web funcione y prestan los servicios que solicitas, y no requieren consentimiento. Las cookies de preferencias recuerdan opciones como el idioma. Las cookies de análisis o medición cuantifican el uso del sitio web para mejorarlo. Las cookies de publicidad comportamental almacenan información sobre tu navegación para mostrarte anuncios adaptados a tus intereses.
+Según su duración. Las cookies de sesión se eliminan al cerrar el navegador. Las cookies persistentes permanecen en tu dispositivo durante el plazo indicado en cada caso, o hasta que las borres.
+4. Cookies y tecnologías que utiliza este sitio web
+Las categorías coinciden con las del panel de configuración que aparece al entrar en el sitio web: Necesarias, Analítica y Anuncios. A continuación se detalla qué se instala en cada categoría, quién lo gestiona, para qué y durante cuánto tiempo.
+4.1 Necesarias (no requieren consentimiento)
+Son imprescindibles para que el sitio web funcione y para atender lo que tú mismo solicitas. Están exentas de consentimiento conforme al artículo 22.2 de la LSSI.
+Nombre
+Tipo
+Gestor
+Finalidad
+Duración
+vct-cookie-settings
+Almacenamiento local (localStorage), propio
+Tantra y consciencia emocional Gemma Shivali
+Guarda tu decisión sobre las cookies (aceptar, rechazar o configuración personalizada) para no volver a mostrarte el aviso en cada visita.
+30 días
+_GRECAPTCHA
+Cookie de tercero (dominio www.google.com)
+Google (reCAPTCHA)
+Protege el formulario de contacto frente al spam y a los envíos automatizados, distinguiendo entre personas y robots (seguridad).
+6 meses
+El servicio reCAPTCHA lo presta Google. Al cargarse, Google recibe datos técnicos de tu dispositivo y de tu navegación, que trata conforme a su política de privacidad.
+4.2 Analítica
+Solo se activan si pulsas «Aceptar todo» o si activas la categoría Analítica en «Personalizar». Sirven para saber cuántas personas visitan el sitio web, qué páginas ven, desde qué tipo de dispositivo y zona geográfica aproximada llegan y cómo navegan, con el único fin de mejorar el sitio web. Se utiliza Google Analytics 4, cargado a través de Google Tag Manager, ambos servicios de Google.
+Nombre
+Tipo
+Gestor
+Finalidad
+Duración
+_ga
+Cookie propia (dominio https://gemmashivali.com) gestionada por Google
+Google (Google Analytics 4)
+Distingue a los usuarios asignando un identificador aleatorio al navegador, para contar visitas y visitantes únicos.
+2 años
+_ga_
+Cookie propia (dominio https://gemmashivali.com) gestionada por Google
+Google (Google Analytics 4)
+Mantiene el estado de la sesión de navegación y cuenta las páginas vistas dentro de ella.
+2 años
+Google Tag Manager no instala cookies por sí mismo: es el gestor que carga la etiqueta de Google Analytics una vez que has aceptado esta categoría. La información recogida se envía a Google e incluye datos técnicos como el tipo de dispositivo, el navegador, el idioma, las páginas visitadas y la ubicación aproximada (ciudad). Google Analytics 4 no registra ni almacena direcciones IP completas. Puedes consultar cómo utiliza Google estos datos en esta página, y puedes impedir que Google Analytics recoja información de tu navegación en cualquier sitio web instalando el complemento de inhabilitación de Google Analytics.
+4.3 Anuncios (publicidad y redes sociales, requieren tu consentimiento)
+Solo se activan si pulsas «Aceptar todo» o si activas la categoría Anuncios en «Personalizar». Se utilizan para medir la eficacia de los anuncios de Tantra y consciencia emocional Gemma Shivali en Facebook e Instagram y para mostrarte publicidad relacionada con tus intereses en esas plataformas. Las gestiona Meta a través de la herramienta Meta Pixel.
+Nombre
+Tipo
+Gestor
+Finalidad
+Duración
+_fbp
+Cookie propia (dominio https://gemmashivali.com) gestionada por Meta
+Meta Platforms Ireland Limited
+Identifica tu navegador para medir las visitas y conversiones procedentes de anuncios de Facebook e Instagram y para mostrarte publicidad personalizada.
+3 meses
+_fbc
+Cookie propia (dominio https://gemmashivali.com) gestionada por Meta
+Meta Platforms Ireland Limited
+Se instala únicamente si llegas al sitio web desde un anuncio de Facebook o Instagram. Asocia tu visita al anuncio en el que hiciste clic.
+3 meses
+fr
+Cookie de tercero (dominio .facebook.com)
+Meta Platforms Ireland Limited
+Publicidad personalizada y medición. Permite a Meta reconocerte si tienes sesión iniciada en Facebook o Instagram.
+3 meses
+Más información en la política de privacidad y en la política de cookies de Meta. Puedes gestionar la publicidad que ves en Facebook e Instagram desde tus preferencias de anuncios.
+4.4 Vídeos de YouTube incrustados
+Para proteger tu privacidad, el reproductor de YouTube no se carga al abrir la página: solo se muestra una imagen de previsualización. El reproductor de YouTube, y con él sus cookies, se carga únicamente si pulsas el botón de reproducción. Si no lo pulsas, YouTube no instala ninguna cookie.
+Nombre
+Tipo
+Gestor
+Finalidad
+Duración
+YSC
+Cookie de tercero (dominio .youtube.com)
+Google (YouTube)
+Detecta spam, fraude y abusos en el reproductor.
+Sesión
+VISITOR_INFO1_LIVE
+Cookie de tercero (dominio .youtube.com)
+Google (YouTube)
+Recuerda tus preferencias de reproducción y permite recomendaciones personalizadas en YouTube. Google también puede utilizarla con fines publicitarios.
+6 meses
+__Secure-YNID
+Cookie de tercero (dominio .youtube.com)
+Google (YouTube)
+Identificador que sustituye progresivamente a VISITOR_INFO1_LIVE con finalidades similares.
+6 meses
+__Secure-ROLLOUT_TOKEN
+Cookie de tercero (dominio .youtube.com)
+Google (YouTube)
+Gestiona el despliegue de nuevas funciones del reproductor y mide su impacto.
+6 meses
+PREF
+Cookie de tercero (dominio .youtube.com)
+Google (YouTube)
+Guarda ajustes del reproductor, como el idioma o la reproducción automática. Puede instalarse durante la reproducción.
+8 meses
+Si tienes sesión iniciada en tu cuenta de Google, YouTube puede instalar cookies adicionales asociadas a tu cuenta. Consulta la información sobre las cookies de Google y su política de privacidad.
+4.5 Servicios de terceros que no instalan cookies
+Para funcionar, el sitio web carga recursos de otros proveedores que no instalan cookies en tu dispositivo, aunque sí reciben tu dirección IP y datos técnicos de la conexión: Google Fonts (tipografías), la plataforma de Erescambio, que aloja el contenido y las imágenes del sitio web como proveedor tecnológico, y la imagen de previsualización del vídeo de YouTube. Los botones y enlaces a WhatsApp, Google Maps, Instagram, LinkedIn y otras webs te llevan fuera de este sitio; a partir de ese momento se aplican las políticas de cookies y de privacidad de cada uno de esos servicios.
+5. Quién utiliza las cookies
+Las cookies propias las utiliza Tantra y consciencia emocional Gemma Shivali. Las cookies de terceros las utilizan las siguientes empresas, que tratan los datos obtenidos con sus propias finalidades y conforme a sus políticas:
+Google Ireland Limited (Gordon House, Barrow Street, Dublín 4, Irlanda): reCAPTCHA, YouTube y Google Fonts. Política de privacidad y cookies de Google.
+Meta Platforms Ireland Limited (Merrion Road, Dublín 4, Irlanda): Meta Pixel (Facebook e Instagram). Política de privacidad y política de cookies.
+6. Transferencias internacionales de datos
+Google y Meta pueden tratar los datos recogidos a través de sus cookies en servidores situados fuera del Espacio Económico Europeo, en particular en Estados Unidos. Ambas empresas están certificadas en el Marco de Privacidad de Datos UE-EE. UU. (EU-US Data Privacy Framework) y, además, aplican las cláusulas contractuales tipo aprobadas por la Comisión Europea. Tantra y consciencia emocional Gemma Shivali no realiza otras transferencias internacionales a través de este sitio web.
+7. Cómo aceptar, rechazar o cambiar tu configuración
+La primera vez que visitas el sitio web aparece un aviso con tres opciones, todas con la misma visibilidad: «Aceptar todo» activa todas las categorías; «Rechazar todas» mantiene únicamente las necesarias; «Personalizar» te permite activar o desactivar cada categoría y pulsar «Guardar». Hasta que decides, no se instala ninguna cookie que requiera consentimiento.
+Tu decisión se guarda en tu navegador durante 30 días. Pasado ese plazo, el aviso vuelve a aparecer para que decidas de nuevo. Si quieres cambiar tu elección antes, tienes dos opciones:
+Borrar los datos de este sitio web en tu navegador (cookies y datos de sitios). Al recargar la página, el aviso volverá a mostrarse y podrás elegir de nuevo. Retirar el consentimiento es tan sencillo como darlo y no afecta a la licitud del tratamiento realizado con anterioridad.
+Configurar tu navegador para bloquear o eliminar las cookies, de forma general o solo para este sitio web. Estas son las instrucciones de los navegadores más habituales:
+Google Chrome (ordenador y móvil)
+Mozilla Firefox
+Safari en Mac y Safari en iPhone y iPad
+Microsoft Edge
+Opera
+También puedes gestionar la publicidad personalizada de Google en adssettings.google.com, la de Meta en tus preferencias de anuncios y la de otros proveedores en youronlinechoices.com.
+Si bloqueas todas las cookies desde el navegador, algunas funciones de este u otros sitios web pueden dejar de funcionar correctamente. Rechazar las cookies de este sitio web no te impide navegar por él ni contactar con Tantra y consciencia emocional Gemma Shivali.
+8. Elaboración de perfiles
+Tantra y consciencia emocional Gemma Shivali no elabora perfiles ni toma decisiones automatizadas con efectos jurídicos sobre ti a partir de las cookies de este sitio web. Meta, con quien Tantra y consciencia emocional Gemma Shivali comparte la responsabilidad sobre la recogida de datos a través del Meta Pixel, puede utilizar esa información para elaborar perfiles publicitarios conforme a su política de privacidad. Puedes evitarlo rechazando la categoría Anuncios o desde tus preferencias de anuncios de Facebook e Instagram.
+9. Tus derechos y más información
+Los datos obtenidos a través de las cookies que requieren consentimiento se tratan sobre la base de ese consentimiento (artículo 6.1.a del RGPD). Los datos de las cookies necesarias se tratan sobre la base del interés legítimo de garantizar el funcionamiento y la seguridad del sitio web (artículo 6.1.f del RGPD).
+Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad, así como retirar tu consentimiento en cualquier momento, escribiendo a gemmaestivill@gmail.com. Si consideras que tus derechos no han sido atendidos, puedes presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es). Encontrarás más información sobre el tratamiento de tus datos en la Política de privacidad.
+10. Actualizaciones de esta política
+Esta política puede modificarse cuando cambien las cookies que utiliza el sitio web o la normativa aplicable. La fecha de la última actualización figura al inicio. Te recomendamos revisarla periódicamente.
+Nota legal
+ | 
+Política de privacidad
+ | 
+Política de cookies
+ | 
+Declaración de accesibilidad
+Copyright ©2026
+ Valoramos tu privacidad 
+ Usamos cookies para mejorar su experiencia de navegación, mostrarle anuncios o contenidos personalizados y analizar nuestro tráfico. Al hacer clic en "Aceptar todo" usted da su consentimiento a nuestro uso de las cookies. Política de cookies 
+ Personalizar Rechazar todas Aceptar todo

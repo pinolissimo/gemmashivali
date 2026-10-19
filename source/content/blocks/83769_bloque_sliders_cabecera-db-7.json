@@ -1,0 +1,169 @@
+{
+  "bloque": {
+    "ID": 83769,
+    "post_author": "2711",
+    "post_date": "2022-04-11 18:02:31",
+    "post_date_gmt": "2022-04-11 17:02:31",
+    "post_content": "",
+    "post_title": "Cabecera home GE",
+    "post_excerpt": "",
+    "post_status": "publish",
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "post_password": "",
+    "post_name": "cabecera-db-7",
+    "to_ping": "",
+    "pinged": "",
+    "post_modified": "2026-03-16 14:38:03",
+    "post_modified_gmt": "2026-03-16 13:38:03",
+    "post_content_filtered": "",
+    "post_parent": 0,
+    "guid": "https://www.erescambio.com/?bloque_sliders=cabecera-db-7",
+    "menu_order": 0,
+    "post_type": "bloque_sliders",
+    "post_mime_type": "",
+    "comment_count": "0",
+    "filter": "raw"
+  },
+  "extended": {
+    "cabeceras": [
+      {
+        "texto": "",
+        "imagen": false,
+        "diseno_avanzado": true,
+        "subtitulo": "",
+        "texto_boton": "Quiero saber más",
+        "enlace_boton": "https://api.whatsapp.com/send?phone=34630127319&text=Hola%20Gemma%2C%20estoy%20en%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20retiro%20de%20tantra.%20",
+        "estilo": {
+          "alineacion_vertical_slide": "bottom",
+          "alineacion_slide": "center",
+          "ancho_caja": "60",
+          "distancia_alineacion": "15",
+          "redondeo_bordes": "0",
+          "alineacion_texto": "center",
+          "color_titulo": "",
+          "tamano_fuente_titulo": "50",
+          "estilo_titulo": "italic",
+          "color_subtitulo": "",
+          "tamano_fuente_subtitulo": "24",
+          "estilo_subtitulo": "italic",
+          "color_fondo_boton": "#c68555",
+          "color_texto_boton": "#ffffff",
+          "tamano_fuente_boton": "16",
+          "color_fondo_texto": "",
+          "opacidad_fondo": "0.5",
+          "sombreado_texto": false
+        },
+        "movil": {
+          "imagen_responsive": false,
+          "alineacion_slide": "center",
+          "redondeo_bordes": "0",
+          "alineacion_texto": "center",
+          "color_titulo": "",
+          "tamano_fuente_titulo": "30",
+          "color_subtitulo": "",
+          "tamano_fuente_subtitulo": "18",
+          "color_fondo_boton": "#c68555",
+          "color_texto_boton": "#ffffff",
+          "tamano_fuente_boton": "14",
+          "color_fondo_texto": "",
+          "opacidad_fondo": "0.5",
+          "color_fondo_responsive": "",
+          "sombreado_texto": false
+        },
+        "key": 0,
+        "imagen_id_desktop": "",
+        "imagen_id_movil": "",
+        "imagen_desktop": false,
+        "imagen_movil": false,
+        "dimensiones": {
+          "desktop": {
+            "ancho": 1920,
+            "alto": 1080
+          },
+          "mobile": {
+            "ancho": 1920,
+            "alto": 1080
+          }
+        }
+      },
+      {
+        "texto": "Recupera tu energía",
+        "imagen": "https://cdn.erescambio.com/wp-content/uploads/2022/04/CABECERA.jpg",
+        "diseno_avanzado": true,
+        "subtitulo": "Reconecta con tu cuerpo y fortalece tu bienestar en cada etapa de tu vida",
+        "texto_boton": "Contáctame",
+        "enlace_boton": "https://api.whatsapp.com/send?phone=34630127319&text=Hola%20Gemma%2C%20estoy%20en%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tus%20servicios.%20",
+        "estilo": {
+          "alineacion_vertical_slide": "center",
+          "alineacion_slide": "right",
+          "ancho_caja": "88",
+          "distancia_alineacion": "66",
+          "redondeo_bordes": "0",
+          "alineacion_texto": "left",
+          "color_titulo": "#ffffff",
+          "tamano_fuente_titulo": "50",
+          "estilo_titulo": "italic",
+          "color_subtitulo": "#ffffff",
+          "tamano_fuente_subtitulo": "24",
+          "estilo_subtitulo": "italic",
+          "color_fondo_boton": "#938474",
+          "color_texto_boton": "#f4e9e7",
+          "tamano_fuente_boton": "16",
+          "color_fondo_texto": "",
+          "opacidad_fondo": "0.5",
+          "sombreado_texto": true
+        },
+        "movil": {
+          "imagen_responsive": "https://cdn.erescambio.com/wp-content/uploads/2022/04/CABECERA.jpg",
+          "alineacion_slide": "center",
+          "redondeo_bordes": "0",
+          "alineacion_texto": "center",
+          "color_titulo": "",
+          "tamano_fuente_titulo": "30",
+          "color_subtitulo": "",
+          "tamano_fuente_subtitulo": "18",
+          "color_fondo_boton": "",
+          "color_texto_boton": "",
+          "tamano_fuente_boton": "14",
+          "color_fondo_texto": "",
+          "opacidad_fondo": "0.5",
+          "color_fondo_responsive": "#f4e9e7",
+          "sombreado_texto": true
+        },
+        "key": 1,
+        "imagen_id_desktop": "170060",
+        "imagen_id_movil": "170060",
+        "imagen_desktop": "https://cdn.erescambio.com/wp-content/uploads/2022/04/CABECERA.jpg",
+        "imagen_movil": "https://cdn.erescambio.com/wp-content/uploads/2022/04/CABECERA-600x310.jpg",
+        "dimensiones": {
+          "desktop": {
+            "ancho": 1928,
+            "alto": 997
+          },
+          "mobile": {
+            "ancho": 600,
+            "alto": 310
+          }
+        }
+      }
+    ],
+    "duracion_transicion": "4",
+    "descripcion": "",
+    "estilos": {
+      "color_de_fondo": "#f7f7f5",
+      "color_de_titulo": "#938474",
+      "color_de_texto": "#545454",
+      "color_de_enlace": "#969696",
+      "colores_personalizados": 0,
+      "colores": "contraste",
+      "fuentes": {
+        "fuente_cabecera": "'Open Sans', sans-serif",
+        "tamano_fuente_cabecera": "45",
+        "fuente_body": "'Open Sans', sans-serif",
+        "tamano_fuente_textos": "14",
+        "alto_de_linea_textos": "26"
+      }
+    }
+  }
+}
