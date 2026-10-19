@@ -1,13 +1,13 @@
 {
   "protocol": "VDS-KNOWLEDGE-SURFACE/1",
   "canonical": "https://gemmashivali.com/politica-de-privacidad/",
-  "primaryEntityId": "gemma-shivali",
+  "primaryEntityId": "legal-politica-de-privacidad",
   "entities": [
     {
-      "id": "gemma-shivali",
-      "name": "Gemma Shivali",
-      "type": "Person",
-      "description": "Terapeuta especializada en procesos de transformación a través del cuerpo y la energía, con más de 30 años de formación en rebirthing, codependencia, bioenergética, tantra y qigong."
+      "id": "legal-politica-de-privacidad",
+      "name": "Política de privacidad de Gemma Shivali",
+      "type": "WebPage",
+      "description": "Documento legal oficial de Gemma Shivali: política de privacidad."
     }
   ],
   "relations": [],
@@ -17,7 +17,7 @@
       "question": "¿Qué información contiene la política de privacidad de Gemma Shivali?",
       "answer": "La política de privacidad de Gemma Shivali explica que los datos se tratan para atender consultas, prestar servicios y enviar newsletters, con base en el consentimiento, y cómo ejercer los derechos de acceso, rectificación, supresión, oposición, portabilidad y limitación.",
       "entityIds": [
-        "gemma-shivali"
+        "legal-politica-de-privacidad"
       ],
       "claimIds": [
         "claim-politica-de-privacidad"
@@ -29,7 +29,7 @@
     {
       "id": "claim-politica-de-privacidad",
       "text": "La política de privacidad de Gemma Shivali explica que los datos se tratan para atender consultas, prestar servicios y enviar newsletters, con base en el consentimiento, y cómo ejercer los derechos de acceso, rectificación, supresión, oposición, portabilidad y limitación.",
-      "entityId": "gemma-shivali",
+      "entityId": "legal-politica-de-privacidad",
       "kind": "fact",
       "sourceIds": [
         "fuente-politica-de-privacidad"

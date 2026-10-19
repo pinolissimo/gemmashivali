@@ -949,14 +949,15 @@ function createLegalGeo({ key, page }) {
     'declaracion-de-accesibilidad': 'La declaración de accesibilidad de Gemma Shivali indica que el sitio es parcialmente conforme con el RD 1112/2018 y la norma UNE-EN 301549:2022, con nivel AA, tras la auditoría de ADDAW del 15/02/2023.'
   };
   const summary = summaries[key];
+  const entityId = `legal-${key}`;
   return createGeoDocument({
-    primaryEntityId: 'gemma-shivali',
+    primaryEntityId: entityId,
     entities: [
       {
-        id: 'gemma-shivali',
-        name: 'Gemma Shivali',
-        type: 'Person',
-        description: 'Terapeuta especializada en procesos de transformación a través del cuerpo y la energía, con más de 30 años de formación en rebirthing, codependencia, bioenergética, tantra y qigong.'
+        id: entityId,
+        name: `${page.title} de Gemma Shivali`,
+        type: 'WebPage',
+        description: `Documento legal oficial de Gemma Shivali: ${page.title.toLowerCase()}.`
       }
     ],
     sources: [
@@ -966,7 +967,7 @@ function createLegalGeo({ key, page }) {
       {
         id: `claim-${key}`,
         text: summary,
-        entityId: 'gemma-shivali',
+        entityId,
         kind: 'fact',
         sourceIds: [`fuente-${key}`]
       }
@@ -976,7 +977,7 @@ function createLegalGeo({ key, page }) {
         id: `answer-${key}`,
         question: `¿Qué información contiene la ${page.title.toLowerCase()} de Gemma Shivali?`,
         answer: summary,
-        entityIds: ['gemma-shivali'],
+        entityIds: [entityId],
         claimIds: [`claim-${key}`],
         fragment: '#respuesta-legal'
       }
@@ -987,10 +988,10 @@ function createLegalGeo({ key, page }) {
 
 /**
  * Purpose: Create the Search manifest shared by page identity, sitemap membership and structured-data declarations.
- * @param {{title:string,description:string,canonicalPath:string,intent?:string,role:string,breadcrumbs?:Array<object>,structuredDataTypes?:string[]}} input Manifest inputs.
+ * @param {{title:string,description:string,canonicalPath:string,intent?:string,role:string,breadcrumbs?:Array<object>,structuredDataTypes?:string[],primaryEntity?:object}} input Manifest inputs.
  * @returns {object} Search manifest.
  */
-function createPageManifest({ title, description, canonicalPath, intent = 'informational', role, breadcrumbs = [], structuredDataTypes = ['WebSite', 'Person', 'WebPage'] }) {
+function createPageManifest({ title, description, canonicalPath, intent = 'informational', role, breadcrumbs = [], structuredDataTypes = ['WebSite', 'Person', 'WebPage'], primaryEntity = { id: 'gemma-shivali', name: 'Gemma Shivali', type: 'Person' } }) {
   return createSearchManifest({
     title,
     description,
@@ -1000,7 +1001,7 @@ function createPageManifest({ title, description, canonicalPath, intent = 'infor
     index: true,
     follow: true,
     primaryIntent: intent,
-    primaryEntity: { id: 'gemma-shivali', name: 'Gemma Shivali', type: 'Person' },
+    primaryEntity,
     alternates: [],
     breadcrumbs,
     strategy: { role },
@@ -1160,12 +1161,13 @@ async function main() {
         title: `${page.title} | Gemma Shivali`,
         description: page.description,
         canonicalPath: page.slug,
-        intent: 'informational',
+        intent: 'navigational',
         role: 'legal',
         breadcrumbs: [
           { label: 'Inicio', path: '/' },
           { label: page.title, path: page.slug }
-        ]
+        ],
+        primaryEntity: { id: `legal-${key}`, name: `${page.title} de Gemma Shivali`, type: 'WebPage' }
       });
       return createPageRecord({ search, geo: createLegalGeo({ key, page }), html });
     })
