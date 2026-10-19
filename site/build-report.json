@@ -1,7 +1,7 @@
 {
   "protocol": "VDS-SITE-BUILD/1",
   "siteOrigin": "https://gemmashivali.com",
-  "generatedAt": "2026-10-19T20:53:30.465Z",
+  "generatedAt": "2026-10-19T21:25:34.900Z",
   "pages": [
     {
       "path": "/",
@@ -103,7 +103,7 @@
     },
     "warnings": []
   },
-  "publicAssets": 41,
+  "publicAssets": 40,
   "artifacts": [
     {
       "path": "index.html",
@@ -266,11 +266,6 @@
       "contentType": "image/jpeg"
     },
     {
-      "path": "assets/images/hero.jpg",
-      "bytes": 167262,
-      "contentType": "image/jpeg"
-    },
-    {
       "path": "assets/images/logo.jpg",
       "bytes": 50293,
       "contentType": "image/jpeg"
@@ -392,7 +387,7 @@
     }
   ],
   "written": {
-    "files": 57,
-    "bytes": 4009207
+    "files": 56,
+    "bytes": 3841945
   }
 }
