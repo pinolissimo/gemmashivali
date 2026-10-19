@@ -23,7 +23,11 @@ if (mobile) await send('Emulation.setTouchEmulationEnabled', { enabled: true, ma
 const loaded = once('Page.loadEventFired');
 await send('Page.navigate', { url });
 await Promise.race([loaded, new Promise(r => setTimeout(r, 10000))]);
-await new Promise(r => setTimeout(r, 1200));
+await new Promise(r => setTimeout(r, 1000));
+if (full) {
+  await send('Runtime.evaluate', { expression: `(async()=>{const step=Math.max(400,Math.floor(innerHeight*0.7));for(let y=0;y<document.documentElement.scrollHeight;y+=step){window.scrollTo(0,y);await new Promise(r=>setTimeout(r,60));}window.scrollTo(0,0);await new Promise(r=>setTimeout(r,500));})()`, awaitPromise: true });
+  await new Promise(r => setTimeout(r, 600));
+}
 const metrics = await send('Page.getLayoutMetrics');
 const cs = metrics.cssContentSize || metrics.contentSize;
 const clip = full ? { x: 0, y: 0, width: Math.ceil(cs.width), height: Math.ceil(cs.height), scale: 1 } : undefined;
