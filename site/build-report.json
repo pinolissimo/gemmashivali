@@ -1,15 +1,15 @@
 {
   "protocol": "VDS-SITE-BUILD/1",
   "siteOrigin": "https://gemmashivali.com",
-  "generatedAt": "2026-10-19T21:25:34.900Z",
+  "generatedAt": "2026-10-20T08:35:44.333Z",
   "pages": [
     {
       "path": "/",
       "canonical": "https://gemmashivali.com/",
       "htmlPath": "index.html",
       "knowledgePath": "knowledge/page.json",
-      "htmlBytes": 32241,
-      "htmlDigest": "1145d8dbfec93d202fc22a0af04e93f3348e51d89afb0f7a425e98c08ff53c0c",
+      "htmlBytes": 84994,
+      "htmlDigest": "ff772539db4b386a3c4bb53b0ce4b1d01a9cd9778dd5a729190a5a37634782de",
       "precompiled": true,
       "indexable": true,
       "intent": "informational",
@@ -22,8 +22,8 @@
       "canonical": "https://gemmashivali.com/nuestros-servicios/",
       "htmlPath": "nuestros-servicios/index.html",
       "knowledgePath": "nuestros-servicios/knowledge.json",
-      "htmlBytes": 32148,
-      "htmlDigest": "00a4ed423a93b8a368149227c58cbad5e341ec65f05bac66aa080d24268d4ced",
+      "htmlBytes": 97676,
+      "htmlDigest": "dc0b6cb7f5a980329076b401f45654617a633474135eac9ff2d42ca35389c249",
       "precompiled": true,
       "indexable": true,
       "intent": "commercial",
@@ -36,8 +36,8 @@
       "canonical": "https://gemmashivali.com/nota-legal/",
       "htmlPath": "nota-legal/index.html",
       "knowledgePath": "nota-legal/knowledge.json",
-      "htmlBytes": 19528,
-      "htmlDigest": "f78385ed1288d78720d58c960c5a264078cbacb0f020931e8f824936a4b9514c",
+      "htmlBytes": 78229,
+      "htmlDigest": "babc4213e47bed4c53333ffcaf830e52fbb1966722d56973ed3645579bd29f92",
       "precompiled": true,
       "indexable": true,
       "intent": "navigational",
@@ -50,8 +50,8 @@
       "canonical": "https://gemmashivali.com/politica-de-privacidad/",
       "htmlPath": "politica-de-privacidad/index.html",
       "knowledgePath": "politica-de-privacidad/knowledge.json",
-      "htmlBytes": 17194,
-      "htmlDigest": "db66e2969e27e26aa1aa1736855a16205234af0ce5fea1fb664f373bcfc7139b",
+      "htmlBytes": 73305,
+      "htmlDigest": "74788c5daf3c1b91a83f05bdd4096f508d1a3bab1184608b768db3fcfc575f1d",
       "precompiled": true,
       "indexable": true,
       "intent": "navigational",
@@ -64,8 +64,8 @@
       "canonical": "https://gemmashivali.com/politica-de-cookies/",
       "htmlPath": "politica-de-cookies/index.html",
       "knowledgePath": "politica-de-cookies/knowledge.json",
-      "htmlBytes": 24331,
-      "htmlDigest": "29519425298a3ccc7eac76a348d43fbe7c940e081bef33603a91ea91e988412c",
+      "htmlBytes": 87636,
+      "htmlDigest": "c36843476859684adde909297e446f94d7c7cc8f63cf670ee523c333d071d828",
       "precompiled": true,
       "indexable": true,
       "intent": "navigational",
@@ -78,8 +78,8 @@
       "canonical": "https://gemmashivali.com/declaracion-de-accesibilidad/",
       "htmlPath": "declaracion-de-accesibilidad/index.html",
       "knowledgePath": "declaracion-de-accesibilidad/knowledge.json",
-      "htmlBytes": 10794,
-      "htmlDigest": "42c0ba002814df800911761b6de731478d12e440d416da9ce79c5e60d78dfa1d",
+      "htmlBytes": 60506,
+      "htmlDigest": "569c47e8d37e79fada32072da830b58ae181557229949dc01471e0acce545a5d",
       "precompiled": true,
       "indexable": true,
       "intent": "navigational",
@@ -103,11 +103,11 @@
     },
     "warnings": []
   },
-  "publicAssets": 40,
+  "publicAssets": 63,
   "artifacts": [
     {
       "path": "index.html",
-      "bytes": 32241,
+      "bytes": 84994,
       "contentType": "text/html; charset=utf-8"
     },
     {
@@ -117,7 +117,7 @@
     },
     {
       "path": "nuestros-servicios/index.html",
-      "bytes": 32148,
+      "bytes": 97676,
       "contentType": "text/html; charset=utf-8"
     },
     {
@@ -127,7 +127,7 @@
     },
     {
       "path": "nota-legal/index.html",
-      "bytes": 19528,
+      "bytes": 78229,
       "contentType": "text/html; charset=utf-8"
     },
     {
@@ -137,7 +137,7 @@
     },
     {
       "path": "politica-de-privacidad/index.html",
-      "bytes": 17194,
+      "bytes": 73305,
       "contentType": "text/html; charset=utf-8"
     },
     {
@@ -147,7 +147,7 @@
     },
     {
       "path": "politica-de-cookies/index.html",
-      "bytes": 24331,
+      "bytes": 87636,
       "contentType": "text/html; charset=utf-8"
     },
     {
@@ -157,7 +157,7 @@
     },
     {
       "path": "declaracion-de-accesibilidad/index.html",
-      "bytes": 10794,
+      "bytes": 60506,
       "contentType": "text/html; charset=utf-8"
     },
     {
@@ -186,14 +186,14 @@
       "contentType": "application/json; charset=utf-8"
     },
     {
-      "path": "assets/site.css",
-      "bytes": 40337,
-      "contentType": "text/css; charset=utf-8"
-    },
-    {
       "path": "assets/images/about-gemma.jpg",
       "bytes": 98020,
       "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/about-gemma.webp",
+      "bytes": 76844,
+      "contentType": "image/webp"
     },
     {
       "path": "assets/images/hero-circle-mobile.jpg",
@@ -201,9 +201,19 @@
       "contentType": "image/jpeg"
     },
     {
+      "path": "assets/images/hero-circle-mobile.webp",
+      "bytes": 61242,
+      "contentType": "image/webp"
+    },
+    {
       "path": "assets/images/hero-circle.jpg",
       "bytes": 221158,
       "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/hero-circle.webp",
+      "bytes": 100478,
+      "contentType": "image/webp"
     },
     {
       "path": "assets/images/hero-meditation-mobile.jpg",
@@ -211,14 +221,19 @@
       "contentType": "image/jpeg"
     },
     {
+      "path": "assets/images/hero-meditation-mobile.webp",
+      "bytes": 79966,
+      "contentType": "image/webp"
+    },
+    {
       "path": "assets/images/hero-meditation.jpg",
       "bytes": 224795,
       "contentType": "image/jpeg"
     },
     {
-      "path": "assets/images/hero-qigong-mobile.jpg",
-      "bytes": 105997,
-      "contentType": "image/jpeg"
+      "path": "assets/images/hero-meditation.webp",
+      "bytes": 116650,
+      "contentType": "image/webp"
     },
     {
       "path": "assets/images/hero-qigong.jpg",
@@ -226,9 +241,19 @@
       "contentType": "image/jpeg"
     },
     {
+      "path": "assets/images/hero-qigong.webp",
+      "bytes": 72268,
+      "contentType": "image/webp"
+    },
+    {
       "path": "assets/images/hero-retreat-mobile.jpg",
       "bytes": 134097,
       "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/hero-retreat-mobile.webp",
+      "bytes": 71834,
+      "contentType": "image/webp"
     },
     {
       "path": "assets/images/hero-retreat.jpg",
@@ -236,9 +261,19 @@
       "contentType": "image/jpeg"
     },
     {
+      "path": "assets/images/hero-retreat.webp",
+      "bytes": 94772,
+      "contentType": "image/webp"
+    },
+    {
       "path": "assets/images/hero-sea-mobile.jpg",
       "bytes": 161175,
       "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/hero-sea-mobile.webp",
+      "bytes": 95758,
+      "contentType": "image/webp"
     },
     {
       "path": "assets/images/hero-sea.jpg",
@@ -246,9 +281,9 @@
       "contentType": "image/jpeg"
     },
     {
-      "path": "assets/images/hero-session-mobile.jpg",
-      "bytes": 92550,
-      "contentType": "image/jpeg"
+      "path": "assets/images/hero-sea.webp",
+      "bytes": 105736,
+      "contentType": "image/webp"
     },
     {
       "path": "assets/images/hero-session.jpg",
@@ -256,9 +291,9 @@
       "contentType": "image/jpeg"
     },
     {
-      "path": "assets/images/hero-tantra-mobile.jpg",
-      "bytes": 110399,
-      "contentType": "image/jpeg"
+      "path": "assets/images/hero-session.webp",
+      "bytes": 60002,
+      "contentType": "image/webp"
     },
     {
       "path": "assets/images/hero-tantra.jpg",
@@ -266,9 +301,19 @@
       "contentType": "image/jpeg"
     },
     {
-      "path": "assets/images/logo.jpg",
-      "bytes": 50293,
+      "path": "assets/images/hero-tantra.webp",
+      "bytes": 99834,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "assets/images/logo-96.jpg",
+      "bytes": 3607,
       "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/logo-96.webp",
+      "bytes": 2326,
+      "contentType": "image/webp"
     },
     {
       "path": "assets/images/og-cover.jpg",
@@ -281,14 +326,29 @@
       "contentType": "image/jpeg"
     },
     {
+      "path": "assets/images/program-40plus.webp",
+      "bytes": 3488,
+      "contentType": "image/webp"
+    },
+    {
       "path": "assets/images/program-empowerment.jpg",
       "bytes": 10403,
       "contentType": "image/jpeg"
     },
     {
-      "path": "assets/images/program-masculine-feminine.jpg",
-      "bytes": 99085,
+      "path": "assets/images/program-empowerment.webp",
+      "bytes": 6864,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "assets/images/program-masculine-feminine-card.jpg",
+      "bytes": 18709,
       "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/program-masculine-feminine-card.webp",
+      "bytes": 12766,
+      "contentType": "image/webp"
     },
     {
       "path": "assets/images/program-menopause-detail.jpg",
@@ -296,19 +356,29 @@
       "contentType": "image/jpeg"
     },
     {
+      "path": "assets/images/program-menopause-detail.webp",
+      "bytes": 61214,
+      "contentType": "image/webp"
+    },
+    {
       "path": "assets/images/program-menopause.jpg",
       "bytes": 6184,
       "contentType": "image/jpeg"
     },
     {
-      "path": "assets/images/program-postpartum.jpg",
-      "bytes": 26034,
+      "path": "assets/images/program-menopause.webp",
+      "bytes": 3768,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "assets/images/program-postpartum-card.jpg",
+      "bytes": 9257,
       "contentType": "image/jpeg"
     },
     {
-      "path": "assets/images/program-transition.jpg",
-      "bytes": 7086,
-      "contentType": "image/jpeg"
+      "path": "assets/images/program-postpartum-card.webp",
+      "bytes": 4508,
+      "contentType": "image/webp"
     },
     {
       "path": "assets/images/qigong.jpg",
@@ -316,9 +386,19 @@
       "contentType": "image/jpeg"
     },
     {
+      "path": "assets/images/qigong.webp",
+      "bytes": 57620,
+      "contentType": "image/webp"
+    },
+    {
       "path": "assets/images/services-individual.jpg",
       "bytes": 111720,
       "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/services-individual.webp",
+      "bytes": 73540,
+      "contentType": "image/webp"
     },
     {
       "path": "assets/images/services-intro.jpg",
@@ -326,9 +406,29 @@
       "contentType": "image/jpeg"
     },
     {
+      "path": "assets/images/services-intro.webp",
+      "bytes": 31174,
+      "contentType": "image/webp"
+    },
+    {
+      "path": "assets/images/services-retreats-card.jpg",
+      "bytes": 19955,
+      "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/services-retreats-card.webp",
+      "bytes": 14870,
+      "contentType": "image/webp"
+    },
+    {
       "path": "assets/images/services-retreats.jpg",
       "bytes": 78238,
       "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/services-retreats.webp",
+      "bytes": 63946,
+      "contentType": "image/webp"
     },
     {
       "path": "assets/images/services-workshops.jpg",
@@ -336,14 +436,29 @@
       "contentType": "image/jpeg"
     },
     {
+      "path": "assets/images/services-workshops.webp",
+      "bytes": 41078,
+      "contentType": "image/webp"
+    },
+    {
       "path": "assets/images/tantra-retreat.jpg",
       "bytes": 127908,
       "contentType": "image/jpeg"
     },
     {
+      "path": "assets/images/tantra-retreat.webp",
+      "bytes": 70030,
+      "contentType": "image/webp"
+    },
+    {
       "path": "assets/images/tantra.jpg",
       "bytes": 129142,
       "contentType": "image/jpeg"
+    },
+    {
+      "path": "assets/images/tantra.webp",
+      "bytes": 78154,
+      "contentType": "image/webp"
     },
     {
       "path": "assets/images/whatsapp-glyph-white.svg",
@@ -387,7 +502,7 @@
     }
   ],
   "written": {
-    "files": 56,
-    "bytes": 3841945
+    "files": 79,
+    "bytes": 5268532
   }
 }

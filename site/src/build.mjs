@@ -4,7 +4,8 @@
  * Purpose: Compile the Gemma Shivali recreation from structured content into VDS9 precompiled semantic pages, Search manifests, GEO evidence and static release artifacts.
  */
 
-import { readFile, readdir, rm, mkdir, writeFile, stat } from 'node:fs/promises';
+import { readFile, readdir, rm, mkdir, writeFile } from 'node:fs/promises';
+import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -120,7 +121,12 @@ function renderImage(images, name, { alt, className = '', loading = 'lazy', fetc
   const size = ` width="${width ?? image.width}" height="${height ?? image.height}"`;
   const classNameAttr = className ? ` class="${escapeAttr(className)}"` : '';
   const priority = fetchPriority ? ` fetchpriority="${escapeAttr(fetchPriority)}"` : '';
-  return `<img${classNameAttr} src="/assets/images/${escapeAttr(name)}"${size} alt="${escapeAttr(alt)}" loading="${escapeAttr(loading)}" decoding="async"${priority}>`;
+  const imageTag = `<img${classNameAttr} src="/assets/images/${escapeAttr(name)}"${size} alt="${escapeAttr(alt)}" loading="${escapeAttr(loading)}" decoding="async"${priority}>`;
+  const webpName = name.replace(/\.jpe?g$/i, '.webp');
+  if (existsSync(path.join(PUBLIC_DIR, 'images', webpName))) {
+    return `<picture><source type="image/webp" srcset="/assets/images/${escapeAttr(webpName)}">${imageTag}</picture>`;
+  }
+  return imageTag;
 }
 
 /**
@@ -129,23 +135,24 @@ function renderImage(images, name, { alt, className = '', loading = 'lazy', fetc
  * @param {object} images Image dimension manifest.
  * @returns {string} Hero slides markup.
  */
-function renderHeroSlides(hero, images) {
-  const slides = hero.slides.map((slide, index) => {
-    const desktop = images[slide.desktop];
-    const mobile = images[slide.mobile];
-    if (!desktop || !mobile) throw new Error(`Missing hero image manifest entry: ${slide.desktop}/${slide.mobile}`);
+function renderHeroSlides(hero, images, mode = 'desktop') {
+  const frames = mode === 'mobile' ? hero.mobileSlides : hero.slides;
+  const slides = frames.map((slide, index) => {
+    const name = mode === 'mobile' ? slide.mobile : slide.desktop;
+    const image = images[name];
+    if (!image) throw new Error(`Missing hero image manifest entry: ${name}`);
     const still = slide.still ? ' hero-slide--still' : '';
     const first = index === 0 ? ' hero-slide--first' : '';
-    const eager = index === 0;
     const style = `--i:${index}; --focus:${slide.focus}; --focus-mobile:${slide.focusMobile}`;
+    const webp = name.replace(/\.jpe?g$/i, '.webp');
     return `<figure class="hero-slide${still}${first}" style="${escapeAttr(style)}">
   <picture>
-    <source media="(max-width: 680px)" srcset="/assets/images/${escapeAttr(slide.mobile)}">
-    <img src="/assets/images/${escapeAttr(slide.desktop)}" width="${desktop.width}" height="${desktop.height}" alt="" loading="${eager ? 'eager' : 'lazy'}" decoding="async" fetchpriority="${eager ? 'high' : 'low'}">
+    <source type="image/webp" srcset="/assets/images/${escapeAttr(webp)}">
+    <img src="/assets/images/${escapeAttr(name)}" width="${image.width}" height="${image.height}" alt="" loading="lazy" decoding="async" fetchpriority="${index === 0 ? 'high' : 'low'}">
   </picture>
 </figure>`;
   }).join('');
-  return `<div class="hero__slides" aria-hidden="true">${slides}</div>`;
+  return `<div class="hero__slides hero__slides--${mode}" aria-hidden="true">${slides}</div>`;
 }
 
 /**
@@ -176,6 +183,23 @@ function createStructuredData({ site, canonical, title, description, includeServ
         addressLocality: 'Barcelona',
         addressCountry: 'ES'
       }
+    },
+    {
+      '@type': 'ProfessionalService',
+      '@id': `${site.origin}/#business`,
+      name: site.name,
+      description: site.description,
+      telephone: '+34630127319',
+      email: `mailto:${site.email}`,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Calle Santaló',
+        addressLocality: 'Barcelona',
+        addressCountry: 'ES'
+      },
+      areaServed: ['Barcelona', 'Sitges', 'Online'],
+      priceRange: '€€',
+      founder: { '@id': `${site.origin}/#gemma-shivali` }
     },
     {
       '@type': 'WebPage',
@@ -222,7 +246,7 @@ function renderHead({ site, title, description, canonicalPath, includeService = 
   const canonical = new URL(canonicalPath, site.origin).href;
   const ogImage = new URL(`/assets/images/${site.ogImage}`, site.origin).href;
   const preload = preloadHero
-    ? '<link rel="preload" as="image" href="/assets/images/hero-sea.jpg" media="(min-width: 681px)" fetchpriority="high"><link rel="preload" as="image" href="/assets/images/hero-sea-mobile.jpg" media="(max-width: 680px)" fetchpriority="high">'
+    ? '<link rel="preload" as="image" href="/assets/images/hero-sea.webp" type="image/webp" media="(min-width: 681px)" fetchpriority="high"><link rel="preload" as="image" href="/assets/images/hero-sea-mobile.webp" type="image/webp" media="(max-width: 680px)" fetchpriority="high">'
     : '';
   return `<head>
 <meta charset="utf-8">
@@ -246,7 +270,7 @@ function renderHead({ site, title, description, canonicalPath, includeService = 
 <link rel="icon" href="/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 ${preload}
-<link rel="stylesheet" href="/assets/site.css">
+<style>${minifyCss(readFileSync(path.join(__dirname, 'styles', 'site.css'), 'utf8'))}</style>
 ${createStructuredData({ site, canonical, title, description, includeService, faqItems })}
 </head>`;
 }
@@ -257,8 +281,9 @@ ${createStructuredData({ site, canonical, title, description, includeService, fa
  * @returns {string} Brand markup.
  */
 function renderBrand(site) {
+  const logoWebp = site.logo.replace(/\.jpe?g$/i, '.webp');
   return `<a class="brand" href="/">
-  <img class="brand__mark" src="/assets/images/${escapeAttr(site.logo)}" width="46" height="46" alt="" loading="eager" decoding="async">
+  <picture><source type="image/webp" srcset="/assets/images/${escapeAttr(logoWebp)}"><img class="brand__mark" src="/assets/images/${escapeAttr(site.logo)}" width="46" height="46" alt="" loading="eager" decoding="async"></picture>
   <span class="brand__text"><span class="brand__name">${escapeHtml(site.name)}</span><span class="brand__sub">Terapia y consciencia</span></span>
 </a>`;
 }
@@ -274,7 +299,7 @@ function renderHeader({ site, nav, currentPath }) {
     const current = active ? ' aria-current="page"' : '';
     return `<li><a class="site-nav__link" href="${escapeAttr(item.href)}"${current}>${escapeHtml(item.label)}</a></li>`;
   }).join('');
-  const mobileLinks = nav.map(item => `<li><a href="${escapeAttr(item.href)}">${escapeHtml(item.label)}</a></li>`).join('');
+  const mobileLinks = nav.map((item, index) => `<li style="--i:${index}"><a class="mobile-menu__link" href="${escapeAttr(item.href)}">${escapeHtml(item.label)}</a></li>`).join('');
   return `<a class="skip-link" href="#main-content">Saltar al contenido principal</a>
 <header class="site-header">
   <div class="container site-header__inner">
@@ -283,15 +308,28 @@ function renderHeader({ site, nav, currentPath }) {
       <ul class="site-nav__list">${links}</ul>
       <a class="button button--primary header-cta" href="${escapeAttr(site.whatsapp)}" target="_blank" rel="noopener">Contactar</a>
     </nav>
-    <details class="mobile-nav">
-      <summary>Menú</summary>
-      <div class="mobile-nav__panel">
-        <nav aria-label="Navegación móvil"><ul>${mobileLinks}</ul></nav>
-        <a class="button button--primary" href="${escapeAttr(site.whatsapp)}" target="_blank" rel="noopener">Contactar por WhatsApp</a>
-      </div>
-    </details>
+    <a class="mobile-nav__open" href="#mobile-menu" aria-label="Abrir menú">Menú <span aria-hidden="true">+</span></a>
   </div>
-</header>`;
+</header>
+<div id="mobile-menu" class="mobile-menu" role="dialog" aria-modal="true" aria-label="Menú">
+  <span id="mobile-menu-close" class="mobile-menu__anchor" aria-hidden="true"></span>
+  <div class="mobile-menu__inner">
+    <div class="mobile-menu__top">
+      ${renderBrand(site)}
+      <a class="mobile-menu__close" href="#mobile-menu-close" aria-label="Cerrar menú"><span></span><span></span></a>
+    </div>
+    <nav class="mobile-menu__nav" aria-label="Navegación móvil">
+      <ul>${mobileLinks}</ul>
+    </nav>
+    <div class="mobile-menu__footer">
+      <p class="mobile-menu__footer-title">Hablemos</p>
+      <a href="mailto:${escapeAttr(site.email)}">${escapeHtml(site.email)}</a>
+      <a href="${escapeAttr(site.phoneHref)}">${escapeHtml(site.phone)}</a>
+      <p>${escapeHtml(site.location)}</p>
+      <a class="mobile-menu__whatsapp" href="${escapeAttr(site.whatsapp)}" target="_blank" rel="noopener">${renderIcon('whatsapp', 'white')} WhatsApp</a>
+    </div>
+  </div>
+</div>`;
 }
 
 /**
@@ -341,6 +379,14 @@ function renderWhatsAppFloat(site) {
 }
 
 /**
+ * Purpose: Render a persistent accessible shortcut back to the top of the page.
+ * @returns {string} Back-to-top link markup.
+ */
+function renderBackToTop() {
+  return `<a class="back-to-top" href="#top" aria-label="Volver arriba" onclick="event.preventDefault();window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});"><span aria-hidden="true">↑</span></a>`;
+}
+
+/**
  * Purpose: Render a visible GEO answer block whose fragment is bound to the page knowledge surface.
  * @param {{id:string,text:string,label?:string}} input Answer-block inputs.
  * @returns {string} Answer markup.
@@ -383,15 +429,12 @@ function renderServiceFacts(facts) {
  * @param {{service:object,images:object,reverse?:boolean,number?:string|null,badge?:string|null,kind?:string}} input Service-section inputs.
  * @returns {string} Service-section markup.
  */
-function renderServiceSection({ service, images, reverse = false, number = null, badge = null, kind = 'default' }) {
-  const media = service.image
-    ? `<div class="service__media">${renderImage(images, service.image, { alt: service.alt })}</div>`
-    : '';
-  const marker = number
-    ? `<span class="service__number">${escapeHtml(number)}</span>`
-    : badge
-      ? `<span class="service__number service__number--badge">${escapeHtml(badge)}</span>`
-      : '';
+/**
+ * Purpose: Render the reusable service body used by desktop service sections and mobile service accordions.
+ * @param {object} service Service content with an optional site context for its CTA.
+ * @returns {string} Service body markup without the section heading or media.
+ */
+function renderServiceContent(service) {
   const paragraphs = (service.paragraphs ?? []).map(text => `<p>${escapeHtml(text)}</p>`).join('');
   const listItems = (service.items ?? service.examples ?? service.types ?? []).map(item => `<li>${escapeHtml(item)}</li>`).join('');
   const listClass = service.id === 'programas' ? 'program-list' : 'check-list';
@@ -410,22 +453,30 @@ function renderServiceSection({ service, images, reverse = false, number = null,
   const closing = service.closing ? `<p>${escapeHtml(service.closing)}</p>` : '';
   const modalities = service.modalities ? `<p><strong>${escapeHtml(service.modalities)}</strong></p>` : '';
   const cta = service.cta ? `<div class="service-cta">${renderButton({ label: service.cta.label, href: service.cta.href, variant: 'primary', icon: 'whatsapp', site: service.siteContext })}</div>` : '';
+  return `${paragraphs}${structure}${list}${prices}${benefitsTitle}${benefits}${facts}${modalities}${closing}${cta}`;
+}
+
+/**
+ * Purpose: Render one desktop service section with its media and shared service body.
+ * @param {{service:object,images:object,reverse?:boolean,number?:string|null,badge?:string|null,kind?:string}} input Service-section inputs.
+ * @returns {string} Service-section markup.
+ */
+function renderServiceSection({ service, images, reverse = false, number = null, badge = null, kind = 'default' }) {
+  const media = service.image
+    ? `<div class="service__media">${renderImage(images, service.image, { alt: service.alt })}</div>`
+    : '';
+  const marker = number
+    ? `<span class="service__number">${escapeHtml(number)}</span>`
+    : badge
+      ? `<span class="service__number service__number--badge">${escapeHtml(badge)}</span>`
+      : '';
   const classes = ['service', reverse ? 'service--flip' : '', kind === 'text' ? 'service--text' : ''].filter(Boolean).join(' ');
   return `<section class="${classes}" id="${escapeAttr(service.id)}" aria-labelledby="title-${escapeAttr(service.id)}">
   ${media}
   <div class="service__body">
     ${marker}
     <h2 class="service__title" id="title-${escapeAttr(service.id)}">${escapeHtml(service.title)}</h2>
-    ${paragraphs}
-    ${structure}
-    ${list}
-    ${prices}
-    ${benefitsTitle}
-    ${benefits}
-    ${facts}
-    ${modalities}
-    ${closing}
-    ${cta}
+    ${renderServiceContent(service)}
   </div>
 </section>`;
 }
@@ -456,6 +507,51 @@ function renderRetreatFeature({ retreat, images }) {
 }
 
 /**
+ * Purpose: Render a nested mobile accordion for long secondary content such as a highlighted programme or retreat.
+ * @param {{id:string,title:string,content:string}} input Accordion inputs.
+ * @returns {string} Nested accordion markup.
+ */
+function renderMobileSubaccordion({ id, title, content }) {
+  return `<details class="mobile-subaccordion" id="${escapeAttr(id)}"><summary>${escapeHtml(title)}</summary><div class="mobile-subaccordion__body">${content}</div></details>`;
+}
+
+/**
+ * Purpose: Render one compact mobile service card whose summary opens the full service content in place.
+ * @param {{card:object,service:object,images:object,extra?:string}} input Mobile service card inputs.
+ * @returns {string} Mobile service card markup.
+ */
+function renderMobileServiceCard({ card, service, images, extra = '' }) {
+  return `<details class="mobile-service-card" id="mobile-${escapeAttr(card.id)}">
+  <summary>
+    ${renderImage(images, card.image, { alt: '', className: 'mobile-service-card__image' })}
+    <span class="mobile-service-card__text"><span class="mobile-service-card__title">${escapeHtml(card.title)}</span><span class="mobile-service-card__summary">${escapeHtml(card.summary)}</span></span>
+  </summary>
+  <div class="mobile-service-card__body">
+    ${renderServiceContent(service)}
+    ${extra}
+  </div>
+</details>`;
+}
+
+/**
+ * Purpose: Render the tantra-retreat details as mobile accordion content without duplicating desktop section markup.
+ * @param {{retreat:object,site:object}} input Retreat content inputs.
+ * @returns {string} Retreat accordion content.
+ */
+function renderMobileRetreatContent({ retreat, site }) {
+  const forWho = retreat.forWho.map(item => `<li>${escapeHtml(item)}</li>`).join('');
+  return `<p class="mobile-retreat__date">${escapeHtml(retreat.date)}</p>
+<p class="mobile-retreat__lead">${escapeHtml(retreat.lead)}</p>
+${retreat.paragraphs.map(text => `<p>${escapeHtml(text)}</p>`).join('')}
+<h4>${escapeHtml(retreat.forWhoTitle)}</h4>
+<ul class="check-list">${forWho}</ul>
+<h4>${escapeHtml(retreat.factsTitle)}</h4>
+${renderServiceFacts(retreat.facts)}
+<p class="retreat-feature__urgency">${escapeHtml(retreat.urgency)}</p>
+<div class="service-cta">${renderButton({ label: retreat.cta.label, href: retreat.cta.href, variant: 'primary', icon: 'whatsapp', site })}</div>`;
+}
+
+/**
  * Purpose: Render the home page from the structured home content while preserving one canonical H1 and all primary sections.
  * @param {{data:object,images:object}} input Home-page inputs.
  * @returns {string} Complete home HTML.
@@ -472,16 +568,22 @@ function renderHomePage({ data, images }) {
   <span class="teaser-card__arrow" aria-hidden="true">→</span>
 </a>`).join('');
   const contactCtas = home.doubts.ctas.map(cta => renderButton({ label: cta.label, href: cta.href, variant: cta.type === 'whatsapp' ? 'light' : 'ghost', icon: cta.type === 'whatsapp' ? 'whatsapp' : cta.type, site })).join('');
+  const aboutRest = `${home.about.paragraphs.slice(1).map(text => `<p>${escapeHtml(text)}</p>`).join('')}
+<h3>${escapeHtml(home.about.philosophyTitle)}</h3>
+${home.about.philosophy.map(text => `<p>${escapeHtml(text)}</p>`).join('')}
+<h3>${escapeHtml(home.about.tantraTitle)}</h3>
+${home.about.tantra.map(text => `<p>${escapeHtml(text)}</p>`).join('')}`;
   const answerText = 'Gemma Shivali es terapeuta especializada en procesos de transformación a través del cuerpo y la energía. Acompaña especialmente a mujeres en etapas de cambio con programas online, sesiones individuales, talleres, retiros, qigong y tantra.';
 
   return `<!doctype html>
 <html lang="es">
 ${renderHead({ site, title: 'Gemma Shivali | Terapia online y presencial en Sitges y Barcelona', description: site.description, canonicalPath: '/', preloadHero: true })}
-<body>
+<body id="top">
 ${renderHeader({ site, nav, currentPath: '/' })}
 <main id="main-content">
   <section class="hero" aria-labelledby="hero-title">
-    ${renderHeroSlides(hero, images)}
+    ${renderHeroSlides(hero, images, 'desktop')}
+    ${renderHeroSlides(hero, images, 'mobile')}
     <div class="hero__overlay" aria-hidden="true"></div>
     <div class="hero__progress" aria-hidden="true"><span></span></div>
     <div class="container hero__content">
@@ -524,6 +626,7 @@ ${renderHeader({ site, nav, currentPath: '/' })}
             <h3>${escapeHtml(home.intro.helpTitle)}</h3>
             <p>${escapeHtml(home.intro.helpText)}</p>
           </div>
+          <div class="about-cta">${renderButton({ label: home.intro.cta.label, href: home.intro.cta.href, variant: 'primary', site })}</div>
           ${renderAnswerBlock({ id: 'en-breve', text: answerText })}
         </div>
         <aside class="questions-card" aria-labelledby="preguntas-title">
@@ -555,11 +658,12 @@ ${renderHeader({ site, nav, currentPath: '/' })}
         <div class="about-copy">
           <p class="eyebrow">Quién soy</p>
           <h2 id="sobre-mi-title">${escapeHtml(home.about.title)}</h2>
-          ${home.about.paragraphs.map(text => `<p>${escapeHtml(text)}</p>`).join('')}
-          <h3>${escapeHtml(home.about.philosophyTitle)}</h3>
-          ${home.about.philosophy.map(text => `<p>${escapeHtml(text)}</p>`).join('')}
-          <h3>${escapeHtml(home.about.tantraTitle)}</h3>
-          ${home.about.tantra.map(text => `<p>${escapeHtml(text)}</p>`).join('')}
+          <p>${escapeHtml(home.about.paragraphs[0])}</p>
+          <div class="about-long about-long--desktop">${aboutRest}</div>
+          <details class="about-long about-long--mobile mobile-accordion">
+            <summary>Conoce mi historia y mi filosofía</summary>
+            <div class="mobile-accordion__content">${aboutRest}</div>
+          </details>
           <div class="about-cta">${renderButton({ label: home.about.cta.label, href: home.about.cta.href, variant: 'ghost', site })}</div>
         </div>
       </div>
@@ -625,6 +729,10 @@ ${renderHeader({ site, nav, currentPath: '/' })}
           </ul>
         </div>
         <form class="contact-form" action="mailto:${escapeAttr(site.email)}" method="post" enctype="text/plain">
+          <div class="contact-form__quick">
+            <p>¿Prefieres escribir por WhatsApp?</p>
+            ${renderButton({ label: 'Escríbeme por WhatsApp', href: 'whatsapp', variant: 'whatsapp', icon: 'whatsapp', site })}
+          </div>
           <div class="form-row">
             <div class="field"><label for="nombre">${escapeHtml(home.contact.form.fields.name)} <span class="required">*</span></label><input id="nombre" name="nombre" type="text" autocomplete="name" required></div>
             <div class="field"><label for="email">${escapeHtml(home.contact.form.fields.email)} <span class="required">*</span></label><input id="email" name="email" type="email" autocomplete="email" required></div>
@@ -641,6 +749,7 @@ ${renderHeader({ site, nav, currentPath: '/' })}
 </main>
 ${renderFooter({ site, nav, legal: data.legal })}
 ${renderWhatsAppFloat(site)}
+${renderBackToTop()}
 </body>
 </html>`;
 }
@@ -661,13 +770,25 @@ function renderServicesPage({ data, images }) {
   const qigong = { ...services.qigong, siteContext: site };
   const tantra = { ...services.tantra, siteContext: site };
   const retreat = { ...services.tantraRetreat, siteContext: site };
+  const mobileServices = { programas: programs, sesiones: sessions, talleres: workshops, retiros: retreats, qigong, tantra };
+  const mobileCards = services.mobileCards.map(card => {
+    let extra = '';
+    if (card.id === 'programas') {
+      extra = renderMobileSubaccordion({ id: 'mobile-menopausia', title: 'Vitalidad en la menopausia', content: renderServiceContent(menopause) });
+    }
+    if (card.id === 'retiros') {
+      extra = renderMobileSubaccordion({ id: 'mobile-retiro-tantra', title: 'Retiro de tantra para mujeres', content: renderMobileRetreatContent({ retreat, site }) });
+    }
+    return renderMobileServiceCard({ card, service: mobileServices[card.id], images, extra });
+  }).join('');
+  const mobileQuickNav = services.mobileCards.map(card => `<li><a class="services-nav__link" href="#mobile-${escapeAttr(card.id)}">${escapeHtml(card.title)}</a></li>`).join('');
   const answerText = 'Los servicios de Gemma Shivali incluyen programas de transformación online, sesiones individuales de 90 o 120 minutos, talleres presenciales de un día, retiros de 2-3 días, talleres de Qi Gong y sesiones de tantra. Las sesiones individuales cuestan 90 € (90 minutos) y 120 € (120 minutos), y pueden ser online o presenciales en Barcelona y Sitges.';
   const contactCtas = services.doubts.ctas.map(cta => renderButton({ label: cta.label, href: cta.href, variant: cta.type === 'whatsapp' ? 'light' : 'ghost', icon: cta.type === 'whatsapp' ? 'whatsapp' : cta.type, site })).join('');
 
   return `<!doctype html>
 <html lang="es">
 ${renderHead({ site, title: 'Servicios | Programas, sesiones, talleres y retiros | Gemma Shivali', description: services.description, canonicalPath: '/nuestros-servicios/', includeService: true, faqItems: services.faq.items })}
-<body>
+<body id="top">
 ${renderHeader({ site, nav, currentPath: '/nuestros-servicios/' })}
 <main id="main-content">
   <section class="page-hero" aria-labelledby="servicios-title">
@@ -684,11 +805,23 @@ ${renderHeader({ site, nav, currentPath: '/nuestros-servicios/' })}
     </div>
   </section>
 
-  <nav class="services-nav" aria-label="Secciones de servicios">
+  <nav class="services-nav services-nav--desktop" aria-label="Secciones de servicios">
     <div class="container"><ul class="services-nav__list">${quickNav}</ul></div>
   </nav>
+  <nav class="services-nav services-nav--mobile" aria-label="Secciones de servicios en móvil">
+    <div class="container"><ul class="services-nav__list">${mobileQuickNav}</ul></div>
+  </nav>
 
-  <div class="container">
+  <section class="section mobile-services" id="mobile-servicios" aria-labelledby="mobile-services-title">
+    <div class="container">
+      <p class="eyebrow">Servicios</p>
+      <h2 class="section-title" id="mobile-services-title">${escapeHtml(services.mobileTitle)}</h2>
+      <p class="section-lead">${escapeHtml(services.mobileIntro)}</p>
+      <div class="mobile-services-grid">${mobileCards}</div>
+    </div>
+  </section>
+
+  <div class="container desktop-services">
     ${renderServiceSection({ service: programs, images, kind: 'text', number: programs.number })}
     ${renderServiceSection({ service: menopause, images, reverse: true, badge: 'Programa destacado' })}
     ${renderServiceSection({ service: sessions, images, number: sessions.number })}
@@ -720,6 +853,7 @@ ${renderHeader({ site, nav, currentPath: '/nuestros-servicios/' })}
 </main>
 ${renderFooter({ site, nav, legal: data.legal })}
 ${renderWhatsAppFloat(site)}
+${renderBackToTop()}
 </body>
 </html>`;
 }
@@ -734,6 +868,7 @@ function renderLegalPage({ page, data }) {
   const sections = page.sections.map((section, index) => ({ ...section, id: `seccion-${index + 1}` }));
   const toc = sections.map(section => `<li><a href="#${escapeAttr(section.id)}">${escapeHtml(section.heading)}</a></li>`).join('');
   const body = sections.map(section => `<section class="legal-section" id="${escapeAttr(section.id)}"><h2>${escapeHtml(section.heading)}</h2>${section.html}</section>`).join('');
+  const mobileBody = sections.map(section => `<details class="mobile-legal-section mobile-accordion" id="mobile-${escapeAttr(section.id)}"><summary>${escapeHtml(section.heading)}</summary><div class="mobile-accordion__content">${section.html}</div></details>`).join('');
   const answerTexts = {
     'nota-legal': 'El aviso legal de Gemma Shivali identifica a la titular del sitio, Gemma Shivali (NIF 43417740L), con domicilio en Calle Santaló, Barcelona, y correo gemmaestivill@gmail.com. Regula el uso del portal, la propiedad intelectual y la legislación aplicable.',
     'politica-de-privacidad': 'La política de privacidad de Gemma Shivali explica que los datos se tratan para atender consultas, prestar servicios y enviar newsletters, con base en el consentimiento, y cómo ejercer los derechos de acceso, rectificación, supresión, oposición, portabilidad y limitación.',
@@ -746,7 +881,7 @@ function renderLegalPage({ page, data }) {
   return `<!doctype html>
 <html lang="es">
 ${renderHead({ site, title: `${page.title} | Gemma Shivali`, description: page.description, canonicalPath: page.slug })}
-<body>
+<body id="top">
 ${renderHeader({ site, nav, currentPath: page.slug })}
 <main id="main-content">
   <section class="page-hero page-hero--compact" aria-labelledby="legal-title">
@@ -759,13 +894,17 @@ ${renderHeader({ site, nav, currentPath: page.slug })}
   </section>
   <section class="legal-page">
     <div class="container legal-layout">
-      <aside class="legal-toc" aria-labelledby="toc-title">
+      <aside class="legal-toc legal-toc--desktop" aria-labelledby="toc-title">
         <h2 id="toc-title">Contenido</h2>
         <ol>${toc}</ol>
       </aside>
       <div class="legal-content">
         ${renderAnswerBlock({ id: 'respuesta-legal', text: answerText, label: 'Respuesta rápida' })}
-        ${body}
+        <div class="legal-desktop">${body}</div>
+        <div class="legal-mobile">
+          <p class="legal-mobile__hint">Toca cada apartado para leerlo.</p>
+          ${mobileBody}
+        </div>
         <p class="legal-back"><a class="text-link" href="/">Volver al inicio</a></p>
       </div>
     </div>
@@ -773,6 +912,7 @@ ${renderHeader({ site, nav, currentPath: page.slug })}
 </main>
 ${renderFooter({ site, nav, legal: data.legal })}
 ${renderWhatsAppFloat(site)}
+${renderBackToTop()}
 </body>
 </html>`;
 }
@@ -991,7 +1131,7 @@ function createLegalGeo({ key, page }) {
  * @param {{title:string,description:string,canonicalPath:string,intent?:string,role:string,breadcrumbs?:Array<object>,structuredDataTypes?:string[],primaryEntity?:object}} input Manifest inputs.
  * @returns {object} Search manifest.
  */
-function createPageManifest({ title, description, canonicalPath, intent = 'informational', role, breadcrumbs = [], structuredDataTypes = ['WebSite', 'Person', 'WebPage'], primaryEntity = { id: 'gemma-shivali', name: 'Gemma Shivali', type: 'Person' } }) {
+function createPageManifest({ title, description, canonicalPath, intent = 'informational', role, breadcrumbs = [], structuredDataTypes = ['WebSite', 'Person', 'ProfessionalService', 'WebPage'], primaryEntity = { id: 'gemma-shivali', name: 'Gemma Shivali', type: 'Person' } }) {
   return createSearchManifest({
     title,
     description,
@@ -1040,6 +1180,7 @@ function contentTypeFor(filename) {
     '.jpeg': 'image/jpeg',
     '.png': 'image/png',
     '.webp': 'image/webp',
+    '.avif': 'image/avif',
     '.svg': 'image/svg+xml',
     '.woff2': 'font/woff2',
     '.css': 'text/css; charset=utf-8',
@@ -1050,13 +1191,24 @@ function contentTypeFor(filename) {
 }
 
 /**
+ * Purpose: Minify the compiled stylesheet while keeping the human-owned source readable and maintainable.
+ * @param {string} css Source stylesheet.
+ * @returns {string} Compact CSS for delivery.
+ */
+function minifyCss(css) {
+  return css
+    .replace(/\/\*[\s\S]*?\*\//g, '')
+    .replace(/\s+/g, ' ')
+    .replace(/\s*([{}:;,>])\s*/g, '$1')
+    .trim();
+}
+
+/**
  * Purpose: Build the public-asset artifact list from the human-owned CSS, image directory, fonts and favicons so the release remains self-contained.
  * @returns {Promise<Array<object>>} Public asset descriptors.
  */
 async function collectPublicAssets() {
   const assets = [];
-  const css = await readFile(path.join(__dirname, 'styles', 'site.css'), 'utf8');
-  assets.push({ path: 'assets/site.css', content: css, contentType: 'text/css; charset=utf-8', encoding: 'utf8' });
 
   for (const directory of ['images', 'fonts']) {
     const absolute = path.join(PUBLIC_DIR, directory);
@@ -1150,7 +1302,7 @@ async function main() {
       { label: 'Inicio', path: '/' },
       { label: 'Servicios', path: '/nuestros-servicios/' }
     ],
-    structuredDataTypes: ['WebSite', 'Person', 'WebPage', 'Service', 'FAQPage']
+    structuredDataTypes: ['WebSite', 'Person', 'ProfessionalService', 'WebPage', 'Service', 'FAQPage']
   });
 
   const precompiledPages = [

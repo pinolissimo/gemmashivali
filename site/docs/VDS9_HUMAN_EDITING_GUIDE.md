@@ -41,7 +41,9 @@ The project may use a subset of these directories. When the agent creates a diff
 - Human-code validation: `node engine/VDS-ENGINE-9/scripts/check-project-code.mjs site` from the workspace root.
 - Local preview: `python -m http.server 8123 --directory site/dist` from the workspace root.
 
-The hero film is intentionally CSS-only: no runtime JavaScript, no third-party player, no remote media. The first and last frames are the original site hero; the intermediate frames are locally stored editorial photography. Keep the frame order, the 45-second cycle and the reduced-motion fallback when editing.
+The hero film is intentionally CSS-only: no runtime JavaScript, no third-party player, no remote media. The first and last frames are the original site hero; the intermediate frames are locally stored editorial photography. Keep the frame order, the desktop 45-second / mobile 35-second cycles and the reduced-motion fallback when editing. The mobile film uses a separate five-frame vertical sequence (`home.hero.mobileSlides`); it is not a CSS-only crop of the desktop film.
+
+The mobile composition is a dedicated layer, not a simple responsive collapse: `services.mobileCards` drives the 3×2 compact service accordion grid; home programme and service cards switch to two-column mini-cards; long about, service and legal copy is disclosed with native `<details>` accordions; the full-screen menu lives in `renderHeader`; and `renderBackToTop` provides the floating return control. Styles are inlined into each compiled page by `renderHead`; edit `src/styles/site.css`, never the generated HTML.
 
 ## Do not edit directly
 

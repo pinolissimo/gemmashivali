@@ -18,7 +18,7 @@
     "location": "Sesiones online · Sesiones presenciales en Barcelona y Sitges",
     "address": "Calle Santaló, Barcelona",
     "nif": "43417740L",
-    "logo": "logo.jpg",
+    "logo": "logo-96.jpg",
     "heroImage": "hero-sea.jpg",
     "ogImage": "og-cover.jpg"
   },
@@ -59,49 +59,70 @@
       "slides": [
         {
           "desktop": "hero-sea.jpg",
-          "mobile": "hero-sea-mobile.jpg",
           "focus": "58% 28%",
           "focusMobile": "center",
           "still": true
         },
         {
           "desktop": "hero-meditation.jpg",
-          "mobile": "hero-meditation-mobile.jpg",
           "focus": "62% 42%",
           "focusMobile": "center"
         },
         {
           "desktop": "hero-session.jpg",
-          "mobile": "hero-session-mobile.jpg",
           "focus": "66% 45%",
           "focusMobile": "center"
         },
         {
           "desktop": "hero-circle.jpg",
-          "mobile": "hero-circle-mobile.jpg",
           "focus": "60% 48%",
           "focusMobile": "center"
         },
         {
           "desktop": "hero-retreat.jpg",
-          "mobile": "hero-retreat-mobile.jpg",
           "focus": "62% 48%",
           "focusMobile": "center"
         },
         {
           "desktop": "hero-qigong.jpg",
-          "mobile": "hero-qigong-mobile.jpg",
           "focus": "42% 45%",
           "focusMobile": "center"
         },
         {
           "desktop": "hero-tantra.jpg",
-          "mobile": "hero-tantra-mobile.jpg",
           "focus": "52% 45%",
           "focusMobile": "center"
         },
         {
           "desktop": "hero-sea.jpg",
+          "focus": "58% 28%",
+          "focusMobile": "center",
+          "still": true
+        }
+      ],
+      "mobileSlides": [
+        {
+          "mobile": "hero-sea-mobile.jpg",
+          "focus": "58% 28%",
+          "focusMobile": "center",
+          "still": true
+        },
+        {
+          "mobile": "hero-meditation-mobile.jpg",
+          "focus": "62% 42%",
+          "focusMobile": "center"
+        },
+        {
+          "mobile": "hero-circle-mobile.jpg",
+          "focus": "60% 48%",
+          "focusMobile": "center"
+        },
+        {
+          "mobile": "hero-retreat-mobile.jpg",
+          "focus": "62% 48%",
+          "focusMobile": "center"
+        },
+        {
           "mobile": "hero-sea-mobile.jpg",
           "focus": "58% 28%",
           "focusMobile": "center",
@@ -124,7 +145,7 @@
         {
           "title": "Reconexión postparto",
           "detail": "Reconecta contigo tras la maternidad",
-          "image": "program-postpartum.jpg",
+          "image": "program-postpartum-card.jpg",
           "alt": "Madre con su bebé en un momento de calma",
           "href": "/nuestros-servicios/#programas"
         },
@@ -138,7 +159,7 @@
         {
           "title": "Integración masculino-femenino",
           "detail": "Equilibra tu energía para tener relaciones de pareja más sanas",
-          "image": "program-masculine-feminine.jpg",
+          "image": "program-masculine-feminine-card.jpg",
           "alt": "Pareja sonriendo abrazada",
           "href": "/nuestros-servicios/#programas"
         },
@@ -152,7 +173,7 @@
         {
           "title": "Transitar el cambio",
           "detail": "Encuentra claridad en tiempos de transformación",
-          "image": "services-retreats.jpg",
+          "image": "services-retreats-card.jpg",
           "alt": "Mujer caminando en un bosque de otoño",
           "href": "/nuestros-servicios/#programas"
         }
@@ -174,7 +195,11 @@
         "¿Te sientes atrapada en relaciones tóxicas pero no sabes cómo romper el ciclo?"
       ],
       "helpTitle": "¿Cómo puedo ayudarte?",
-      "helpText": "Mi trabajo consiste en acompañarte en este proceso, ayudándote a reconectar con tu cuerpo como fuente de fortaleza, confianza y claridad. A través de técnicas corporales y energéticas como la bioenergética, el rebirthing, el qigong y el tantra, crearemos un espacio de transformación para que recuperes tu seguridad, te sientas alineada con quién eres y te conectes con todo el potencial que te trae esta nueva etapa de tu vida."
+      "helpText": "Mi trabajo consiste en acompañarte en este proceso, ayudándote a reconectar con tu cuerpo como fuente de fortaleza, confianza y claridad. A través de técnicas corporales y energéticas como la bioenergética, el rebirthing, el qigong y el tantra, crearemos un espacio de transformación para que recuperes tu seguridad, te sientas alineada con quién eres y te conectes con todo el potencial que te trae esta nueva etapa de tu vida.",
+      "cta": {
+        "label": "Ver programas",
+        "href": "/nuestros-servicios/#programas"
+      }
     },
     "process": {
       "eyebrow": "Cómo trabajo",
@@ -693,6 +718,46 @@
           "href": "email"
         }
       ]
-    }
+    },
+    "mobileTitle": "Elige tu acompañamiento",
+    "mobileIntro": "Abre cada tarjeta para ver los detalles y reservar.",
+    "mobileCards": [
+      {
+        "id": "programas",
+        "title": "Programas",
+        "image": "services-intro.jpg",
+        "summary": "Acompañamientos online en streaming para cada etapa vital."
+      },
+      {
+        "id": "sesiones",
+        "title": "Sesiones",
+        "image": "services-individual.jpg",
+        "summary": "Un espacio personalizado de 90 o 120 minutos."
+      },
+      {
+        "id": "talleres",
+        "title": "Talleres",
+        "image": "services-workshops.jpg",
+        "summary": "Experiencias intensivas de un día."
+      },
+      {
+        "id": "retiros",
+        "title": "Retiros",
+        "image": "services-retreats.jpg",
+        "summary": "2-3 días en la naturaleza."
+      },
+      {
+        "id": "qigong",
+        "title": "Qi Gong",
+        "image": "qigong.jpg",
+        "summary": "Energía, calma y presencia."
+      },
+      {
+        "id": "tantra",
+        "title": "Tantra",
+        "image": "tantra.jpg",
+        "summary": "Cuerpo, energía y sexualidad consciente."
+      }
+    ]
   }
 }

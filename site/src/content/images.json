@@ -1,9 +1,4 @@
 {
-  "logo.jpg": {
-    "width": 480,
-    "height": 480,
-    "bytes": 50293
-  },
   "about-gemma.jpg": {
     "width": 600,
     "height": 757,
@@ -14,30 +9,15 @@
     "height": 200,
     "bytes": 10403
   },
-  "program-postpartum.jpg": {
-    "width": 556,
-    "height": 556,
-    "bytes": 26034
-  },
   "program-menopause.jpg": {
     "width": 133,
     "height": 133,
     "bytes": 6184
   },
-  "program-masculine-feminine.jpg": {
-    "width": 700,
-    "height": 700,
-    "bytes": 99085
-  },
   "program-40plus.jpg": {
     "width": 133,
     "height": 133,
     "bytes": 5765
-  },
-  "program-transition.jpg": {
-    "width": 133,
-    "height": 133,
-    "bytes": 7086
   },
   "services-intro.jpg": {
     "width": 646,
@@ -109,11 +89,6 @@
     "height": 1080,
     "bytes": 159165
   },
-  "hero-session-mobile.jpg": {
-    "width": 900,
-    "height": 1200,
-    "bytes": 92550
-  },
   "hero-circle.jpg": {
     "width": 1920,
     "height": 1080,
@@ -139,19 +114,29 @@
     "height": 1080,
     "bytes": 177238
   },
-  "hero-qigong-mobile.jpg": {
-    "width": 900,
-    "height": 1200,
-    "bytes": 105997
-  },
   "hero-tantra.jpg": {
     "width": 1920,
     "height": 1080,
     "bytes": 218007
   },
-  "hero-tantra-mobile.jpg": {
-    "width": 900,
-    "height": 1200,
-    "bytes": 110399
+  "logo-96.jpg": {
+    "width": 96,
+    "height": 96,
+    "bytes": 3607
+  },
+  "program-postpartum-card.jpg": {
+    "width": 264,
+    "height": 264,
+    "bytes": 9257
+  },
+  "program-masculine-feminine-card.jpg": {
+    "width": 264,
+    "height": 264,
+    "bytes": 18709
+  },
+  "services-retreats-card.jpg": {
+    "width": 264,
+    "height": 264,
+    "bytes": 19955
   }
 }

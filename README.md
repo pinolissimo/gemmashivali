@@ -5,12 +5,14 @@ Ricostruzione e redesign del sito [gemmashivali.com](https://gemmashivali.com) c
 ## Cosa contiene
 
 - **6 pagine VDS9**: home, servicios, nota legal, política de privacidad, política de cookies, declaración de accesibilidad.
-- **Hero cinematografica CSS-only**: 8 fotogrammi in dissolvenza incrociata, 45 secondi, Ken Burns, varianti desktop/mobile, prima e ultima immagine = hero originale del sito.
+- **Hero cinematografica CSS-only**: desktop 8 fotogrammi / 45 s, mobile 5 fotogrammi verticali / 35 s, dissolvenze incrociate, Ken Burns, prima e ultima immagine = hero originale del sito.
 - **Fotografia editoriale locale**: immagini originali ottimizzate + 6 scene fotorealistiche generate per il film della hero.
+- **Versione mobile dedicata**: programmi e servizi in 3 righe × 2 mini-schede, testi lunghi in accordion, menu full-screen con fade e footer contatti, back-to-top, hero verticale dedicata.
 - **Design mobile-first**: tipografia editoriale (Cormorant Garamond + Open Sans), palette taupe/rosa/salvia, layout responsive senza JavaScript runtime.
 - **Accessibilità**: skip link, focus visibile, menu mobile nativo `<details>`, form etichettato, `prefers-reduced-motion`, contrasto e struttura semantica.
 - **Search/GEO**: canonical, Open Graph, JSON-LD, FAQPage, sitemap, robots, `llms.txt`, knowledge surface per pagina.
-- **Asset locali**: nessuna dipendenza da CDN, font o player di terzi.
+- **Asset locali**: WebP + fallback JPEG, immagini responsive, CSS critico inline, font self-hosted; nessuna dipendenza da CDN, font o player di terzi.
+- **Performance**: Lighthouse home desktop 100, servicios mobile 99, home mobile 90; TBT 0 ms, CLS 0,012.
 - **Logo WhatsApp ufficiale**: glyph dal brand resource center ufficiale fornito dal cliente.
 
 ## Vedere il sito in locale

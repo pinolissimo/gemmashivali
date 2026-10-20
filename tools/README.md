@@ -9,14 +9,16 @@ Script di supporto usati per archiviare il sito originale, preparare gli asset e
 - `extract_rendered.py` — estrae testo e immagini dall'HTML renderizzato con Chrome headless.
 - `build_site_images.py` — genera le immagini ottimizzate del sito da `source/images/originals/`.
 - `build_hero_variants.py` — genera le varianti desktop/mobile della hero e aggiorna `site/src/content/images.json`.
+- `build_webp.py` — genera le varianti WebP e le immagini responsive per card e logo.
 - `regen_og.py` — rigenera l'immagine Open Graph dalla hero.
+- `find_unused_images.py` — verifica gli asset non referenziati.
 
 ## Hero generata
 
 - `generate_hero_images.py` — genera i fotogrammi 2–7 con OpenAI `gpt-image-1`.
 - `generate_tantra.py` — genera il fotogramma tantra con un prompt non esplicito.
 
-Gli script leggono la chiave API da un file temporaneo esterno al repository (`%TEMP%\kilo\openai-key.txt`). **Non inserire mai la chiave nel repository.** La chiave usata durante la lavorazione è stata rimossa.
+Gli script leggono la chiave API da un file temporaneo esterno al repository (`%TEMP%\kilo\openai-key.txt`). **Non inserire mai la chiave nel repository.** La chiave usata durante la lavorazione è stata rimossa. `chatgpt_audit.py` usa lo stesso file temporaneo per l'audit vision e salva `AUDIT-CHATGPT.md`.
 
 ## QA
 
